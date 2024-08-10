@@ -463,7 +463,13 @@ def create_parser():
     parser.add_argument(
         "--input-dir",
         type=str,
-        help="The directory to search for Python files. E.g. 'C:\path\to\sleap'.",
+        help=(
+            "The path to the source code of a repo. E.g. 'C:\path\\to\sleap'. If no "
+            "directory is provided, then testing the repo import is skipped. If a "
+            "directory is provided without a library argument, then the entire "
+            "repo is copied and tested for import-ability. If both a directory and "
+            "a library are provided, then only the imports from the library are copied."
+        ),
         default=None,
     )
     parser.add_argument(
