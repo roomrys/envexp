@@ -6,19 +6,16 @@ import subprocess
 import time
 from pathlib import Path
 
-# TODO(LM): Separate test code from the main code
-# from pygments import highlight
-# from pygments.formatters import TerminalFormatter
-# from pygments.lexers import PythonLexer
+from pygments import highlight
+from pygments.formatters import TerminalFormatter
+from pygments.lexers import PythonLexer
+
+import user_test_code
 
 
 def print_code(code):
     """Prints code with syntax highlighting."""
 
-    print(code)
-    return
-
-    # TODO(LM): Separate test code from the main code
     print(highlight(code, PythonLexer(), TerminalFormatter()))
 
 
@@ -323,27 +320,6 @@ def find_and_copy_imports(input_dir, output_path, library):
                 initfile.write("\n".join(matching_imports) + "\n")
 
 
-def user_test_code():
-    """User-defined test code to run after the imports have been tested."""
-
-    return
-
-    # Example test code that is not run since after return
-    from qtpy.QtWidgets import QApplication, QMainWindow
-
-    def create_app():
-        """Creates Qt application."""
-        app = QApplication([])
-        return app
-
-    app = create_app()
-
-    window = QMainWindow()
-    window.showMaximized()
-
-    app.exec_()
-
-
 def run_and_log(command, fail_message=None, pass_message=None):
     """Runs a command and logs the output."""
 
@@ -376,15 +352,14 @@ def run_and_log(command, fail_message=None, pass_message=None):
 def test_code(conda_command):
     """Runs user-defined test code."""
 
-    logger.info("Running user-defined test code...")
-    print(f"\nRunning user-defined test code:")
     user_code = inspect.getsource(user_test_code)
-    logger.info(user_code)
+    logger.info(f"Running user-defined test code:\n{user_code}")
+    print(f"\nRunning user-defined test code:")
     print_code(user_code)
 
     fail_message = "Tests failed!"
     pass_message = "Tests passed successfully!"
-    command = f'{conda_command} run -n experiment python -c "import test_env; test_env.user_test_code()"'
+    command = f"{conda_command} run -n experiment python user_test_code.py"
     run_and_log(command=command, fail_message=fail_message, pass_message=pass_message)
 
 
@@ -396,7 +371,7 @@ def test_imports(conda_command, repo_name):
         repo_name (str): The name of the repo to test imports for. E.g. 'sleap'.
     """
 
-    logger.info("\nTesting imports with:")
+    logger.info("Testing imports with:")
     print("\nTesting imports with:")
     logger.info(f"\timport {repo_name}")
     print_code(f"\timport {repo_name}")

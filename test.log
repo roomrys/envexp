@@ -1,16 +1,33 @@
-2024-07-18 11:05:44,161 ERROR test_env Imports failed!
+2024-08-10 14:47:54,925 INFO __main__ Testing imports with:
+2024-08-10 14:47:54,925 INFO __main__ 	import sleap
+2024-08-10 14:47:55,294 INFO __main__ Imports passed successfully!
+2024-08-10 14:47:55,294 INFO __main__ Running user-defined test code...
+"""User-defined test code to run after the imports have been tested."""
+
+if __name__ == "__main__":
+    assert False, "Replace this block with your own test code."
+
+    # Example test code that is not run since after return
+    from qtpy.QtWidgets import QApplication, QMainWindow
+
+    def create_app():
+        """Creates Qt application."""
+        app = QApplication([])
+        return app
+
+    app = create_app()
+
+    window = QMainWindow()
+    window.showMaximized()
+
+    app.exec_()
+
+2024-08-10 14:47:55,485 ERROR __main__ Tests failed!
 Traceback (most recent call last):
-  File "C:\Users\Liezl\Projects\py310_pyside6_qtpy\envexp\test_env.py", line 136, in test_imports
+  File "/Users/liezlmaree/Projects/envexp/envexp/test_env.py", line 342, in run_and_log
     raise Exception(error)
 Exception: Traceback (most recent call last):
-  File "<string>", line 1, in <module>
-  File "C:\Users\Liezl\Projects\py310_pyside6_qtpy\envexp\experiment\__init__.py", line 26, in <module>
-    from experiment import monitor
-  File "C:\Users\Liezl\Projects\py310_pyside6_qtpy\envexp\experiment\monitor.py", line 2, in <module>
-    from qtpy.QtCharts import QtCharts
-  File "C:\Users\Liezl\miniconda3\envs\experiment\lib\site-packages\qtpy\QtCharts.py", line 46, in <module>
-    from PySide6 import QtCharts
-ImportError: DLL load failed while importing QtCharts: The specified module could not be found.
-
-ERROR conda.cli.main_run:execute(47): `conda run python -c import experiment` failed. (See above for error)
+  File "/Users/liezlmaree/Projects/envexp/envexp/user_test_code.py", line 4, in <module>
+    assert False, "Replace this block with your own test code."
+AssertionError: Replace this block with your own test code.
 
