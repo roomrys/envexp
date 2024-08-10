@@ -553,7 +553,7 @@ def main(library=None, input_dir=None, commit_message=None):
 
         # Test the imports
         if input_dir is not None:
-            # Find imports from library in the given directory
+            # Copy imports from the given directory
             copy_source_code(
                 input_dir=input_dir,
                 repo_name=repo_name,
