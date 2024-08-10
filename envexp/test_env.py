@@ -139,13 +139,13 @@ def create_environment(conda_command):
 
 
 def clean_up_envexp():
-    """Removes all directories in ./envexp folder that does not contain "egg-info"."""
+    """Removes all directories in ./envexp folder that does not contain "envexp"."""
 
     print("\nCleaning up envexp directory...")
 
     envexp_dir = Path(__file__).resolve().parent
     for directory in envexp_dir.iterdir():
-        if directory.is_dir() and ("egg-info" not in directory.name):
+        if directory.is_dir() and ("envexp" not in directory.name):
             print(f"Removing directory [{directory}]...")
             shutil.rmtree(directory)
 
