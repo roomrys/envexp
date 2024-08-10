@@ -507,7 +507,7 @@ def main(library=None, input_dir=None, repo_name=None, commit_message=None):
     conda_command = determine_conda()
 
     # Remove environment
-    # remove_environment(conda_command=conda_command)
+    remove_environment(conda_command=conda_command)
 
     # Reset log file
     with open(LOGFILE, "w") as f:
@@ -515,7 +515,7 @@ def main(library=None, input_dir=None, repo_name=None, commit_message=None):
 
     try:
         # Create a new conda environment
-        # create_environment(conda_command=conda_command)
+        create_environment(conda_command=conda_command)
 
         # Test the imports
         if input_dir is not None:
@@ -540,12 +540,12 @@ def main(library=None, input_dir=None, repo_name=None, commit_message=None):
         # Commit the changes
         close_logger_handlers(logger)
         wait_for_log_update(LOGFILE)
-        # commit_changes(commit_message=commit_message)
+        commit_changes(commit_message=commit_message)
 
 
 if __name__ == "__main__":
     main(
-        # library="qtpy",
+        library="qtpy",
         repo_name="sleap",
         input_dir="/Users/liezlmaree/Projects/sleap/sleap",
         commit_message="Run test code",
