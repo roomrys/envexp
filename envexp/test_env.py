@@ -169,6 +169,25 @@ def gitignore_repo(repo_name):
     with GITIGNORE_PATH.open("a") as gitignore:
         gitignore.write(f"\n{GITIGNORE_FLAG}{repo_name}/\n")
 
+    assume_unchanged_gitignore()
+    return
+
+
+def assume_unchanged_gitignore():
+    """Assumes the .gitignore file is unchanged."""
+
+    subprocess.run(
+        "git update-index --assume-unchanged .gitignore", shell=True, cwd=BASE_DIR
+    )
+
+
+def no_assume_unchanged_gitignore():
+    """Removes the assume-unchanged flag from the .gitignore file."""
+
+    subprocess.run(
+        "git update-index --no-assume-unchanged .gitignore", shell=True, cwd=BASE_DIR
+    )
+
 
 def un_gitignore_prev_repo():
     """Removes the previous repo name from the .gitignore file."""
@@ -541,6 +560,9 @@ def main(library=None, input_dir=None, repo_name=None, commit_message=None):
         close_logger_handlers(logger)
         wait_for_log_update(LOGFILE)
         commit_changes(commit_message=commit_message)
+        no_assume_unchanged_gitignore()
+
+    return
 
 
 if __name__ == "__main__":
