@@ -319,7 +319,7 @@ def find_and_copy_imports(input_dir, output_path, library):
         if matching_imports:
             relative_path = python_file.relative_to(input_dir)
             with init_path.open("a") as initfile:
-                initfile.write(f"# {relative_path}\n")
+                initfile.write(f"\n# {relative_path}\n")
                 initfile.write("\n".join(matching_imports) + "\n")
 
 
