@@ -1,10 +1,25 @@
 import argparse
+import inspect
 import logging
-import re
 import shutil
 import subprocess
 import time
 from pathlib import Path
+
+# TODO(LM): Separate test code from the main code
+# from pygments import highlight
+# from pygments.formatters import TerminalFormatter
+# from pygments.lexers import PythonLexer
+
+
+def print_code(code):
+    """Prints code with syntax highlighting."""
+
+    print(code)
+    return
+
+    # TODO(LM): Separate test code from the main code
+    print(highlight(code, PythonLexer(), TerminalFormatter()))
 
 
 def wait_for_log_update(logfile_path, timeout=10):
@@ -40,11 +55,14 @@ logger = logging.getLogger(__name__)
 def determine_conda():
     """Determines the conda executable to use (i.e. mm, mamba, or conda)."""
 
+    print("\nDetermining conda executable...")
+
     # Check if mamba is installed
     try:
         output = subprocess.run("mamba --version", shell=True, capture_output=True)
         if len(output.stderr) > 0:
             raise FileNotFoundError("No mamba executable found.")
+        print("\t... using mamba")
         return "mamba"
     except Exception as e:
         print(output.stderr.decode())
@@ -55,6 +73,7 @@ def determine_conda():
         output = subprocess.run("micromamba --version", shell=True, capture_output=True)
         if len(output.stderr) > 0:
             raise FileNotFoundError("No micromamba executable found.")
+        print("\t... using micromamba")
         return "micromamba"
     except FileNotFoundError:
         pass
@@ -64,6 +83,7 @@ def determine_conda():
         output = subprocess.run("conda --version", shell=True, capture_output=True)
         if len(output.stderr) > 0:
             raise FileNotFoundError("No conda executable found.")
+        print("\t... using conda")
         return "conda"
     except FileNotFoundError:
         pass
@@ -74,6 +94,8 @@ def determine_conda():
 def remove_environment(conda_command):
     """Removes the conda environment created for the experiment."""
 
+    print("\nRemoving experiment environment...")
+
     # Remove the conda environment
     command = f"{conda_command} env remove -n experiment"
     if conda_command == "micromamba":
@@ -83,6 +105,8 @@ def remove_environment(conda_command):
 
 def create_environment(conda_command):
     """Creates a new conda environment with the required dependencies."""
+
+    print("\n(Re)creating experiment environment...")
 
     parent_dir = Path(__file__).resolve().parent
     environment_file = parent_dir / "environment.yml"
@@ -252,6 +276,12 @@ def run_and_log(command, fail_message=None, pass_message=None):
 
 def test_code(conda_command):
     """Runs user-defined test code."""
+
+    logger.info("Running user-defined test code...")
+    print(f"\nRunning user-defined test code:")
+    user_code = inspect.getsource(user_test_code)
+    logger.info(user_code)
+    print_code(user_code)
 
     fail_message = "Tests failed!"
     pass_message = "Tests passed successfully!"
