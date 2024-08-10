@@ -585,7 +585,7 @@ def main(library=None, input_dir=None, commit_message=None):
 
 if __name__ == "__main__":
     main(
-        library="qtpy",
+        # library="qtpy",
         input_dir="/Users/liezlmaree/Projects/sleap/sleap",
-        commit_message="Run test code",
+        commit_message="import sleap",
     )

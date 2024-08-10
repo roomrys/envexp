@@ -1,2 +1,26 @@
-2024-08-08 17:57:15,192 INFO test_env Environment created successfully!
-2024-08-08 17:57:40,875 INFO test_env Tests passed successfully!
+2024-08-10 13:09:00,451 INFO __main__ Environment created successfully!
+2024-08-10 13:09:02,057 INFO __main__ 
+Testing imports with:
+2024-08-10 13:09:02,057 INFO __main__ 	import sleap
+2024-08-10 13:10:09,448 ERROR __main__ Imports failed!
+Traceback (most recent call last):
+  File "/Users/liezlmaree/Projects/envexp/envexp/test_env.py", line 354, in run_and_log
+    raise Exception(error)
+Exception: Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/__init__.py", line 14, in <module>
+    import sleap.nn
+  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/nn/__init__.py", line 1, in <module>
+    import sleap.nn.architectures
+  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/nn/architectures/__init__.py", line 7, in <module>
+    from sleap.nn.architectures import pretrained_encoders
+  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/nn/architectures/pretrained_encoders.py", line 47, in <module>
+    from sleap.nn.data.normalization import ensure_rgb
+  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/nn/data/__init__.py", line 2, in <module>
+    from sleap.nn.data import confidence_maps
+  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/nn/data/confidence_maps.py", line 6, in <module>
+    from sleap.nn.data.utils import make_grid_vectors
+  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/nn/data/utils.py", line 4, in <module>
+    from keras.utils import tf_utils
+ImportError: cannot import name 'tf_utils' from 'keras.utils' (/Users/liezlmaree/micromamba/envs/experiment/lib/python3.10/site-packages/keras/api/utils/__init__.py)
+

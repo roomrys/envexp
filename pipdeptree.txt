@@ -1,4 +1,4 @@
-aiohttp @ file:///Users/runner/miniforge3/conda-bld/aiohttp_1722910557522/work
+aiohttp @ file:///Users/runner/miniforge3/conda-bld/aiohttp_1723177279493/work
   aiohappyeyeballs @ file:///home/conda/feedstock_root/build_artifacts/aiohappyeyeballs_1723050862572/work
   aiosignal @ file:///home/conda/feedstock_root/build_artifacts/aiosignal_1667935791922/work
     frozenlist @ file:///Users/runner/miniforge3/conda-bld/frozenlist_1702645565720/work
@@ -54,7 +54,7 @@ cattrs @ file:///home/conda/feedstock_root/build_artifacts/cattrs_1701406356568/
   exceptiongroup @ file:///home/conda/feedstock_root/build_artifacts/exceptiongroup_1720869315914/work
   typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1717802530399/work
 click @ file:///home/conda/feedstock_root/build_artifacts/click_1692311806742/work
--e git+https://github.com/roomrys/envexp@cb3315df0f13c7bd47a2b0dc7284e628200d69f7#egg=experiment&subdirectory=envexp
+-e git+https://github.com/roomrys/envexp@084085e81ceeababa1b88c4797ce8e1c78e3e422#egg=experiment&subdirectory=envexp
 google-auth-oauthlib @ file:///home/conda/feedstock_root/build_artifacts/google-auth-oauthlib_1630497468950/work
   google-auth @ file:///home/conda/feedstock_root/build_artifacts/google-auth_1723018752281/work
     cachetools @ file:///home/conda/feedstock_root/build_artifacts/cachetools_1721091878889/work
