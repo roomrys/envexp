@@ -41,8 +41,16 @@ def close_logger_handlers(logger):
         logger.removeHandler(handler)
 
 
+# Configure commonly reused paths
+FILE_PATH = Path(__file__)
+FILE_DIR = FILE_PATH.parent
+BASE_DIR = FILE_DIR.parent.absolute()
+
+# Configure gitignore
+GITIGNORE_PATH = BASE_DIR / ".gitignore"
+GITIGNORE_FLAG = "# added by envexp\n"
+
 # Configure the logging module to write logs to a file
-BASE_DIR = Path(__file__).parent.parent.absolute()
 LOGFILE = BASE_DIR / "test.log"
 logging.basicConfig(
     filename=LOGFILE,
