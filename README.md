@@ -26,7 +26,10 @@ options:
   -h, --help            show this help message and exit
   --library LIBRARY     The library to search for in the imports. E.g. 'qtpy'.
   --input-dir INPUT_DIR
-                        The directory to search for Python files. E.g. 'C:\path o\sleap'.
+                        The path to the source code of a repo. E.g. 'C:\path\to\sleap'. If no directory is provided, then testing the
+                        repo import is skipped. If a directory is provided without a library argument, then the entire repo is copied
+                        and tested for import-ability. If both a directory and a library are provided, then only the imports from the
+                        library are copied.
   --commit-message COMMIT_MESSAGE
                         The commit message to use when committing the changes.
 ```
