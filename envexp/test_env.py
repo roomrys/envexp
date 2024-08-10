@@ -498,7 +498,7 @@ def parse_args(library=None, input_dir=None, repo_name=None, commit_message=None
     if args.input_dir is not None:
         args.input_dir = Path(input_dir)
         if args.repo_name is None:
-            args.repo_name = input_dir.name
+            args.repo_name = args.input_dir.name
 
     # Print the modified arguments
     print(f"Modified Arguments:\n\t{args}")
@@ -567,8 +567,8 @@ def main(library=None, input_dir=None, repo_name=None, commit_message=None):
 
 if __name__ == "__main__":
     main(
-        library="qtpy",
-        repo_name="sleap",
+        # library="qtpy",
+        # repo_name="sleap",
         input_dir="/Users/liezlmaree/Projects/sleap/sleap",
         commit_message="Run test code",
     )
