@@ -138,66 +138,138 @@ def create_environment(conda_command):
         log_dependencies(conda_command=conda_command)
 
 
-def remove_imports(imports_dir):
-    """Removes the imports directory if it exists."""
-    imports_dir = Path(imports_dir)
-    if imports_dir.exists():
-        print("Removing imports directory...")
-        shutil.rmtree(imports_dir)
+def clean_up_envexp():
+    """Removes all directories in ./envexp folder that does not contain "egg-info"."""
+
+    print("\nCleaning up envexp directory...")
+
+    envexp_dir = Path(__file__).resolve().parent
+    for directory in envexp_dir.iterdir():
+        if directory.is_dir() and ("egg-info" not in directory.name):
+            print(f"Removing directory [{directory}]...")
+            shutil.rmtree(directory)
+
+    un_gitignore_prev_repo()
 
 
-def find_imports(input_dir, repo_name=None, library=None):
+def gitignore_repo(repo_name):
+    """Appends the repo name to the .gitignore file.
+
+    Args:
+        repo_name (str): The name of the repo to append to the .gitignore file.
+    """
+
+    # Ensure the .gitignore file ends with a newline
+    with GITIGNORE_PATH.open("rb+") as file:
+        file.seek(-1, 2)  # Move the cursor to the last byte in the file
+        last_char = file.read(1)
+        if last_char != b"\n":
+            file.write(b"\n")
+
+    with GITIGNORE_PATH.open("a") as gitignore:
+        gitignore.write(f"\n{GITIGNORE_FLAG}{repo_name}/\n")
+
+
+def un_gitignore_prev_repo():
+    """Removes the previous repo name from the .gitignore file."""
+
+    def is_gitignore_block(prev_line, line, next_line):
+        """Determines if the line is part of the gitignore block.
+
+        Args:
+            prev_line (str): The previous line.
+            next_line (str): The next line.
+        """
+
+        if (
+            (GITIGNORE_FLAG in prev_line)
+            or (GITIGNORE_FLAG in line)
+            or (GITIGNORE_FLAG in next_line)
+        ):
+            return True
+        return False
+
+    with GITIGNORE_PATH.open("r") as gitignore:
+        lines = gitignore.readlines()
+
+    with GITIGNORE_PATH.open("w") as gitignore:
+        # Write the first line (we assume it's not part of the block)
+        gitignore.write(lines[0])
+
+        # Only write lines that are not part of the envexp gitignore block
+        for line_idx, line in enumerate(lines[1:-1]):
+
+            prev_line = lines[line_idx]
+            next_line = lines[line_idx + 2]
+            if is_gitignore_block(prev_line, line, next_line):
+                continue
+
+            gitignore.write(line)
+        # Write the last line if it's not part of the block
+        if not is_gitignore_block(prev_line=line, line=next_line, next_line=lines[-1]):
+            gitignore.write(lines[-1])
+
+    return
+
+
+def copy_source_code(input_dir, repo_name, library=None):
     """Finds all imports from a given library in Python files and copies them to test.
 
     Args:
         input_dir (str): The directory to search for Python files.
             E.g. 'C:\path\to\sleap'.
         repo_name (str): The name of the repo to copy imports from. E.g. 'sleap'.
-            If None, then will use the name of the input directory.
         library (str): The library to search for in the imports. E.g. 'qtpy'. If None,
             the function will search for imports all non-tabbed imports.
     """
 
-    current_file = Path(__file__).resolve()
-    output_dir = Path(current_file.parent) / "experiment"  # TODO: Change to repo_name
-
     # Remove the imports directory if it exists
-    remove_imports(imports_dir=output_dir)
+    clean_up_envexp()
 
-    # Set-up input and output paths
-    input_path = Path(input_dir)
-    repo_name = input_path.name
-    output_path = Path(
-        output_dir
-    ).resolve()  # Resolve to absolute path but keep it relative if given so
+    # Set-up output path to copy and test code
+    output_path = FILE_DIR / repo_name
     output_path.mkdir(
         parents=True, exist_ok=True
     )  # Create output directory if it doesn't exist
-    init_path = (
-        output_path / "__init__.py"
-    )  # Create __init__.py file in output directory
 
-    if library is None:
+    gitignore_repo(repo_name)
 
-        def check_import(line):
-            """Check if the line is an import statement."""
-
-            if line.startswith("from ") or line.startswith("import "):
-                return True
-            return False
-
+    # Only find and copy specific imports if a library is provided
+    if library is not None:
+        print(f"\nFinding and copying imports from [{library}]...")
+        find_and_copy_imports(
+            input_dir=input_dir, output_path=output_path, library=library
+        )
+        print(f"Finished copying imports from [{library}].")
     else:
+        print("\nCopying entire repo from input directory...")
+        copy_repo(input_dir=input_dir, output_path=output_path)
+        print("Finished copying entire repo.")
 
-        def check_import(line):
-            """Check if the line is an import statement from the library."""
+    return
 
-            if line.startswith(f"from {library}") or line.startswith(
-                f"import {library}"
-            ):
-                return True
-            return False
 
-    for python_file in input_path.rglob("*.py"):  # Search recursively for Python files
+def copy_repo(input_dir, output_path):
+    """Copies the entire repo to the output path."""
+
+    # Copy the entire repo to the output path
+    shutil.copytree(input_dir, output_path, dirs_exist_ok=True)
+
+
+def find_and_copy_imports(input_dir, output_path, library):
+
+    def is_import(line):
+        """Check if the line is an import statement from the library."""
+
+        if line.startswith(f"from {library}") or line.startswith(f"import {library}"):
+            return True
+        return False
+
+    # Create __init__.py file in output directory to add all imports
+    init_path = output_path / "__init__.py"
+
+    # Find all Python files in the input directory
+    for python_file in input_dir.rglob("*.py"):
         with python_file.open("r") as infile:
             lines = infile.readlines()
 
@@ -206,6 +278,7 @@ def find_imports(input_dir, repo_name=None, library=None):
         multi_line_import = False
         current_import = ""
 
+        # Find imports from the library
         for line in lines:
             if multi_line_import:
                 current_import += line.strip()
@@ -215,13 +288,7 @@ def find_imports(input_dir, repo_name=None, library=None):
                     current_import = ""
                 continue
 
-            if check_import(line):
-
-                # Skip the line if the repo name is in the line
-                if repo_name in re.split(r"[ .,\(\)\n]+", line):
-                    continue
-                    # line = line.replace(repo_name, "experiment")
-
+            if is_import(line):
                 # Determine if the import is a multi-line import
                 if line.strip().endswith("("):
                     multi_line_import = True
@@ -231,20 +298,10 @@ def find_imports(input_dir, repo_name=None, library=None):
 
         # Only write to the output file if there are matching lines
         if matching_imports:
-            # Create the output file path
-            realtive_path = python_file.relative_to(input_path)
-            output_file_path = output_path / realtive_path
-            if not output_file_path.parent.exists():
-                output_file_path.parent.mkdir(parents=True, exist_ok=True)
-            with output_file_path.open("w") as outfile:
-                outfile.write("\n".join(matching_imports) + "\n")
-
-            if library is not None:
-                # Append the output file path to the __init__.py file
-                with init_path.open("a") as initfile:
-                    initfile.write(
-                        f"from {output_path.name} import {python_file.stem}\n"
-                    )
+            relative_path = python_file.relative_to(input_dir)
+            with init_path.open("a") as initfile:
+                initfile.write(f"# {relative_path}\n")
+                initfile.write("\n".join(matching_imports) + "\n")
 
 
 def user_test_code():
@@ -297,13 +354,22 @@ def test_code(conda_command):
     run_and_log(command=command, fail_message=fail_message, pass_message=pass_message)
 
 
-def test_imports(conda_command):
-    """Tests the imports in the experiment environment."""
+def test_imports(conda_command, repo_name):
+    """Tests the imports in the experiment environment.
 
-    # TODO(LM): Change to import the repo name
+    Args:
+        conda_command (str): The conda command to use (i.e. micromamba, mamba, or conda)
+        repo_name (str): The name of the repo to test imports for. E.g. 'sleap'.
+    """
+
+    logger.info("\nTesting imports with:")
+    print("\nTesting imports with:")
+    logger.info(f"\timport {repo_name}")
+    print_code(f"\timport {repo_name}")
+
     fail_message = "Imports failed!"
     pass_message = "Imports passed successfully!"
-    command = f'{conda_command} run -n experiment python -c "import experiment"'
+    command = f'{conda_command} run -n experiment python -c "import {repo_name}"'
     run_and_log(command=command, fail_message=fail_message, pass_message=pass_message)
 
 
@@ -400,14 +466,23 @@ def parse_args(library=None, input_dir=None, repo_name=None, commit_message=None
     parser = create_parser()
     args = parser.parse_args()
 
-    # Set the arguments
-    library = library or args.library
-    input_dir = input_dir or args.input_dir
-    repo_name = repo_name or args.repo_name
-    commit_message = commit_message or args.commit_message
-
     # Print the arguments
-    print(f"Arguments:\n{args}")
+    print(f"CLI Arguments:\n\t{args}")
+
+    # Set the arguments
+    args.library = library or args.library
+    args.input_dir = input_dir or args.input_dir
+    args.repo_name = repo_name or args.repo_name
+    args.commit_message = commit_message or args.commit_message
+
+    # Modify the input_dir and repo_name if input_dir is provided
+    if args.input_dir is not None:
+        args.input_dir = Path(input_dir)
+        if args.repo_name is None:
+            args.repo_name = input_dir.name
+
+    # Print the modified arguments
+    print(f"Modified Arguments:\n\t{args}")
 
     if commit_message is None:
         parser.print_usage()
@@ -415,7 +490,7 @@ def parse_args(library=None, input_dir=None, repo_name=None, commit_message=None
             "Missing required argument --commit-message. "
             "Please provide a commit message.",
         )
-    return library, input_dir, repo_name, commit_message
+    return args.library, args.input_dir, args.repo_name, args.commit_message
 
 
 def main(library=None, input_dir=None, repo_name=None, commit_message=None):
@@ -445,12 +520,12 @@ def main(library=None, input_dir=None, repo_name=None, commit_message=None):
         # Test the imports
         if input_dir is not None:
             # Find imports from library in the given directory
-            find_imports(
+            copy_source_code(
                 input_dir=input_dir,
                 repo_name=repo_name,
                 library=library,
             )
-            test_imports(conda_command=conda_command)
+            test_imports(conda_command=conda_command, repo_name=repo_name)
 
         # Run user-defined test code
         test_code(conda_command=conda_command)
