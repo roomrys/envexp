@@ -326,7 +326,22 @@ def find_and_copy_imports(input_dir, output_path, library):
 def user_test_code():
     """User-defined test code to run after the imports have been tested."""
 
-    import experiment
+    return
+
+    # Example test code that is not run since after return
+    from qtpy.QtWidgets import QApplication, QMainWindow
+
+    def create_app():
+        """Creates Qt application."""
+        app = QApplication([])
+        return app
+
+    app = create_app()
+
+    window = QMainWindow()
+    window.showMaximized()
+
+    app.exec_()
 
 
 def run_and_log(command, fail_message=None, pass_message=None):
