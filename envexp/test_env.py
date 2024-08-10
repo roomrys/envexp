@@ -467,12 +467,6 @@ def create_parser():
         default=None,
     )
     parser.add_argument(
-        "--repo-name",
-        type=str,
-        help="The name of the repo to copy imports from. E.g. 'sleap'.",
-        default=None,
-    )
-    parser.add_argument(
         "--commit-message",
         type=str,
         help="The commit message to use when committing the changes.",
@@ -480,7 +474,7 @@ def create_parser():
     return parser
 
 
-def parse_args(library=None, input_dir=None, repo_name=None, commit_message=None):
+def parse_args(library=None, input_dir=None, commit_message=None):
     # Parse the command-line arguments
     parser = create_parser()
     args = parser.parse_args()
@@ -491,14 +485,12 @@ def parse_args(library=None, input_dir=None, repo_name=None, commit_message=None
     # Set the arguments
     args.library = library or args.library
     args.input_dir = input_dir or args.input_dir
-    args.repo_name = repo_name or args.repo_name
     args.commit_message = commit_message or args.commit_message
 
     # Modify the input_dir and repo_name if input_dir is provided
     if args.input_dir is not None:
         args.input_dir = Path(input_dir)
-        if args.repo_name is None:
-            args.repo_name = args.input_dir.name
+        repo_name = args.input_dir.name
 
     # Print the modified arguments
     print(f"Modified Arguments:\n\t{args}")
@@ -509,16 +501,15 @@ def parse_args(library=None, input_dir=None, repo_name=None, commit_message=None
             "Missing required argument --commit-message. "
             "Please provide a commit message.",
         )
-    return args.library, args.input_dir, args.repo_name, args.commit_message
+    return args.library, args.input_dir, repo_name, args.commit_message
 
 
-def main(library=None, input_dir=None, repo_name=None, commit_message=None):
+def main(library=None, input_dir=None, commit_message=None):
 
     # Parse the command-line arguments
     library, input_dir, repo_name, commit_message = parse_args(
         library=library,
         input_dir=input_dir,
-        repo_name=repo_name,
         commit_message=commit_message,
     )
 
@@ -567,8 +558,7 @@ def main(library=None, input_dir=None, repo_name=None, commit_message=None):
 
 if __name__ == "__main__":
     main(
-        # library="qtpy",
-        # repo_name="sleap",
+        library="qtpy",
         input_dir="/Users/liezlmaree/Projects/sleap/sleap",
         commit_message="Run test code",
     )
