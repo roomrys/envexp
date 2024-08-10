@@ -511,6 +511,24 @@ def parse_args(library=None, input_dir=None, commit_message=None):
 
 
 def main(library=None, input_dir=None, commit_message=None):
+    """Main function to run the environment experiment.
+
+    This function:
+        1. removes any existing environment called 'experiment'
+        2. creates a new environment called 'experiment' from the envexp/environment.yml
+        3. logs the dependencies of the experiment environment to mamaba_list.txt and
+            pipdeptree.txt
+        3. copies the source code from the input directory to the envexp directory
+        4. tests the importability of the copied source code
+        5. runs user-defined test code
+        6. logs results of the experiment to test.log
+        7. commits the changes to the root directory
+
+    Args:
+        library (str): The library to search for in the imports. E.g. 'qtpy'.
+        input_dir (str): The path to the source code of a repo. E.g. 'C:\path\\to\sleap'.
+        commit_message (str): The commit message to use when committing the changes.
+    """
 
     # Parse the command-line arguments
     library, input_dir, repo_name, commit_message = parse_args(
