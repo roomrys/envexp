@@ -1,8 +1,8 @@
 """Defines functions for managing the environment."""
 
 import subprocess
-from pathlib import Path
 
+from file_utils import FILE_DIR
 from logging_utils import log_dependencies, run_and_log
 
 def determine_conda():
@@ -47,8 +47,7 @@ def create_environment(conda_command):
 
     print("\n(Re)creating experiment environment...")
 
-    parent_dir = Path(__file__).resolve().parent
-    environment_file = parent_dir / "environment.yml"
+    environment_file = FILE_DIR / "environment.yml"
 
     # Create a new conda environment with the required dependencies
     command = f"{conda_command} env create -f {environment_file.as_posix()}"
