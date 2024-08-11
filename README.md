@@ -10,8 +10,8 @@ To get started with the ENVironment EXPeriment package:
    ```bash
    mamba activate envexp
    ```
-3. edit the `envexp/environment.yml` to contain the dependencies you need
-4. edit the `user_test_code` function in `envexp/test_env.py` to test a specific code block
+3. edit the `./envexp/environment.yml` to contain the dependencies you need
+4. edit the `./envexp/user_test_code.py` python file to test specific code
 5. test that all the imports/tests work using CLI
    ```bash
    test-env --library <optional> --input-dir <optional> --commit-message <required>
