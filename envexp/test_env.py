@@ -2,12 +2,9 @@ import argparse
 from pathlib import Path
 
 from code_copy_utils import copy_source_code
-from commit_utils import (
-    commit_changes,
-    no_assume_unchanged_gitignore,
-)
+from commit_utils import commit_experiment
 from environment_utils import determine_conda, create_environment, remove_environment
-from logging_utils import LOGFILE, close_logger_handlers, wait_for_log_update, logger
+from logging_utils import LOGFILE
 from test_utils import test_code, test_imports
 
 def create_parser():
@@ -130,10 +127,7 @@ def main(library=None, input_dir=None, commit_message=None):
         raise e
     finally:
         # Commit the changes
-        close_logger_handlers(logger)
-        wait_for_log_update()
-        commit_changes(commit_message=commit_message)
-        no_assume_unchanged_gitignore()
+        commit_experiment(commit_message=commit_message)
 
     return
 

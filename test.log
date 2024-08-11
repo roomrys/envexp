@@ -1,7 +1,8 @@
-2024-08-10 14:47:54,925 INFO __main__ Testing imports with:
-2024-08-10 14:47:54,925 INFO __main__ 	import sleap
-2024-08-10 14:47:55,294 INFO __main__ Imports passed successfully!
-2024-08-10 14:47:55,294 INFO __main__ Running user-defined test code...
+2024-08-10 17:10:31,431 INFO logging_utils Environment created successfully!
+2024-08-10 17:10:32,335 INFO logging_utils Testing imports with:
+2024-08-10 17:10:32,335 INFO logging_utils 	import sleap
+2024-08-10 17:10:34,359 INFO logging_utils Imports passed successfully!
+2024-08-10 17:10:34,360 INFO logging_utils Running user-defined test code:
 """User-defined test code to run after the imports have been tested."""
 
 if __name__ == "__main__":
@@ -22,9 +23,9 @@ if __name__ == "__main__":
 
     app.exec_()
 
-2024-08-10 14:47:55,485 ERROR __main__ Tests failed!
+2024-08-10 17:10:34,559 ERROR logging_utils Tests failed!
 Traceback (most recent call last):
-  File "/Users/liezlmaree/Projects/envexp/envexp/test_env.py", line 342, in run_and_log
+  File "/Users/liezlmaree/Projects/envexp/envexp/logging_utils.py", line 114, in run_and_log
     raise Exception(error)
 Exception: Traceback (most recent call last):
   File "/Users/liezlmaree/Projects/envexp/envexp/user_test_code.py", line 4, in <module>

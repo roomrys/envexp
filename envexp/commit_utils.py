@@ -3,6 +3,7 @@ import subprocess
 from pathlib import Path
 
 from file_utils import BASE_DIR
+from logging_utils import close_logger_handlers, wait_for_log_update, logger
 
 # Configure gitignore
 GITIGNORE_PATH = BASE_DIR / ".gitignore"
@@ -93,3 +94,12 @@ def commit_changes(commit_message: str):
     # Commit the changes to the root directory
     subprocess.run("git add .", shell=True, cwd=BASE_DIR)
     subprocess.run(f'git commit -m "{commit_message}"', shell=True)
+
+def commit_experiment(commit_message: str):
+    """Commits the changes to the root directory."""
+
+    close_logger_handlers(logger)
+    wait_for_log_update()
+    commit_changes(commit_message=commit_message)
+    no_assume_unchanged_gitignore()
+    return
