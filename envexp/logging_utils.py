@@ -19,6 +19,12 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+def reset_logfile():
+    """Resets the log file."""
+    
+    with open(LOGFILE, "w") as f:
+        pass
+
 def log_dependencies(conda_command):
     """Logs the dependencies of the experiment environment to file."""
 

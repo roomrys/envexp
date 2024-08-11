@@ -4,7 +4,7 @@ from pathlib import Path
 from code_copy_utils import copy_source_code
 from commit_utils import commit_experiment
 from environment_utils import determine_conda, create_environment, remove_environment
-from logging_utils import LOGFILE
+from logging_utils import reset_logfile
 from test_utils import test_code, test_imports
 
 def create_parser():
@@ -94,13 +94,8 @@ def main(library=None, input_dir=None, commit_message=None):
 
     # Determine the conda executable to use
     conda_command = determine_conda()
-
-    # Remove environment
     remove_environment(conda_command=conda_command)
-
-    # Reset log file
-    with open(LOGFILE, "w") as f:
-        pass
+    reset_logfile()
 
     try:
         # Create a new conda environment
