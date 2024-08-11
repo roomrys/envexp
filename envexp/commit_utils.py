@@ -1,6 +1,5 @@
 
 import subprocess
-from pathlib import Path
 
 from file_utils import BASE_DIR
 from logging_utils import close_logger_handlers, wait_for_log_update, logger

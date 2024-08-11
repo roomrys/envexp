@@ -1,6 +1,5 @@
 
 import shutil
-from pathlib import Path
 
 from commit_utils import gitignore_repo, un_gitignore_prev_repo
 from file_utils import FILE_DIR
