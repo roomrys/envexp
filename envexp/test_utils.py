@@ -1,3 +1,4 @@
+"""Utilities for testing the experiment environment."""
 
 import inspect
 import user_test_code
@@ -5,7 +6,11 @@ from logging_utils import logger, print_code, run_and_log
 
 
 def test_code(conda_command):
-    """Runs user-defined test code."""
+    """Runs user-defined test code.
+    
+    Args:
+        conda_command (str): The conda command to use (i.e. micromamba, mamba, or conda)
+    """
 
     user_code = inspect.getsource(user_test_code)
     logger.info(f"Running user-defined test code:\n{user_code}")

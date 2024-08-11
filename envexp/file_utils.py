@@ -1,3 +1,5 @@
+"""File constants."""
+
 from pathlib import Path
 
 # Configure commonly reused paths
