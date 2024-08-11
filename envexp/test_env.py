@@ -96,6 +96,7 @@ def main(library=None, input_dir=None, commit_message=None):
     conda_command = determine_conda()
     remove_environment(conda_command=conda_command)
     reset_logfile()
+    delete_old_experiment_code()
 
     try:
         # Create a new conda environment
