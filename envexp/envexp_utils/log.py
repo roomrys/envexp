@@ -8,10 +8,10 @@ from pygments import highlight
 from pygments.formatters import TerminalFormatter
 from pygments.lexers import PythonLexer
 
-from file_utils import FILE_DIR, BASE_DIR
+from envexp_utils.file import EXP_DIR, ROOT_DIR
 
 # Configure the logging module to write logs to a file
-LOGFILE = BASE_DIR / "test.log"
+LOGFILE = ROOT_DIR / "test.log"
 logging.basicConfig(
     filename=LOGFILE,
     level=logging.INFO,
@@ -39,8 +39,8 @@ def log_dependencies(conda_command):
                 if line.strip():  # only write the line if it's not empty
                     f.write(line)
 
-    mamba_filename = BASE_DIR / "mamba_list.txt"
-    pip_filename = BASE_DIR / "pipdeptree.txt"
+    mamba_filename = ROOT_DIR / "mamba_list.txt"
+    pip_filename = ROOT_DIR / "pipdeptree.txt"
 
     # Reset the files
     for filename in [mamba_filename, pip_filename]:
@@ -113,7 +113,7 @@ def run_and_log(command, fail_message=None, pass_message=None):
             command,
             shell=True,
             capture_output=True,
-            cwd=FILE_DIR,
+            cwd=EXP_DIR,
         )
         if output.returncode != 0:
             error = output.stderr.decode()

@@ -2,8 +2,8 @@
 
 import subprocess
 
-from file_utils import FILE_DIR
-from logging_utils import log_dependencies, run_and_log
+from envexp_utils.file import EXP_DIR
+from envexp_utils.log import log_dependencies, run_and_log
 
 def determine_conda():
     """Determines the conda executable to use (i.e. mm, mamba, or conda)."""
@@ -47,7 +47,7 @@ def create_environment(conda_command):
 
     print("\n(Re)creating experiment environment...")
 
-    environment_file = FILE_DIR / "environment.yml"
+    environment_file = EXP_DIR / "environment.yml"
 
     # Create a new conda environment with the required dependencies
     command = f"{conda_command} env create -f {environment_file.as_posix()}"

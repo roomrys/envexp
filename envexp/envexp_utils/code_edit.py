@@ -1,15 +1,15 @@
 
 import shutil
 
-from commit_utils import gitignore_repo, un_gitignore_prev_repo
-from file_utils import FILE_DIR
+from envexp_utils.commit import gitignore_repo, un_gitignore_prev_repo
+from envexp_utils.file import EXP_DIR
 
-def clean_up_envexp():
+def delete_old_experiment_code():
     """Removes all directories in ./envexp folder that does not contain "envexp"."""
 
     print("\nCleaning up envexp directory...")
 
-    envexp_dir = FILE_DIR
+    envexp_dir = EXP_DIR
     for directory in envexp_dir.iterdir():
         if directory.is_dir() and ("envexp" not in directory.name):
             print(f"Removing directory [{directory}]...")
@@ -29,10 +29,10 @@ def copy_source_code(input_dir, repo_name, library=None):
     """
 
     # Remove the imports directory if it exists
-    clean_up_envexp()
+    delete_old_experiment_code()
 
     # Set-up output path to copy and test code
-    output_path = FILE_DIR / repo_name
+    output_path = EXP_DIR / repo_name
     output_path.mkdir(
         parents=True, exist_ok=True
     )  # Create output directory if it doesn't exist

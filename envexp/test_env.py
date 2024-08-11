@@ -1,11 +1,11 @@
 import argparse
 from pathlib import Path
 
-from code_copy_utils import copy_source_code
-from commit_utils import commit_experiment
-from environment_utils import determine_conda, create_environment, remove_environment
-from logging_utils import reset_logfile
-from test_utils import test_code, test_imports
+from envexp_utils.code_edit import delete_old_experiment_code, copy_source_code
+from envexp_utils.commit import commit_experiment
+from envexp_utils.environment import determine_conda, create_environment, remove_environment
+from envexp_utils.log import reset_logfile
+from envexp_utils.test import test_code, test_imports
 
 def create_parser():
     parser = argparse.ArgumentParser()

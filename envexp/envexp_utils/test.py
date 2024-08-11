@@ -2,7 +2,7 @@
 
 import inspect
 import user_test_code
-from logging_utils import logger, print_code, run_and_log
+from envexp_utils.log import logger, print_code, run_and_log
 
 
 def test_code(conda_command):

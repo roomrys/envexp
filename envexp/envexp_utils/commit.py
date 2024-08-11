@@ -1,11 +1,11 @@
 
 import subprocess
 
-from file_utils import BASE_DIR
-from logging_utils import close_logger_handlers, wait_for_log_update, logger
+from envexp_utils.file import ROOT_DIR
+from envexp_utils.log import close_logger_handlers, wait_for_log_update, logger
 
 # Configure gitignore
-GITIGNORE_PATH = BASE_DIR / ".gitignore"
+GITIGNORE_PATH = ROOT_DIR / ".gitignore"
 GITIGNORE_FLAG = "# added by envexp\n"
 
 def gitignore_repo(repo_name):
@@ -33,7 +33,7 @@ def assume_unchanged_gitignore():
     """Assumes the .gitignore file is unchanged."""
 
     subprocess.run(
-        "git update-index --assume-unchanged .gitignore", shell=True, cwd=BASE_DIR
+        "git update-index --assume-unchanged .gitignore", shell=True, cwd=ROOT_DIR
     )
 
 
@@ -41,7 +41,7 @@ def no_assume_unchanged_gitignore():
     """Removes the assume-unchanged flag from the .gitignore file."""
 
     subprocess.run(
-        "git update-index --no-assume-unchanged .gitignore", shell=True, cwd=BASE_DIR
+        "git update-index --no-assume-unchanged .gitignore", shell=True, cwd=ROOT_DIR
     )
 
 
@@ -91,7 +91,7 @@ def commit_changes(commit_message: str):
     """Commits the changes to the root directory."""
 
     # Commit the changes to the root directory
-    subprocess.run("git add .", shell=True, cwd=BASE_DIR)
+    subprocess.run("git add .", shell=True, cwd=ROOT_DIR)
     subprocess.run(f'git commit -m "{commit_message}"', shell=True)
 
 def commit_experiment(commit_message: str):
