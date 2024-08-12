@@ -137,5 +137,5 @@ if __name__ == "__main__":
     main(
         # library="qtpy",
         input_dir="/Users/liezlmaree/Projects/sleap/sleap",
-        commit_message="update main",
+        commit_message="tensorflow ==2.10.0",
     )
