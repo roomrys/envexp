@@ -1,11 +1,8 @@
-2024-08-12 13:43:03,439 INFO envexp_utils.log Environment created successfully!
-2024-08-12 13:43:04,442 INFO envexp_utils.log Running user-defined test code:
-"""User-defined test code to run after the imports have been tested."""
+2024-08-12 13:51:47,987 ERROR envexp_utils.log Failed to create environment!
+Traceback (most recent call last):
+  File "/Users/liezlmaree/Projects/envexp/envexp/envexp_utils/log.py", line 121, in run_and_log
+    raise Exception(error)
+Exception: ERROR: Cannot install -r /Users/liezlmaree/Projects/envexp/envexp/requirements.txt (line 1) and protobuf>3.20 because these package versions have conflicting dependencies.
+ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+critical libmamba pip failed to install packages
 
-if __name__ == "__main__":
-    import tensorflow as tf
-
-    physical_devices = tf.config.list_physical_devices("GPU")
-    assert len(physical_devices) > 0, "No GPU devices found."
-
-2024-08-12 13:43:27,370 INFO envexp_utils.log Tests passed successfully!
