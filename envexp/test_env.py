@@ -3,9 +3,14 @@ from pathlib import Path
 
 from envexp_utils.code_edit import delete_old_experiment_code, copy_source_code
 from envexp_utils.commit import commit_experiment
-from envexp_utils.environment import determine_conda, create_environment, remove_environment
+from envexp_utils.environment import (
+    determine_conda,
+    create_environment,
+    remove_environment,
+)
 from envexp_utils.log import reset_logfile
 from envexp_utils.test import test_code, test_imports
+
 
 def create_parser():
     parser = argparse.ArgumentParser()
@@ -49,6 +54,7 @@ def parse_args(library=None, input_dir=None, commit_message=None):
     args.commit_message = commit_message or args.commit_message
 
     # Modify the input_dir and repo_name if input_dir is provided
+    repo_name = None
     if args.input_dir is not None:
         args.input_dir = Path(input_dir)
         repo_name = args.input_dir.name
@@ -130,7 +136,7 @@ def main(library=None, input_dir=None, commit_message=None):
 
 if __name__ == "__main__":
     main(
-        library="qtpy",
-        input_dir="/Users/liezlmaree/Projects/sleap/sleap",
-        commit_message="Run test code",
+        # library="qtpy",
+        # input_dir="/Users/liezlmaree/Projects/sleap/sleap",
+        commit_message="Fix error with repo_name",
     )
