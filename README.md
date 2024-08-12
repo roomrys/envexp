@@ -10,8 +10,8 @@ To get started with the ENVironment EXPeriment package:
    ```bash
    mamba activate envexp
    ```
-3. edit the `envexp/environment.yml` to contain the dependencies you need
-4. edit the `user_test_code` function in `envexp/test_env.py` to test a specific code block
+3. edit the `./envexp/environment.yml` to contain the dependencies you need
+4. edit the `./envexp/user_test_code.py` python file to test specific code
 5. test that all the imports/tests work using CLI
    ```bash
    test-env --library <optional> --input-dir <optional> --commit-message <required>
@@ -26,10 +26,16 @@ options:
   -h, --help            show this help message and exit
   --library LIBRARY     The library to search for in the imports. E.g. 'qtpy'.
   --input-dir INPUT_DIR
-                        The directory to search for Python files. E.g. 'C:\path o\sleap'.
+                        The path to the source code of a repo. E.g. 'C:\path\to\sleap'. If no directory is provided, then testing the
+                        repo import is skipped. If a directory is provided without a library argument, then the entire repo is copied
+                        and tested for import-ability. If both a directory and a library are provided, then only the imports from the
+                        library are copied.
   --commit-message COMMIT_MESSAGE
                         The commit message to use when committing the changes.
 ```
 
-> Note: this project was created to verify that Python 3.10, PySide6, and QtPy could work
-> together in an environment.
+## Flowchart
+![image](https://github.com/user-attachments/assets/275e9eec-628a-49ff-be66-30dce409e205)
+
+> Generated with code2flow.
+

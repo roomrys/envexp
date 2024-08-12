@@ -1,5 +1,3 @@
-2024-08-12 13:59:30,582 INFO envexp_utils.log Environment created successfully!
-2024-08-12 13:59:31,571 INFO envexp_utils.log Running user-defined test code:
 """User-defined test code to run after the imports have been tested."""
 
 if __name__ == "__main__":
@@ -7,5 +5,3 @@ if __name__ == "__main__":
 
     physical_devices = tf.config.list_physical_devices("GPU")
     assert len(physical_devices) > 0, "No GPU devices found."
-
-2024-08-12 14:00:01,492 INFO envexp_utils.log Tests passed successfully!

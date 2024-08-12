@@ -1,294 +1,15 @@
 import argparse
-import logging
-import shutil
-import subprocess
-import time
 from pathlib import Path
 
-
-def wait_for_log_update(logfile_path, timeout=10):
-    logfile_path = Path(logfile_path)  # Ensure logfile_path is a Path object
-    start_time = time.time()
-    initial_mod_time = logfile_path.stat().st_mtime
-    while time.time() - start_time < timeout:
-        current_mod_time = logfile_path.stat().st_mtime
-        if current_mod_time != initial_mod_time:
-            return True  # Log file has been updated
-        time.sleep(0.5)  # Wait for half a second before checking again
-    return False  # Timeout reached without detecting an update
-
-
-# Function to close and remove all handlers from the logger
-def close_logger_handlers(logger):
-    for handler in logger.handlers[:]:  # Iterate over a copy of the list
-        handler.close()
-        logger.removeHandler(handler)
-
-
-# Configure the logging module to write logs to a file
-BASE_DIR = Path(__file__).parent.parent.absolute()
-LOGFILE = BASE_DIR / "test.log"
-logging.basicConfig(
-    filename=LOGFILE,
-    level=logging.INFO,
-    format="%(asctime)s %(levelname)s %(name)s %(message)s",
+from envexp_utils.code_edit import delete_old_experiment_code, copy_source_code
+from envexp_utils.commit import commit_experiment
+from envexp_utils.environment import (
+    determine_conda,
+    create_environment,
+    remove_environment,
 )
-logger = logging.getLogger(__name__)
-
-
-def determine_conda():
-    """Determines the conda executable to use (i.e. mm, mamba, or conda)."""
-
-    # Check if mamba is installed
-    try:
-        output = subprocess.run("mamba --version", shell=True, capture_output=True)
-        if len(output.stderr) > 0:
-            raise FileNotFoundError("No mamba executable found.")
-        return "mamba"
-    except Exception as e:
-        print(output.stderr.decode())
-        pass
-
-    # Check if micromamba is installed
-    try:
-        output = subprocess.run("micromamba --version", shell=True, capture_output=True)
-        if len(output.stderr) > 0:
-            raise FileNotFoundError("No micromamba executable found.")
-        return "micromamba"
-    except FileNotFoundError:
-        pass
-
-    # Check if conda is installed
-    try:
-        output = subprocess.run("conda --version", shell=True, capture_output=True)
-        if len(output.stderr) > 0:
-            raise FileNotFoundError("No conda executable found.")
-        return "conda"
-    except FileNotFoundError:
-        pass
-
-    raise FileNotFoundError("No conda executable found.")
-
-
-def remove_environment(conda_command):
-    """Removes the conda environment created for the experiment."""
-
-    # Remove the conda environment
-    command = f"{conda_command} env remove -n experiment"
-    if conda_command == "micromamba":
-        command += " -y"
-    subprocess.run(f"{command}", shell=True)
-
-
-def create_environment(conda_command):
-    """Creates a new conda environment with the required dependencies."""
-
-    parent_dir = Path(__file__).resolve().parent
-    environment_file = parent_dir / "environment.yml"
-
-    # Create a new conda environment with the required dependencies
-    command = f"{conda_command} env create -f {environment_file.as_posix()}"
-    if conda_command == "micromamba":
-        command += " -y"
-
-    fail_message = "Failed to create environment!"
-    pass_message = "Environment created successfully!"
-
-    try:
-        run_and_log(
-            command=command, fail_message=fail_message, pass_message=pass_message
-        )
-    except Exception as e:
-        raise e
-    finally:
-        # Log the dependencies
-        log_dependencies(conda_command=conda_command)
-
-
-def remove_imports(imports_dir):
-    """Removes the imports directory if it exists."""
-    imports_dir = Path(imports_dir)
-    if imports_dir.exists():
-        print("Removing imports directory...")
-        shutil.rmtree(imports_dir)
-
-
-def find_imports(library, input_dir, output_dir=None):
-    """Finds all imports from a given library in Python files and copies them to test.
-
-    Args:
-        library (str): The library to search for in the imports. E.g. 'qtpy'.
-        input_dir (str): The directory to search for Python files.
-            E.g. 'C:\path\to\sleap'.
-        output_dir (str): The directory to save the modified Python files. Defaults to
-            '.\experiment'.
-    """
-
-    if output_dir is None:
-        current_file = Path(__file__).resolve()
-        output_dir = Path(current_file.parent) / "experiment"
-
-    # Remove the imports directory if it exists
-    remove_imports(imports_dir=output_dir)
-
-    input_path = Path(input_dir)
-    output_path = Path(
-        output_dir
-    ).resolve()  # Resolve to absolute path but keep it relative if given so
-    output_path.mkdir(
-        parents=True, exist_ok=True
-    )  # Create output directory if it doesn't exist
-    init_path = (
-        output_path / "__init__.py"
-    )  # Create __init__.py file in output directory
-
-    for python_file in input_path.rglob("*.py"):  # Search recursively for Python files
-        with python_file.open("r") as infile:
-            lines = infile.readlines()
-
-        # Find and collect multi-line imports that start with 'from qtpy'
-        qtpy_imports = []
-        multi_line_import = False
-        current_import = ""
-
-        for line in lines:
-            if multi_line_import:
-                current_import += line.strip()
-                if line.strip().endswith(")"):
-                    qtpy_imports.append(current_import)
-                    multi_line_import = False
-                    current_import = ""
-                continue
-
-            if line.startswith(f"from {library}"):
-                if line.strip().endswith("("):
-                    multi_line_import = True
-                    current_import = line.strip()
-                else:
-                    qtpy_imports.append(line.strip())
-
-        # Only write to the output file if there are matching lines
-        if qtpy_imports:
-            # Create the output file path
-            output_file_path = output_path / python_file.name
-            with output_file_path.open("w") as outfile:
-                outfile.write("\n".join(qtpy_imports) + "\n")
-            # Append the output file path to the __init__.py file
-            with init_path.open("a") as initfile:
-                initfile.write(f"from {output_path.name} import {python_file.stem}\n")
-
-
-def user_test_code():
-    """User-defined test code to run after the imports have been tested."""
-
-    import tensorflow
-
-
-def run_and_log(command, fail_message=None, pass_message=None):
-    """Runs a command and logs the output."""
-
-    if fail_message is None:
-        fail_message = "Failed!"
-
-    if pass_message is None:
-        pass_message = "Passed!"
-
-    try:
-        output = subprocess.run(
-            command,
-            shell=True,
-            capture_output=True,
-            cwd=Path(__file__).resolve().parent,
-        )
-        if output.returncode != 0:
-            error = output.stderr.decode()
-            error = error.replace("\r\r", "")
-            raise Exception(error)
-        print(output.stdout.decode())
-        logger.info(pass_message)
-        print(pass_message)
-    except Exception as e:
-        logger.exception(fail_message)
-        print(fail_message)
-        raise e
-
-
-def test_code(conda_command):
-    """Runs user-defined test code."""
-
-    fail_message = "Tests failed!"
-    pass_message = "Tests passed successfully!"
-    command = f'{conda_command} run -n experiment python -c "import test_env; test_env.user_test_code()"'
-    run_and_log(command=command, fail_message=fail_message, pass_message=pass_message)
-
-
-def test_imports(conda_command):
-    """Tests the imports in the experiment environment."""
-
-    fail_message = "Imports failed!"
-    pass_message = "Imports passed successfully!"
-    command = f'{conda_command} run -n experiment python -c "import experiment"'
-    run_and_log(command=command, fail_message=fail_message, pass_message=pass_message)
-
-
-def log_dependencies(conda_command):
-    """Logs the dependencies of the experiment environment to file."""
-
-    def post_process_file(filename):
-        """Removes empty lines from a file."""
-
-        with open(filename, "r") as f:
-            lines = f.readlines()
-
-        with open(filename, "w") as f:
-            for line in lines:
-                if line.strip():  # only write the line if it's not empty
-                    f.write(line)
-
-    mamba_filename = BASE_DIR / "mamba_list.txt"
-    pip_filename = BASE_DIR / "pipdeptree.txt"
-
-    # Reset the files
-    for filename in [mamba_filename, pip_filename]:
-        with open(filename, "w") as f:
-            pass
-
-    # mamba list > mamba_list.txt
-    with open(mamba_filename, "w") as f:
-        subprocess.run(
-            f"{conda_command} run -n experiment {conda_command} list",
-            shell=True,
-            stdout=f,
-        )
-
-    # Find python path of experiment environment
-    result = subprocess.run(
-        f"{conda_command} run -n experiment which python",
-        shell=True,
-        capture_output=True,
-    )
-    python_path = result.stdout.decode().strip()
-
-    # pipdeptree -f > pipdeptree.txt
-    with open(pip_filename, "w") as f:
-        # Run pipdeptree in the envexp environment on the experiment environment
-        subprocess.run(
-            f"{conda_command} run -n envexp pipdeptree --python {python_path} -f",
-            shell=True,
-            stdout=f,
-        )
-
-    # Remove empty lines from the files
-    for filename in [mamba_filename, pip_filename]:
-        post_process_file(filename)
-
-
-def commit_changes(commit_message: str):
-    """Commits the changes to the experiment branch."""
-
-    # Commit the changes to the experiment branch
-    subprocess.run("git add .", shell=True, cwd=BASE_DIR)
-    subprocess.run(f'git commit -m "{commit_message}"', shell=True)
+from envexp_utils.log import reset_logfile
+from envexp_utils.test import test_code, test_imports
 
 
 def create_parser():
@@ -302,7 +23,13 @@ def create_parser():
     parser.add_argument(
         "--input-dir",
         type=str,
-        help="The directory to search for Python files. E.g. 'C:\path\to\sleap'.",
+        help=(
+            "The path to the source code of a repo. E.g. 'C:\path\\to\sleap'. If no "
+            "directory is provided, then testing the repo import is skipped. If a "
+            "directory is provided without a library argument, then the entire "
+            "repo is copied and tested for import-ability. If both a directory and "
+            "a library are provided, then only the imports from the library are copied."
+        ),
         default=None,
     )
     parser.add_argument(
@@ -317,10 +44,23 @@ def parse_args(library=None, input_dir=None, commit_message=None):
     # Parse the command-line arguments
     parser = create_parser()
     args = parser.parse_args()
-    library = library or args.library
-    input_dir = input_dir or args.input_dir
-    commit_message = commit_message or args.commit_message
-    print(f"Arguments:\n{args}")
+
+    # Print the arguments
+    print(f"CLI Arguments:\n\t{args}")
+
+    # Set the arguments
+    args.library = library or args.library
+    args.input_dir = input_dir or args.input_dir
+    args.commit_message = commit_message or args.commit_message
+
+    # Modify the input_dir and repo_name if input_dir is provided
+    repo_name = None
+    if args.input_dir is not None:
+        args.input_dir = Path(input_dir)
+        repo_name = args.input_dir.name
+
+    # Print the modified arguments
+    print(f"Modified Arguments:\n\t{args}")
 
     if commit_message is None:
         parser.print_usage()
@@ -328,36 +68,55 @@ def parse_args(library=None, input_dir=None, commit_message=None):
             "Missing required argument --commit-message. "
             "Please provide a commit message.",
         )
-    return library, input_dir, commit_message
+    return args.library, args.input_dir, repo_name, args.commit_message
 
 
 def main(library=None, input_dir=None, commit_message=None):
+    """Main function to run the environment experiment.
+
+    This function:
+        1. removes any existing environment called 'experiment'
+        2. creates a new environment called 'experiment' from the envexp/environment.yml
+        3. logs the dependencies of the experiment environment to mamaba_list.txt and
+            pipdeptree.txt
+        3. copies the source code from the input directory to the envexp directory
+        4. tests the importability of the copied source code
+        5. runs user-defined test code
+        6. logs results of the experiment to test.log
+        7. commits the changes to the root directory
+
+    Args:
+        library (str): The library to search for in the imports. E.g. 'qtpy'.
+        input_dir (str): The path to the source code of a repo. E.g. 'C:\path\\to\sleap'.
+        commit_message (str): The commit message to use when committing the changes.
+    """
 
     # Parse the command-line arguments
-    library, input_dir, commit_message = parse_args(library, input_dir, commit_message)
+    library, input_dir, repo_name, commit_message = parse_args(
+        library=library,
+        input_dir=input_dir,
+        commit_message=commit_message,
+    )
 
     # Determine the conda executable to use
     conda_command = determine_conda()
-
-    # Remove environment
     remove_environment(conda_command=conda_command)
-
-    # Reset log file
-    with open(LOGFILE, "w") as f:
-        pass
+    reset_logfile()
+    delete_old_experiment_code()
 
     try:
         # Create a new conda environment
         create_environment(conda_command=conda_command)
 
         # Test the imports
-        if input_dir is not None and library is not None:
-            # Find imports from library in the given directory
-            find_imports(
-                library=library,
+        if input_dir is not None:
+            # Copy imports from the given directory
+            copy_source_code(
                 input_dir=input_dir,
+                repo_name=repo_name,
+                library=library,
             )
-            test_imports(conda_command=conda_command)
+            test_imports(conda_command=conda_command, repo_name=repo_name)
 
         # Run user-defined test code
         test_code(conda_command=conda_command)
@@ -370,14 +129,14 @@ def main(library=None, input_dir=None, commit_message=None):
         raise e
     finally:
         # Commit the changes
-        close_logger_handlers(logger)
-        wait_for_log_update(LOGFILE)
-        # commit_changes(commit_message=commit_message)
+        commit_experiment(commit_message=commit_message)
+
+    return
 
 
 if __name__ == "__main__":
     main(
         # library="qtpy",
-        # input_dir=r"C:\Users\Liezl\Projects\sleap-estimates-animal-poses\pull-requests\sleap",
-        commit_message="Run test code",
+        # input_dir="/Users/liezlmaree/Projects/sleap/sleap",
+        commit_message="tensorflow-macos>=2.10.0,<2.13.0",
     )

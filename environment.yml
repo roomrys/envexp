@@ -6,4 +6,5 @@ dependencies:
   - pip
   - pipdeptree # pipdeptree may break if pip's internal API changes in newer releases
   - pip:
+      - pygments
       - -e . # Install the package in the current directory
