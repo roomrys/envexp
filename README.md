@@ -34,5 +34,8 @@ options:
                         The commit message to use when committing the changes.
 ```
 
-> Note: this project was created to verify that Python 3.10, PySide6, and QtPy could work
-> together in an environment.
+## Flowchart
+![image](https://github.com/user-attachments/assets/275e9eec-628a-49ff-be66-30dce409e205)
+
+> Generated with code2flow.
+
