@@ -1,4 +1,4 @@
-2024-08-12 13:51:47,987 ERROR envexp_utils.log Failed to create environment!
+2024-08-12 13:53:53,130 ERROR envexp_utils.log Failed to create environment!
 Traceback (most recent call last):
   File "/Users/liezlmaree/Projects/envexp/envexp/envexp_utils/log.py", line 121, in run_and_log
     raise Exception(error)
