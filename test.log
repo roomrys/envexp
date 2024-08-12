@@ -1,8 +1,8 @@
-2024-08-12 14:25:10,941 INFO envexp_utils.log Environment created successfully!
-2024-08-12 14:25:12,406 INFO envexp_utils.log Testing imports with:
-2024-08-12 14:25:12,407 INFO envexp_utils.log 	import sleap
-2024-08-12 14:26:03,638 INFO envexp_utils.log Imports passed successfully!
-2024-08-12 14:26:03,638 INFO envexp_utils.log Running user-defined test code:
+2024-08-12 14:38:25,768 INFO envexp_utils.log Environment created successfully!
+2024-08-12 14:38:27,226 INFO envexp_utils.log Testing imports with:
+2024-08-12 14:38:27,226 INFO envexp_utils.log 	import sleap
+2024-08-12 14:39:10,435 INFO envexp_utils.log Imports passed successfully!
+2024-08-12 14:39:10,436 INFO envexp_utils.log Running user-defined test code:
 """User-defined test code to run after the imports have been tested."""
 
 if __name__ == "__main__":
@@ -11,4 +11,475 @@ if __name__ == "__main__":
     physical_devices = tf.config.list_physical_devices("GPU")
     assert len(physical_devices) > 0, "No GPU devices found."
 
-2024-08-12 14:26:06,226 INFO envexp_utils.log Tests passed successfully!
+    from sleap.gui.app import main as sleap_label
+
+    sleap_label()
+
+2024-08-12 14:39:16,887 ERROR envexp_utils.log Tests failed!
+Traceback (most recent call last):
+  File "/Users/liezlmaree/Projects/envexp/envexp/envexp_utils/log.py", line 121, in run_and_log
+    raise Exception(error)
+Exception: shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QWidget'
+        OFFENDING LINE: '1:PySide6.QtWidgets.QFileDialog(self,parent:PySide6.QtWidgets.QWidget,f:PySide6.QtCore.Qt.WindowType)'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.Qt.WindowType'
+        OFFENDING LINE: '1:PySide6.QtWidgets.QFileDialog(self,parent:PySide6.QtWidgets.QWidget,f:PySide6.QtCore.Qt.WindowType)'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QWidget'
+        OFFENDING LINE: '0:PySide6.QtWidgets.QFileDialog(self,parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),directory:QString=QString(),filter:QString=QString())'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QFileDialog.AcceptMode'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.acceptMode(self)->PySide6.QtWidgets.QFileDialog.AcceptMode'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QEvent'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.changeEvent(self,e:PySide6.QtCore.QEvent)'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QDir'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.directory(self)->PySide6.QtCore.QDir'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QUrl'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.directoryUrl(self)->PySide6.QtCore.QUrl'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QFileDialog.FileMode'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.fileMode(self)->PySide6.QtWidgets.QFileDialog.FileMode'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QDir.Filter'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.filter(self)->PySide6.QtCore.QDir.Filter'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QWidget'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getExistingDirectory(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Option.ShowDirsOnly)->QString'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QFileDialog.Option'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getExistingDirectory(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Option.ShowDirsOnly)->QString'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'QFileDialog.Option.ShowDirsOnly'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getExistingDirectory(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Option.ShowDirsOnly)->QString'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QWidget'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getExistingDirectoryUrl(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:typing.Union[PySide6.QtCore.QUrl, QString]=QUrl(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Option.ShowDirsOnly,supportedSchemes:QStringList=QStringList())->PySide6.QtCore.QUrl'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QUrl'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getExistingDirectoryUrl(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:typing.Union[PySide6.QtCore.QUrl, QString]=QUrl(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Option.ShowDirsOnly,supportedSchemes:QStringList=QStringList())->PySide6.QtCore.QUrl'
+        
+shibokensupport/signature/parser.py:359: RuntimeWarning: pyside_type_init:_resolve_type
+
+                UNRECOGNIZED:   'typing.Union[PySide6.QtCore.QUrl, str]'
+                OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getExistingDirectoryUrl(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:typing.Union[PySide6.QtCore.QUrl, QString]=QUrl(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Option.ShowDirsOnly,supportedSchemes:QStringList=QStringList())->PySide6.QtCore.QUrl'
+                
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QUrl, str'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getExistingDirectoryUrl(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:typing.Union[PySide6.QtCore.QUrl, QString]=QUrl(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Option.ShowDirsOnly,supportedSchemes:QStringList=QStringList())->PySide6.QtCore.QUrl'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QFileDialog.Option'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getExistingDirectoryUrl(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:typing.Union[PySide6.QtCore.QUrl, QString]=QUrl(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Option.ShowDirsOnly,supportedSchemes:QStringList=QStringList())->PySide6.QtCore.QUrl'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'QFileDialog.Option.ShowDirsOnly'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getExistingDirectoryUrl(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:typing.Union[PySide6.QtCore.QUrl, QString]=QUrl(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Option.ShowDirsOnly,supportedSchemes:QStringList=QStringList())->PySide6.QtCore.QUrl'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QWidget'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getOpenFileName(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:QString=QString(),filter:QString=QString(),selectedFilter:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Options())->Tuple[str, str]'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QFileDialog.Option'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getOpenFileName(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:QString=QString(),filter:QString=QString(),selectedFilter:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Options())->Tuple[str, str]'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QWidget'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getOpenFileNames(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:QString=QString(),filter:QString=QString(),selectedFilter:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Options())->Tuple[List[str], str]'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QFileDialog.Option'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getOpenFileNames(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:QString=QString(),filter:QString=QString(),selectedFilter:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Options())->Tuple[List[str], str]'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QWidget'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getOpenFileUrl(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:typing.Union[PySide6.QtCore.QUrl, QString]=QUrl(),filter:QString=QString(),selectedFilter:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Options(),supportedSchemes:QStringList=QStringList())->Tuple[PySide6.QtCore.QUrl, str]'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QUrl'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getOpenFileUrl(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:typing.Union[PySide6.QtCore.QUrl, QString]=QUrl(),filter:QString=QString(),selectedFilter:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Options(),supportedSchemes:QStringList=QStringList())->Tuple[PySide6.QtCore.QUrl, str]'
+        
+shibokensupport/signature/parser.py:359: RuntimeWarning: pyside_type_init:_resolve_type
+
+                UNRECOGNIZED:   'typing.Union[PySide6.QtCore.QUrl, str]'
+                OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getOpenFileUrl(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:typing.Union[PySide6.QtCore.QUrl, QString]=QUrl(),filter:QString=QString(),selectedFilter:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Options(),supportedSchemes:QStringList=QStringList())->Tuple[PySide6.QtCore.QUrl, str]'
+                
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QUrl, str'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getOpenFileUrl(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:typing.Union[PySide6.QtCore.QUrl, QString]=QUrl(),filter:QString=QString(),selectedFilter:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Options(),supportedSchemes:QStringList=QStringList())->Tuple[PySide6.QtCore.QUrl, str]'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QFileDialog.Option'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getOpenFileUrl(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:typing.Union[PySide6.QtCore.QUrl, QString]=QUrl(),filter:QString=QString(),selectedFilter:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Options(),supportedSchemes:QStringList=QStringList())->Tuple[PySide6.QtCore.QUrl, str]'
+        
+shibokensupport/signature/parser.py:359: RuntimeWarning: pyside_type_init:_resolve_type
+
+                UNRECOGNIZED:   'typing.Tuple[PySide6.QtCore.QUrl, str]'
+                OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getOpenFileUrl(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:typing.Union[PySide6.QtCore.QUrl, QString]=QUrl(),filter:QString=QString(),selectedFilter:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Options(),supportedSchemes:QStringList=QStringList())->Tuple[PySide6.QtCore.QUrl, str]'
+                
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QWidget'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getOpenFileUrls(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:typing.Union[PySide6.QtCore.QUrl, QString]=QUrl(),filter:QString=QString(),selectedFilter:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Options(),supportedSchemes:QStringList=QStringList())->Tuple[List[PySide6.QtCore.QUrl], str]'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QUrl'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getOpenFileUrls(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:typing.Union[PySide6.QtCore.QUrl, QString]=QUrl(),filter:QString=QString(),selectedFilter:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Options(),supportedSchemes:QStringList=QStringList())->Tuple[List[PySide6.QtCore.QUrl], str]'
+        
+shibokensupport/signature/parser.py:359: RuntimeWarning: pyside_type_init:_resolve_type
+
+                UNRECOGNIZED:   'typing.Union[PySide6.QtCore.QUrl, str]'
+                OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getOpenFileUrls(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:typing.Union[PySide6.QtCore.QUrl, QString]=QUrl(),filter:QString=QString(),selectedFilter:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Options(),supportedSchemes:QStringList=QStringList())->Tuple[List[PySide6.QtCore.QUrl], str]'
+                
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QUrl, str'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getOpenFileUrls(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:typing.Union[PySide6.QtCore.QUrl, QString]=QUrl(),filter:QString=QString(),selectedFilter:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Options(),supportedSchemes:QStringList=QStringList())->Tuple[List[PySide6.QtCore.QUrl], str]'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QFileDialog.Option'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getOpenFileUrls(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:typing.Union[PySide6.QtCore.QUrl, QString]=QUrl(),filter:QString=QString(),selectedFilter:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Options(),supportedSchemes:QStringList=QStringList())->Tuple[List[PySide6.QtCore.QUrl], str]'
+        
+shibokensupport/signature/parser.py:359: RuntimeWarning: pyside_type_init:_resolve_type
+
+                UNRECOGNIZED:   'typing.List[PySide6.QtCore.QUrl]'
+                OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getOpenFileUrls(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:typing.Union[PySide6.QtCore.QUrl, QString]=QUrl(),filter:QString=QString(),selectedFilter:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Options(),supportedSchemes:QStringList=QStringList())->Tuple[List[PySide6.QtCore.QUrl], str]'
+                
+shibokensupport/signature/parser.py:359: RuntimeWarning: pyside_type_init:_resolve_type
+
+                UNRECOGNIZED:   'typing.Tuple[PySide6.QtCore.QUrl, str]'
+                OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getOpenFileUrls(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:typing.Union[PySide6.QtCore.QUrl, QString]=QUrl(),filter:QString=QString(),selectedFilter:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Options(),supportedSchemes:QStringList=QStringList())->Tuple[List[PySide6.QtCore.QUrl], str]'
+                
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QWidget'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getSaveFileName(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:QString=QString(),filter:QString=QString(),selectedFilter:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Options())->Tuple[str, str]'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QFileDialog.Option'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getSaveFileName(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:QString=QString(),filter:QString=QString(),selectedFilter:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Options())->Tuple[str, str]'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QWidget'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getSaveFileUrl(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:typing.Union[PySide6.QtCore.QUrl, QString]=QUrl(),filter:QString=QString(),selectedFilter:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Options(),supportedSchemes:QStringList=QStringList())->Tuple[PySide6.QtCore.QUrl, str]'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QUrl'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getSaveFileUrl(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:typing.Union[PySide6.QtCore.QUrl, QString]=QUrl(),filter:QString=QString(),selectedFilter:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Options(),supportedSchemes:QStringList=QStringList())->Tuple[PySide6.QtCore.QUrl, str]'
+        
+shibokensupport/signature/parser.py:359: RuntimeWarning: pyside_type_init:_resolve_type
+
+                UNRECOGNIZED:   'typing.Union[PySide6.QtCore.QUrl, str]'
+                OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getSaveFileUrl(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:typing.Union[PySide6.QtCore.QUrl, QString]=QUrl(),filter:QString=QString(),selectedFilter:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Options(),supportedSchemes:QStringList=QStringList())->Tuple[PySide6.QtCore.QUrl, str]'
+                
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QUrl, str'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getSaveFileUrl(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:typing.Union[PySide6.QtCore.QUrl, QString]=QUrl(),filter:QString=QString(),selectedFilter:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Options(),supportedSchemes:QStringList=QStringList())->Tuple[PySide6.QtCore.QUrl, str]'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QFileDialog.Option'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getSaveFileUrl(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:typing.Union[PySide6.QtCore.QUrl, QString]=QUrl(),filter:QString=QString(),selectedFilter:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Options(),supportedSchemes:QStringList=QStringList())->Tuple[PySide6.QtCore.QUrl, str]'
+        
+shibokensupport/signature/parser.py:359: RuntimeWarning: pyside_type_init:_resolve_type
+
+                UNRECOGNIZED:   'typing.Tuple[PySide6.QtCore.QUrl, str]'
+                OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.getSaveFileUrl(parent:PySide6.QtWidgets.QWidget=nullptr,caption:QString=QString(),dir:typing.Union[PySide6.QtCore.QUrl, QString]=QUrl(),filter:QString=QString(),selectedFilter:QString=QString(),options:PySide6.QtWidgets.QFileDialog.Option=QFileDialog.Options(),supportedSchemes:QStringList=QStringList())->Tuple[PySide6.QtCore.QUrl, str]'
+                
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtGui.QAbstractFileIconProvider'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.iconProvider(self)->PySide6.QtGui.QAbstractFileIconProvider'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QAbstractItemDelegate'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.itemDelegate(self)->PySide6.QtWidgets.QAbstractItemDelegate'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QFileDialog.DialogLabel'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.labelText(self,label:PySide6.QtWidgets.QFileDialog.DialogLabel)->QString'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QObject'
+        OFFENDING LINE: '0:PySide6.QtWidgets.QFileDialog.open(self,receiver:PySide6.QtCore.QObject,member:char*)'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QFileDialog.Option'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.options(self)->PySide6.QtWidgets.QFileDialog.Option'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QAbstractProxyModel'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.proxyModel(self)->PySide6.QtCore.QAbstractProxyModel'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QByteArray'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.restoreState(self,state:typing.Union[PySide6.QtCore.QByteArray, char*])->bool'
+        
+shibokensupport/signature/parser.py:359: RuntimeWarning: pyside_type_init:_resolve_type
+
+                UNRECOGNIZED:   'typing.Union[PySide6.QtCore.QByteArray, typing.Union[bytes, bytearray, memoryview]]'
+                OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.restoreState(self,state:typing.Union[PySide6.QtCore.QByteArray, char*])->bool'
+                
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QByteArray, typing.Union[bytes, bytearray, memoryview]'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.restoreState(self,state:typing.Union[PySide6.QtCore.QByteArray, char*])->bool'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QByteArray'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.saveFileContent(fileContent:typing.Union[PySide6.QtCore.QByteArray, char*],fileNameHint:QString,parent:PySide6.QtWidgets.QWidget=nullptr)'
+        
+shibokensupport/signature/parser.py:359: RuntimeWarning: pyside_type_init:_resolve_type
+
+                UNRECOGNIZED:   'typing.Union[PySide6.QtCore.QByteArray, typing.Union[bytes, bytearray, memoryview]]'
+                OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.saveFileContent(fileContent:typing.Union[PySide6.QtCore.QByteArray, char*],fileNameHint:QString,parent:PySide6.QtWidgets.QWidget=nullptr)'
+                
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QByteArray, typing.Union[bytes, bytearray, memoryview]'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.saveFileContent(fileContent:typing.Union[PySide6.QtCore.QByteArray, char*],fileNameHint:QString,parent:PySide6.QtWidgets.QWidget=nullptr)'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QWidget'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.saveFileContent(fileContent:typing.Union[PySide6.QtCore.QByteArray, char*],fileNameHint:QString,parent:PySide6.QtWidgets.QWidget=nullptr)'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QByteArray'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.saveState(self)->PySide6.QtCore.QByteArray'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QUrl'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.selectUrl(self,url:typing.Union[PySide6.QtCore.QUrl, QString])'
+        
+shibokensupport/signature/parser.py:359: RuntimeWarning: pyside_type_init:_resolve_type
+
+                UNRECOGNIZED:   'typing.Union[PySide6.QtCore.QUrl, str]'
+                OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.selectUrl(self,url:typing.Union[PySide6.QtCore.QUrl, QString])'
+                
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QUrl, str'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.selectUrl(self,url:typing.Union[PySide6.QtCore.QUrl, QString])'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QUrl'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.selectedUrls(self)->QList[PySide6.QtCore.QUrl]'
+        
+shibokensupport/signature/parser.py:359: RuntimeWarning: pyside_type_init:_resolve_type
+
+                UNRECOGNIZED:   'typing.List[PySide6.QtCore.QUrl]'
+                OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.selectedUrls(self)->QList[PySide6.QtCore.QUrl]'
+                
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QFileDialog.AcceptMode'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.setAcceptMode(self,mode:PySide6.QtWidgets.QFileDialog.AcceptMode)'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QDir'
+        OFFENDING LINE: '1:PySide6.QtWidgets.QFileDialog.setDirectory(self,directory:PySide6.QtCore.QDir)'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QUrl'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.setDirectoryUrl(self,directory:typing.Union[PySide6.QtCore.QUrl, QString])'
+        
+shibokensupport/signature/parser.py:359: RuntimeWarning: pyside_type_init:_resolve_type
+
+                UNRECOGNIZED:   'typing.Union[PySide6.QtCore.QUrl, str]'
+                OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.setDirectoryUrl(self,directory:typing.Union[PySide6.QtCore.QUrl, QString])'
+                
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QUrl, str'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.setDirectoryUrl(self,directory:typing.Union[PySide6.QtCore.QUrl, QString])'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QFileDialog.FileMode'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.setFileMode(self,mode:PySide6.QtWidgets.QFileDialog.FileMode)'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QDir.Filter'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.setFilter(self,filters:PySide6.QtCore.QDir.Filter)'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtGui.QAbstractFileIconProvider'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.setIconProvider(self,provider:PySide6.QtGui.QAbstractFileIconProvider)'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QAbstractItemDelegate'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.setItemDelegate(self,delegate:PySide6.QtWidgets.QAbstractItemDelegate)'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QFileDialog.DialogLabel'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.setLabelText(self,label:PySide6.QtWidgets.QFileDialog.DialogLabel,text:QString)'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QFileDialog.Option'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.setOption(self,option:PySide6.QtWidgets.QFileDialog.Option,on:bool=true)'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QFileDialog.Option'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.setOptions(self,options:PySide6.QtWidgets.QFileDialog.Option)'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QAbstractProxyModel'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.setProxyModel(self,model:PySide6.QtCore.QAbstractProxyModel)'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QUrl'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.setSidebarUrls(self,urls:QList[PySide6.QtCore.QUrl])'
+        
+shibokensupport/signature/parser.py:359: RuntimeWarning: pyside_type_init:_resolve_type
+
+                UNRECOGNIZED:   'typing.Sequence[PySide6.QtCore.QUrl]'
+                OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.setSidebarUrls(self,urls:QList[PySide6.QtCore.QUrl])'
+                
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QFileDialog.ViewMode'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.setViewMode(self,mode:PySide6.QtWidgets.QFileDialog.ViewMode)'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtCore.QUrl'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.sidebarUrls(self)->QList[PySide6.QtCore.QUrl]'
+        
+shibokensupport/signature/parser.py:359: RuntimeWarning: pyside_type_init:_resolve_type
+
+                UNRECOGNIZED:   'typing.List[PySide6.QtCore.QUrl]'
+                OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.sidebarUrls(self)->QList[PySide6.QtCore.QUrl]'
+                
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QFileDialog.Option'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.testOption(self,option:PySide6.QtWidgets.QFileDialog.Option)->bool'
+        
+shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resolve_value
+
+        UNRECOGNIZED:   'PySide6.QtWidgets.QFileDialog.ViewMode'
+        OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.viewMode(self)->PySide6.QtWidgets.QFileDialog.ViewMode'
+        
+qt.qpa.drawing: Layer-backing is always enabled.  QT_MAC_WANTS_LAYER/_q_mac_wantsLayer has no effect.
+/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/app.py:747: UserWarning: 
+The "+" operator is deprecated in Qt For Python 6.0 .
+Please use "|" instead.
+  Qt.CTRL + Qt.Key_C,
+/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/app.py:752: UserWarning: 
+The "+" operator is deprecated in Qt For Python 6.0 .
+Please use "|" instead.
+  Qt.CTRL + Qt.Key_V,
+/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/app.py:846: UserWarning: 
+The "+" operator is deprecated in Qt For Python 6.0 .
+Please use "|" instead.
+  Qt.CTRL + Qt.SHIFT + Qt.Key_C,
+/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/app.py:851: UserWarning: 
+The "+" operator is deprecated in Qt For Python 6.0 .
+Please use "|" instead.
+  Qt.CTRL + Qt.SHIFT + Qt.Key_V,
+Traceback (most recent call last):
+  File "/Users/liezlmaree/Projects/envexp/envexp/user_test_code.py", line 11, in <module>
+    sleap_label()
+  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/app.py", line 1682, in main
+    window = MainWindow(
+  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/app.py", line 176, in __init__
+    self._initialize_gui()
+  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/app.py", line 307, in _initialize_gui
+    self._create_dock_windows()
+  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/app.py", line 1014, in _create_dock_windows
+    self.skeleton_dock = SkeletonDock(self, tab_with=self.videos_dock)
+  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/widgets/docks.py", line 219, in __init__
+    super().__init__(
+  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/widgets/docks.py", line 68, in __init__
+    self.lay_everything_out()
+  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/widgets/docks.py", line 399, in lay_everything_out
+    templates_gb = self.create_templates_groupbox()
+  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/widgets/docks.py", line 392, in create_templates_groupbox
+    update_skeleton_preview(idx=0)
+  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/widgets/docks.py", line 383, in update_skeleton_preview
+    skel = Skeleton.load_json(skeletons_json_files[idx])
+  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/skeleton.py", line 1113, in load_json
+    skeleton = cls.from_json(file.read(), idx_to_node)
+  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/skeleton.py", line 1076, in from_json
+    graph = json_graph.node_link_graph(nx_graph)
+  File "/Users/liezlmaree/micromamba/envs/experiment/lib/python3.10/site-packages/networkx/utils/decorators.py", line 789, in func
+    return argmap._lazy_compile(__wrapper)(*args, **kwargs)
+  File "<class 'networkx.utils.decorators.argmap'> compilation 4", line 3, in argmap_node_link_graph_1
+    import gzip
+  File "/Users/liezlmaree/micromamba/envs/experiment/lib/python3.10/site-packages/networkx/utils/backends.py", line 633, in __call__
+    return self.orig_func(*args, **kwargs)
+  File "/Users/liezlmaree/micromamba/envs/experiment/lib/python3.10/site-packages/networkx/readwrite/json_graph/node_link.py", line 229, in node_link_graph
+    graph.add_node(node, **nodedata)
+  File "/Users/liezlmaree/micromamba/envs/experiment/lib/python3.10/site-packages/networkx/classes/digraph.py", line 460, in add_node
+    if node_for_adding not in self._succ:
+TypeError: unhashable type: 'dict'
+
