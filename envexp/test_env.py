@@ -54,6 +54,7 @@ def parse_args(library=None, input_dir=None, commit_message=None):
     args.commit_message = commit_message or args.commit_message
 
     # Modify the input_dir and repo_name if input_dir is provided
+    repo_name = None
     if args.input_dir is not None:
         args.input_dir = Path(input_dir)
         repo_name = args.input_dir.name
@@ -137,5 +138,5 @@ if __name__ == "__main__":
     main(
         # library="qtpy",
         input_dir="/Users/liezlmaree/Projects/sleap/sleap",
-        commit_message="tensorflow ==2.10.0",
+        commit_message="Merge from base",
     )
