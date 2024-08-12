@@ -1,10 +1,9 @@
-2024-08-10 13:09:00,451 INFO __main__ Environment created successfully!
-2024-08-10 13:09:02,057 INFO __main__ 
-Testing imports with:
-2024-08-10 13:09:02,057 INFO __main__ 	import sleap
-2024-08-10 13:10:09,448 ERROR __main__ Imports failed!
+2024-08-12 13:11:27,145 INFO envexp_utils.log Environment created successfully!
+2024-08-12 13:11:28,721 INFO envexp_utils.log Testing imports with:
+2024-08-12 13:11:28,721 INFO envexp_utils.log 	import sleap
+2024-08-12 13:12:36,466 ERROR envexp_utils.log Imports failed!
 Traceback (most recent call last):
-  File "/Users/liezlmaree/Projects/envexp/envexp/test_env.py", line 354, in run_and_log
+  File "/Users/liezlmaree/Projects/envexp/envexp/envexp_utils/log.py", line 121, in run_and_log
     raise Exception(error)
 Exception: Traceback (most recent call last):
   File "<string>", line 1, in <module>

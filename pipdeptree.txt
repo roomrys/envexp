@@ -1,4 +1,4 @@
-aiohttp @ file:///Users/runner/miniforge3/conda-bld/aiohttp_1723177279493/work
+aiohttp @ file:///Users/runner/miniforge3/conda-bld/aiohttp_1723330888367/work
   aiohappyeyeballs @ file:///home/conda/feedstock_root/build_artifacts/aiohappyeyeballs_1723050862572/work
   aiosignal @ file:///home/conda/feedstock_root/build_artifacts/aiosignal_1667935791922/work
     frozenlist @ file:///Users/runner/miniforge3/conda-bld/frozenlist_1702645565720/work
@@ -35,7 +35,7 @@ albumentations @ file:///home/conda/feedstock_root/build_artifacts/albumentation
     pillow @ file:///Users/runner/miniforge3/conda-bld/pillow_1719903567335/work
     scipy @ file:///Users/runner/miniforge3/conda-bld/scipy-split_1720323036795/work/dist/scipy-1.14.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=b939069a5cdf606593597be906da29711202c602e3f753e5fbc9256c5a5e562d
       numpy @ file:///Users/runner/miniforge3/conda-bld/numpy_1707225416355/work/dist/numpy-1.26.4-cp310-cp310-macosx_11_0_arm64.whl#sha256=14c628943f67e9c10d22faa9c1cdcbf69c3192e88f2f597d03b77a252e589567
-    tifffile @ file:///home/conda/feedstock_root/build_artifacts/tifffile_1721813262608/work
+    tifffile @ file:///home/conda/feedstock_root/build_artifacts/tifffile_1723458355548/work
       numpy @ file:///Users/runner/miniforge3/conda-bld/numpy_1707225416355/work/dist/numpy-1.26.4-cp310-cp310-macosx_11_0_arm64.whl#sha256=14c628943f67e9c10d22faa9c1cdcbf69c3192e88f2f597d03b77a252e589567
   scikit-learn @ file:///Users/runner/miniforge3/conda-bld/scikit-learn_1719998139114/work/dist/scikit_learn-1.5.1-cp310-cp310-macosx_11_0_arm64.whl#sha256=3a3666390773d49f321866f340869ec511b3089dfc8fd1f0244d305930b5018e
     joblib @ file:///home/conda/feedstock_root/build_artifacts/joblib_1714665484399/work
@@ -54,7 +54,7 @@ cattrs @ file:///home/conda/feedstock_root/build_artifacts/cattrs_1701406356568/
   exceptiongroup @ file:///home/conda/feedstock_root/build_artifacts/exceptiongroup_1720869315914/work
   typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1717802530399/work
 click @ file:///home/conda/feedstock_root/build_artifacts/click_1692311806742/work
--e git+https://github.com/roomrys/envexp@084085e81ceeababa1b88c4797ce8e1c78e3e422#egg=experiment&subdirectory=envexp
+-e git+https://github.com/roomrys/envexp@7d211831296866ac39aa93cd915b3d1b455b3d7e#egg=experiment&subdirectory=envexp
 google-auth-oauthlib @ file:///home/conda/feedstock_root/build_artifacts/google-auth-oauthlib_1630497468950/work
   google-auth @ file:///home/conda/feedstock_root/build_artifacts/google-auth_1723018752281/work
     cachetools @ file:///home/conda/feedstock_root/build_artifacts/cachetools_1721091878889/work
@@ -237,7 +237,7 @@ segmentation-models==1.0.1
       pillow @ file:///Users/runner/miniforge3/conda-bld/pillow_1719903567335/work
       scipy @ file:///Users/runner/miniforge3/conda-bld/scipy-split_1720323036795/work/dist/scipy-1.14.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=b939069a5cdf606593597be906da29711202c602e3f753e5fbc9256c5a5e562d
         numpy @ file:///Users/runner/miniforge3/conda-bld/numpy_1707225416355/work/dist/numpy-1.26.4-cp310-cp310-macosx_11_0_arm64.whl#sha256=14c628943f67e9c10d22faa9c1cdcbf69c3192e88f2f597d03b77a252e589567
-      tifffile @ file:///home/conda/feedstock_root/build_artifacts/tifffile_1721813262608/work
+      tifffile @ file:///home/conda/feedstock_root/build_artifacts/tifffile_1723458355548/work
         numpy @ file:///Users/runner/miniforge3/conda-bld/numpy_1707225416355/work/dist/numpy-1.26.4-cp310-cp310-macosx_11_0_arm64.whl#sha256=14c628943f67e9c10d22faa9c1cdcbf69c3192e88f2f597d03b77a252e589567
   image-classifiers==1.0.0
     Keras-Applications==1.0.8
