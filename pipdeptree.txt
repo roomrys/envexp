@@ -1,4 +1,4 @@
-aiohttp @ file:///Users/runner/miniforge3/conda-bld/aiohttp_1722910557522/work
+aiohttp @ file:///Users/runner/miniforge3/conda-bld/aiohttp_1723330888367/work
   aiohappyeyeballs @ file:///home/conda/feedstock_root/build_artifacts/aiohappyeyeballs_1723050862572/work
   aiosignal @ file:///home/conda/feedstock_root/build_artifacts/aiosignal_1667935791922/work
     frozenlist @ file:///Users/runner/miniforge3/conda-bld/frozenlist_1702645565720/work
@@ -13,7 +13,7 @@ blinker @ file:///home/conda/feedstock_root/build_artifacts/blinker_171509118412
 Brotli @ file:///Users/runner/miniforge3/conda-bld/brotli-split_1695989934239/work
 cached-property @ file:///home/conda/feedstock_root/build_artifacts/cached_property_1615209429212/work
 click @ file:///home/conda/feedstock_root/build_artifacts/click_1692311806742/work
--e git+https://github.com/roomrys/envexp@5fc17d47925fc226122ee20be1146a83d65f4f8c#egg=experiment&subdirectory=envexp
+-e git+https://github.com/roomrys/envexp@edee4cd37f034fc11d119da9561d46a4b060f53d#egg=experiment&subdirectory=envexp
 google-auth-oauthlib @ file:///home/conda/feedstock_root/build_artifacts/google-auth-oauthlib_1630497468950/work
   google-auth @ file:///home/conda/feedstock_root/build_artifacts/google-auth_1723018752281/work
     cachetools @ file:///home/conda/feedstock_root/build_artifacts/cachetools_1721091878889/work
