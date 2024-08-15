@@ -8,6 +8,25 @@ if __name__ == "__main__":
 
     from sleap.gui.app import main as sleap_label
 
-    ds = "/Users/liezlmaree/Projects/sleap-datasets/drosophila-melanogaster-courtship/courtship_labels.slp"
-    # ds = "/Users/liezlmaree/Projects/sleap/tests/data/hdf5_format_v1/centered_pair_predictions.slp"
-    sleap_label([ds])
+    # ds = "/Users/liezlmaree/Projects/sleap-datasets/drosophila-melanogaster-courtship/courtship_labels.slp"
+    ds = "/Users/liezlmaree/Projects/sleap/tests/data/hdf5_format_v1/centered_pair_predictions.slp"
+    # sleap_label([ds])
+
+    from pathlib import Path
+
+    from sleap import load_file
+    from sleap.gui.app import create_app, MainWindow
+    app = create_app()
+
+    # Get the relative video path
+    labels = load_file(ds)
+    video_path: str = labels.videos[0].filename
+    search_paths = [str(Path("/Users/liezlmaree/Projects/sleap/") / video_path)]
+
+    # Reload the labels with the search paths to find the video
+    labels = load_file(ds, search_paths=search_paths)
+    window = MainWindow(
+        labels=labels,
+    )
+    window.showMaximized()
+    app.exec_()

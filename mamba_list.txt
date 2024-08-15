@@ -168,7 +168,7 @@ List of packages in environment: "/Users/liezlmaree/micromamba/envs/experiment"
   markdown                              3.4.1         py310hca03da5_0           anaconda   
   markdown-it-py                        3.0.0         pyhd8ed1ab_0              conda-forge
   markupsafe                            2.1.5         py310hd125d64_0           conda-forge
-  matplotlib-base                       3.9.1         py310heb73f16_2           conda-forge
+  matplotlib-base                       3.9.2         py310heb73f16_0           conda-forge
   mdurl                                 0.1.2         pyhd8ed1ab_0              conda-forge
   multidict                             6.0.5         py310h8e9501a_0           conda-forge
   munkres                               1.1.4         pyh9f0ad1d_0              conda-forge
