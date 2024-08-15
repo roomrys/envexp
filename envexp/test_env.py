@@ -138,5 +138,5 @@ if __name__ == "__main__":
     main(
         # library="qtpy",
         input_dir="/Users/liezlmaree/Projects/sleap/sleap",
-        commit_message="tensorflow-macos >=2.10.0,<2.13.0, sleap-label",
+        commit_message="tensorflow-macos >=2.10.0,<2.13.0, sleap-label, jsonpickle<=1.5.0",
     )

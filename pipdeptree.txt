@@ -54,8 +54,7 @@ cattrs @ file:///home/conda/feedstock_root/build_artifacts/cattrs_1701406356568/
   exceptiongroup @ file:///home/conda/feedstock_root/build_artifacts/exceptiongroup_1720869315914/work
   typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1717802530399/work
 click @ file:///home/conda/feedstock_root/build_artifacts/click_1692311806742/work
-envexp==0.1.0
-experiment==0.1.0
+-e git+https://github.com/roomrys/envexp@541d26e4862ed15751833b0a76bb8ef161edd6a3#egg=experiment&subdirectory=envexp
 h2 @ file:///home/conda/feedstock_root/build_artifacts/h2_1634280454336/work
   hpack==4.0.0
   hyperframe @ file:///home/conda/feedstock_root/build_artifacts/hyperframe_1619110129307/work
@@ -76,11 +75,11 @@ imgstore==0.2.9
   pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1706886791323/work
   PyYAML @ file:///Users/runner/miniforge3/conda-bld/pyyaml_1723018225160/work
   tzlocal==5.2
-importlib_metadata @ file:///home/conda/feedstock_root/build_artifacts/importlib-metadata_1721856510709/work
-  zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1718013267051/work
-importlib_resources @ file:///home/conda/feedstock_root/build_artifacts/importlib_resources_1711040877059/work
+importlib_resources @ file:///home/conda/feedstock_root/build_artifacts/importlib_resources_1723702735258/work
 jsmin @ file:///home/conda/feedstock_root/build_artifacts/jsmin_1642532731678/work
-jsonpickle @ file:///home/conda/feedstock_root/build_artifacts/jsonpickle_1718891807479/work
+jsonpickle==1.4.1
+  importlib_metadata @ file:///home/conda/feedstock_root/build_artifacts/importlib-metadata_1721856510709/work
+    zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1723591248676/work
 Keras-Preprocessing @ file:///home/conda/feedstock_root/build_artifacts/keras-preprocessing_1610713559828/work
   numpy==1.23.5
   six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
@@ -169,7 +168,7 @@ PySocks @ file:///home/conda/feedstock_root/build_artifacts/pysocks_166160483914
 python-rapidjson @ file:///Users/runner/miniforge3/conda-bld/python-rapidjson_1722901897220/work
 pyu2f @ file:///home/conda/feedstock_root/build_artifacts/pyu2f_1604248910016/work
   six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
-PyWavelets==1.6.0
+PyWavelets==1.7.0
   numpy==1.23.5
 pyzmq @ file:///Users/runner/miniforge3/conda-bld/pyzmq_1722971691381/work
 qimage2ndarray==1.10.0

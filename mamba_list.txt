@@ -19,7 +19,7 @@ List of packages in environment: "/Users/liezlmaree/micromamba/envs/experiment"
   brotli-python                         1.1.0         py310h1253130_1           conda-forge
   brunsli                               0.1           h9f76cd9_0                conda-forge
   bzip2                                 1.0.8         h99b78c6_7                conda-forge
-  c-ares                                1.32.3        h99b78c6_0                conda-forge
+  c-ares                                1.33.0        h99b78c6_0                conda-forge
   c-blosc2                              2.15.1        h5063078_0                conda-forge
   ca-certificates                       2024.7.4      hf0a4a13_0                conda-forge
   cached-property                       1.5.2         hd8ed1ab_1                conda-forge
@@ -52,8 +52,8 @@ List of packages in environment: "/Users/liezlmaree/micromamba/envs/experiment"
   fribidi                               1.0.10        h27ca646_0                conda-forge
   frozenlist                            1.4.1         py310hd125d64_0           conda-forge
   gast                                  0.4.0         pyh9f0ad1d_0              conda-forge
-  gettext                               0.22.5        h8fbad5d_2                conda-forge
-  gettext-tools                         0.22.5        h8fbad5d_2                conda-forge
+  gettext                               0.22.5        h8414b35_3                conda-forge
+  gettext-tools                         0.22.5        h8414b35_3                conda-forge
   giflib                                5.2.2         h93a5062_0                conda-forge
   gmp                                   6.3.0         h7bae524_2                conda-forge
   gnutls                                3.7.9         hd26332c_0                conda-forge
@@ -77,11 +77,11 @@ List of packages in environment: "/Users/liezlmaree/micromamba/envs/experiment"
   imath                                 3.1.11        h1059232_0                conda-forge
   importlib-metadata                    8.2.0         pyha770c72_0              conda-forge
   importlib_metadata                    8.2.0         hd8ed1ab_0                conda-forge
-  importlib_resources                   6.4.0         pyhd8ed1ab_0              conda-forge
+  importlib_resources                   6.4.2         pyhd8ed1ab_0              conda-forge
   jasper                                4.2.4         h6c4e4ef_0                conda-forge
   joblib                                1.4.2         pyhd8ed1ab_0              conda-forge
   jsmin                                 3.0.1         pyhd8ed1ab_0              conda-forge
-  jsonpickle                            3.2.2         pyhd8ed1ab_0              conda-forge
+  jsonpickle                            1.4.1         pyh9f0ad1d_0              conda-forge
   jsonschema                            4.23.0        pyhd8ed1ab_0              conda-forge
   jsonschema-specifications             2023.12.1     pyhd8ed1ab_0              conda-forge
   jxrlib                                1.1           h93a5062_3                conda-forge
@@ -95,8 +95,8 @@ List of packages in environment: "/Users/liezlmaree/micromamba/envs/experiment"
   lerc                                  4.0.0         h9a09cb3_0                conda-forge
   libabseil                             20240116.2    cxx17_h00cdb27_1          conda-forge
   libaec                                1.1.3         hebf3989_0                conda-forge
-  libasprintf                           0.22.5        h8fbad5d_2                conda-forge
-  libasprintf-devel                     0.22.5        h8fbad5d_2                conda-forge
+  libasprintf                           0.22.5        h8414b35_3                conda-forge
+  libasprintf-devel                     0.22.5        h8414b35_3                conda-forge
   libass                                0.17.3        hf20b609_0                conda-forge
   libavif16                             1.1.1         h9a910c9_0                conda-forge
   libblas                               3.9.0         23_osxarm64_openblas      conda-forge
@@ -107,14 +107,14 @@ List of packages in environment: "/Users/liezlmaree/micromamba/envs/experiment"
   libclang-cpp16                        16.0.6        default_h5c12605_11       conda-forge
   libclang13                            18.1.8        default_hfc66aa2_2        conda-forge
   libcurl                               8.9.1         hfd8ffcc_0                conda-forge
-  libcxx                                18.1.8        h167917d_2                conda-forge
+  libcxx                                18.1.8        h5a72898_4                conda-forge
   libdeflate                            1.21          h99b78c6_0                conda-forge
   libedit                               3.1.20191231  hc8eb9b7_2                conda-forge
   libev                                 4.33          h93a5062_2                conda-forge
   libexpat                              2.6.2         hebf3989_0                conda-forge
   libffi                                3.4.2         h3422bc3_5                conda-forge
-  libgettextpo                          0.22.5        h8fbad5d_2                conda-forge
-  libgettextpo-devel                    0.22.5        h8fbad5d_2                conda-forge
+  libgettextpo                          0.22.5        h8414b35_3                conda-forge
+  libgettextpo-devel                    0.22.5        h8414b35_3                conda-forge
   libgfortran                           5.0.0         13_2_0_hd922786_3         conda-forge
   libgfortran5                          13.2.0        hf226fd6_3                conda-forge
   libglib                               2.80.3        h59d46d9_2                conda-forge
@@ -123,8 +123,8 @@ List of packages in environment: "/Users/liezlmaree/micromamba/envs/experiment"
   libhwy                                1.1.0         h2ffa867_0                conda-forge
   libiconv                              1.17          h0d3ecfb_2                conda-forge
   libidn2                               2.3.7         h93a5062_0                conda-forge
-  libintl                               0.22.5        h8fbad5d_2                conda-forge
-  libintl-devel                         0.22.5        h8fbad5d_2                conda-forge
+  libintl                               0.22.5        h8414b35_3                conda-forge
+  libintl-devel                         0.22.5        h8414b35_3                conda-forge
   libjpeg-turbo                         3.0.0         hb547adb_1                conda-forge
   libjxl                                0.10.3        h44ef4fb_0                conda-forge
   liblapack                             3.9.0         23_osxarm64_openblas      conda-forge
@@ -163,7 +163,7 @@ List of packages in environment: "/Users/liezlmaree/micromamba/envs/experiment"
   libxslt                               1.1.39        h223e5b9_0                conda-forge
   libzlib                               1.3.1         hfb2fe0b_1                conda-forge
   libzopfli                             1.0.3         h9f76cd9_0                conda-forge
-  llvm-openmp                           18.1.8        hde57baf_0                conda-forge
+  llvm-openmp                           18.1.8        hde57baf_1                conda-forge
   lz4-c                                 1.9.4         hb7217d7_0                conda-forge
   markdown                              3.4.1         py310hca03da5_0           anaconda   
   markdown-it-py                        3.0.0         pyhd8ed1ab_0              conda-forge
@@ -221,7 +221,7 @@ List of packages in environment: "/Users/liezlmaree/micromamba/envs/experiment"
   python_abi                            3.10          4_cp310                   conda-forge
   pytz                                  2024.1        pyhd8ed1ab_0              conda-forge
   pyu2f                                 0.1.5         pyhd8ed1ab_0              conda-forge
-  pywavelets                            1.6.0         py310hb3e58dc_0           conda-forge
+  pywavelets                            1.7.0         py310hb3e58dc_0           conda-forge
   pyyaml                                6.0.2         py310ha6dd24b_0           conda-forge
   pyzmq                                 26.1.0        py310h16e08c9_0           conda-forge
   qhull                                 2020.2        h420ef59_5                conda-forge
@@ -272,7 +272,7 @@ List of packages in environment: "/Users/liezlmaree/micromamba/envs/experiment"
   yarl                                  1.9.4         py310hd125d64_0           conda-forge
   zeromq                                4.3.5         hcc0f68c_4                conda-forge
   zfp                                   1.0.1         ha84d530_1                conda-forge
-  zipp                                  3.19.2        pyhd8ed1ab_0              conda-forge
+  zipp                                  3.20.0        pyhd8ed1ab_0              conda-forge
   zlib                                  1.3.1         hfb2fe0b_1                conda-forge
   zlib-ng                               2.2.1         h00cdb27_0                conda-forge
   zstandard                             0.23.0        py310hd9c37c8_0           conda-forge
