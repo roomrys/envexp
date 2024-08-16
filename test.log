@@ -1,34 +1,17 @@
-2024-08-10 19:37:09,882 INFO envexp_utils.log Environment created successfully!
-2024-08-10 19:37:10,763 INFO envexp_utils.log Testing imports with:
-2024-08-10 19:37:10,763 INFO envexp_utils.log 	import sleap
-2024-08-10 19:37:12,864 INFO envexp_utils.log Imports passed successfully!
-2024-08-10 19:37:12,864 INFO envexp_utils.log Running user-defined test code:
+2024-08-15 21:34:28,298 INFO envexp_utils.log Environment created successfully!
+2024-08-15 21:34:41,260 INFO envexp_utils.log Testing imports with:
+2024-08-15 21:34:41,260 INFO envexp_utils.log 	import sleap
+2024-08-15 21:34:53,936 INFO envexp_utils.log Imports passed successfully!
+2024-08-15 21:34:53,936 INFO envexp_utils.log Running user-defined test code:
 """User-defined test code to run after the imports have been tested."""
 
 if __name__ == "__main__":
-    assert False, "Replace this block with your own test code."
+    
+    import os
 
-    # Example test code that is not run since after return
-    from qtpy.QtWidgets import QApplication, QMainWindow
+    from sleap import load_file
 
-    def create_app():
-        """Creates Qt application."""
-        app = QApplication([])
-        return app
+    ds = os.environ["ds-dmc"]
+    load_file(ds)
 
-    app = create_app()
-
-    window = QMainWindow()
-    window.showMaximized()
-
-    app.exec_()
-
-2024-08-10 19:37:13,066 ERROR envexp_utils.log Tests failed!
-Traceback (most recent call last):
-  File "/Users/liezlmaree/Projects/envexp/envexp/envexp_utils/log.py", line 121, in run_and_log
-    raise Exception(error)
-Exception: Traceback (most recent call last):
-  File "/Users/liezlmaree/Projects/envexp/envexp/user_test_code.py", line 4, in <module>
-    assert False, "Replace this block with your own test code."
-AssertionError: Replace this block with your own test code.
-
+2024-08-15 21:35:05,298 INFO envexp_utils.log Tests passed successfully!
