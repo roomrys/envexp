@@ -100,7 +100,7 @@ def main(library=None, input_dir=None, commit_message=None):
 
     # Determine the conda executable to use
     conda_command = determine_conda()
-    remove_environment(conda_command=conda_command)
+    # remove_environment(conda_command=conda_command)
     reset_logfile()
     delete_old_experiment_code()
 
