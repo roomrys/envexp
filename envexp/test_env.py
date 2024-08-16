@@ -56,7 +56,7 @@ def parse_args(library=None, input_dir=None, commit_message=None):
     # Modify the input_dir and repo_name if input_dir is provided
     repo_name = None
     if args.input_dir is not None:
-        args.input_dir = Path(input_dir)
+        args.input_dir = Path(args.input_dir)
         repo_name = args.input_dir.name
 
     # Print the modified arguments
