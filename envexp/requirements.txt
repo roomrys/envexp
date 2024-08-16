@@ -36,3 +36,9 @@ click==8.0.4
 
 # Attrs needs to match cattrs
 attrs >=23.1.0  # We use cattrs >=23.2.0 which requires attrs >=23.1.0
+
+# This file contains the dependencies to be installed for jupyter lab support. 
+
+ipykernel
+ipywidgets
+jupyterlab

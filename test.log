@@ -1,8 +1,8 @@
-2024-08-15 21:28:08,003 INFO envexp_utils.log Environment created successfully!
-2024-08-15 21:28:19,047 INFO envexp_utils.log Testing imports with:
-2024-08-15 21:28:19,047 INFO envexp_utils.log 	import sleap
-2024-08-15 21:28:30,585 INFO envexp_utils.log Imports passed successfully!
-2024-08-15 21:28:30,585 INFO envexp_utils.log Running user-defined test code:
+2024-08-15 21:34:28,298 INFO envexp_utils.log Environment created successfully!
+2024-08-15 21:34:41,260 INFO envexp_utils.log Testing imports with:
+2024-08-15 21:34:41,260 INFO envexp_utils.log 	import sleap
+2024-08-15 21:34:53,936 INFO envexp_utils.log Imports passed successfully!
+2024-08-15 21:34:53,936 INFO envexp_utils.log Running user-defined test code:
 """User-defined test code to run after the imports have been tested."""
 
 if __name__ == "__main__":
@@ -14,4 +14,4 @@ if __name__ == "__main__":
     ds = os.environ["ds-dmc"]
     load_file(ds)
 
-2024-08-15 21:28:41,326 INFO envexp_utils.log Tests passed successfully!
+2024-08-15 21:35:05,298 INFO envexp_utils.log Tests passed successfully!
