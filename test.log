@@ -1,53 +1,12 @@
-2024-08-15 21:07:21,175 INFO envexp_utils.log Environment created successfully!
-2024-08-15 21:07:33,794 INFO envexp_utils.log Testing imports with:
-2024-08-15 21:07:33,794 INFO envexp_utils.log 	import sleap
-2024-08-15 21:07:46,113 INFO envexp_utils.log Imports passed successfully!
-2024-08-15 21:07:46,113 INFO envexp_utils.log Running user-defined test code:
-"""User-defined test code to run after the imports have been tested."""
-
-if __name__ == "__main__":
-    
-    import os
-
-    from sleap import load_file
-
-    ds = os.environ["ds-dmc"]
-    load_file(ds)
-
-2024-08-15 21:07:57,062 ERROR envexp_utils.log Tests failed!
+2024-08-15 21:20:50,440 ERROR envexp_utils.log Failed to create environment!
 Traceback (most recent call last):
   File "C:\Users\Liezl\Projects\envexp\envexp\envexp_utils\log.py", line 123, in run_and_log
     raise Exception(error)
-Exception: Traceback (most recent call last):
-  File "C:\Users\Liezl\Projects\envexp\envexp\user_test_code.py", line 10, in <module>
-    load_file(ds)
-  File "C:\Users\Liezl\Projects\envexp\envexp\sleap\io\dataset.py", line 2787, in load_file
-    return Labels.load_file(filename, search_paths, match_to=match_to)
-  File "C:\Users\Liezl\Projects\envexp\envexp\sleap\io\dataset.py", line 1968, in load_file
-    return read(
-  File "C:\Users\Liezl\Projects\envexp\envexp\sleap\io\format\main.py", line 113, in read
-    return disp.read(filename, *args, **kwargs)
-  File "C:\Users\Liezl\Projects\envexp\envexp\sleap\io\format\dispatch.py", line 57, in read
-    return adaptor.read(file, *args, **kwargs)
-  File "C:\Users\Liezl\Projects\envexp\envexp\sleap\io\format\hdf5.py", line 142, in read
-    labels = cls.read_headers(file, video_search, match_to)
-  File "C:\Users\Liezl\Projects\envexp\envexp\sleap\io\format\hdf5.py", line 127, in read_headers
-    labels = labels_json.LabelsJsonAdaptor.from_json_data(dicts, match_to=match_to)
-  File "C:\Users\Liezl\Projects\envexp\envexp\sleap\io\format\labels_json.py", line 391, in from_json_data
-    nodes = cattr.structure(dicts["nodes"], List[Node])
-  File "C:\Users\Liezl\miniconda3\envs\experiment\lib\site-packages\cattrs\converters.py", line 332, in structure
-    return self._structure_func.dispatch(cl)(obj, cl)
-  File "C:\Users\Liezl\miniconda3\envs\experiment\lib\site-packages\cattrs\converters.py", line 514, in _structure_list
-    handler = self._structure_func.dispatch(elem_type)
-  File "C:\Users\Liezl\miniconda3\envs\experiment\lib\site-packages\cattrs\dispatch.py", line 112, in _dispatch
-    res = self._function_dispatch.dispatch(typ)
-  File "C:\Users\Liezl\miniconda3\envs\experiment\lib\site-packages\cattrs\dispatch.py", line 62, in dispatch
-    return handler(typ)
-  File "C:\Users\Liezl\miniconda3\envs\experiment\lib\site-packages\cattrs\converters.py", line 990, in gen_structure_attrs_fromdict
-    return make_dict_structure_fn(
-  File "C:\Users\Liezl\miniconda3\envs\experiment\lib\site-packages\cattrs\gen\__init__.py", line 355, in make_dict_structure_fn
-    ian = a.alias
-AttributeError: 'Attribute' object has no attribute 'alias'
+Exception: Pip subprocess error:
+ERROR: Cannot install attrs>=23.1.0, myst-nb and myst-parser because these package versions have conflicting dependencies.
+ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
 
-ERROR conda.cli.main_run:execute(47): `conda run python user_test_code.py` failed. (See above for error)
+
+CondaEnvException: Pip failed
+
 

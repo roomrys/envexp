@@ -33,3 +33,6 @@ twine==3.3.0
 PyGithub
 jedi==0.17.2
 click==8.0.4
+
+# Attrs needs to match cattrs
+attrs >=23.1.0  # We use cattrs >=23.2.0 which requires attrs >=23.1.0
