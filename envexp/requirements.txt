@@ -23,8 +23,8 @@ sphinx
 sphinx-book-theme
 sphinx-copybutton
 nbformat==5.1.3
-myst-nb==0.13.2
-myst-parser==0.15.2
+myst-nb
+myst-parser
 linkify-it-py
 sphinx-autobuild
 black==21.6b0

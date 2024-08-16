@@ -1,12 +1,17 @@
-2024-08-15 21:20:50,440 ERROR envexp_utils.log Failed to create environment!
-Traceback (most recent call last):
-  File "C:\Users\Liezl\Projects\envexp\envexp\envexp_utils\log.py", line 123, in run_and_log
-    raise Exception(error)
-Exception: Pip subprocess error:
-ERROR: Cannot install attrs>=23.1.0, myst-nb and myst-parser because these package versions have conflicting dependencies.
-ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
-
-
-CondaEnvException: Pip failed
-
+2024-08-15 21:28:08,003 INFO envexp_utils.log Environment created successfully!
+2024-08-15 21:28:19,047 INFO envexp_utils.log Testing imports with:
+2024-08-15 21:28:19,047 INFO envexp_utils.log 	import sleap
+2024-08-15 21:28:30,585 INFO envexp_utils.log Imports passed successfully!
+2024-08-15 21:28:30,585 INFO envexp_utils.log Running user-defined test code:
+"""User-defined test code to run after the imports have been tested."""
 
+if __name__ == "__main__":
+    
+    import os
+
+    from sleap import load_file
+
+    ds = os.environ["ds-dmc"]
+    load_file(ds)
+
+2024-08-15 21:28:41,326 INFO envexp_utils.log Tests passed successfully!
