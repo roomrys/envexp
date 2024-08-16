@@ -2,6 +2,7 @@
 
 import logging
 import subprocess
+import platform
 import time
 
 from pygments import highlight
@@ -56,12 +57,13 @@ def log_dependencies(conda_command):
         )
 
     # Find python path of experiment environment
+    which_or_where = "where" if platform.system() == "Windows" else "which"
     result = subprocess.run(
-        f"{conda_command} run -n experiment which python",
+        f"{conda_command} run -n experiment {which_or_where} python",
         shell=True,
         capture_output=True,
     )
-    python_path = result.stdout.decode().strip()
+    python_path = result.stdout.decode().strip().split("\r")[0]
 
     # pipdeptree -f > pipdeptree.txt
     with open(pip_filename, "w") as f:
