@@ -62,7 +62,7 @@ def parse_args(library=None, input_dir=None, commit_message=None):
     # Print the modified arguments
     print(f"Modified Arguments:\n\t{args}")
 
-    if commit_message is None:
+    if args.commit_message is None:
         parser.print_usage()
         raise ValueError(
             "Missing required argument --commit-message. "
