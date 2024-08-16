@@ -105,7 +105,7 @@ def main(library=None, input_dir=None, commit_message=None):
     delete_old_experiment_code()
 
     try:
-        # Create a new conda environment
+        # # Create a new conda environment
         create_environment(conda_command=conda_command)
 
         # Test the imports
@@ -138,5 +138,5 @@ if __name__ == "__main__":
     main(
         # library="qtpy",
         input_dir="/Users/liezlmaree/Projects/sleap/sleap",
-        commit_message="tensorflow-macos >=2.10.0,<2.13.0, sleap-label w/ Tracks, jsonpickle<=1.5.0",
+        commit_message="tensorflow-macos >=2.10.0,<2.13.0, sleap-train, jsonpickle<=1.5.0",
     )

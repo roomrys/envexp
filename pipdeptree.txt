@@ -54,7 +54,7 @@ cattrs @ file:///home/conda/feedstock_root/build_artifacts/cattrs_1701406356568/
   exceptiongroup @ file:///home/conda/feedstock_root/build_artifacts/exceptiongroup_1720869315914/work
   typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1717802530399/work
 click @ file:///home/conda/feedstock_root/build_artifacts/click_1692311806742/work
--e git+https://github.com/roomrys/envexp@ca6573c757a66e02a44ba3bb46d47ff108351b97#egg=experiment&subdirectory=envexp
+-e git+https://github.com/roomrys/envexp@7e85d2b4f34ece808d47d2025bf56589451638ef#egg=experiment&subdirectory=envexp
 h2 @ file:///home/conda/feedstock_root/build_artifacts/h2_1634280454336/work
   hpack==4.0.0
   hyperframe @ file:///home/conda/feedstock_root/build_artifacts/hyperframe_1619110129307/work

@@ -8,15 +8,14 @@ if __name__ == "__main__":
 
     from sleap.gui.app import main as sleap_label
 
-    # ds = "/Users/liezlmaree/Projects/sleap-datasets/drosophila-melanogaster-courtship/courtship_labels.slp"
-    ds = "/Users/liezlmaree/Projects/sleap/tests/data/hdf5_format_v1/centered_pair_predictions.slp"
+    ds = "/Users/liezlmaree/Projects/sleap-datasets/drosophila-melanogaster-courtship/courtship_labels.slp"
+    # ds = "/Users/liezlmaree/Projects/sleap/tests/data/hdf5_format_v1/centered_pair_predictions.slp"
     # sleap_label([ds])
 
     from pathlib import Path
 
     from sleap import load_file
-    from sleap.gui.app import create_app, MainWindow
-    app = create_app()
+    from sleap.nn.training import main as sleap_train
 
     # Get the relative video path
     labels = load_file(ds)
@@ -25,8 +24,6 @@ if __name__ == "__main__":
 
     # Reload the labels with the search paths to find the video
     labels = load_file(ds, search_paths=search_paths)
-    window = MainWindow(
-        labels=labels,
-    )
-    window.showMaximized()
-    app.exec_()
+    labels.save("./test_labels.slp")
+
+    sleap_train(["/Users/liezlmaree/Projects/sleap-datasets/drosophila-melanogaster-courtship/models/231016_063130.centroid.n=149","./test_labels.slp"])
