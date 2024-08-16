@@ -1,8 +1,7 @@
-2024-08-15 16:14:17,568 INFO envexp_utils.log Environment created successfully!
-2024-08-15 16:14:19,078 INFO envexp_utils.log Testing imports with:
-2024-08-15 16:14:19,078 INFO envexp_utils.log 	import sleap
-2024-08-15 16:15:01,990 INFO envexp_utils.log Imports passed successfully!
-2024-08-15 16:15:01,991 INFO envexp_utils.log Running user-defined test code:
+2024-08-15 17:18:21,375 INFO envexp_utils.log Testing imports with:
+2024-08-15 17:18:21,375 INFO envexp_utils.log 	import sleap
+2024-08-15 17:18:29,417 INFO envexp_utils.log Imports passed successfully!
+2024-08-15 17:18:29,417 INFO envexp_utils.log Running user-defined test code:
 """User-defined test code to run after the imports have been tested."""
 
 if __name__ == "__main__":
@@ -36,7 +35,7 @@ if __name__ == "__main__":
     window.showMaximized()
     app.exec_()
 
-2024-08-15 16:15:08,655 ERROR envexp_utils.log Tests failed!
+2024-08-15 17:18:35,348 ERROR envexp_utils.log Tests failed!
 Traceback (most recent call last):
   File "/Users/liezlmaree/Projects/envexp/envexp/envexp_utils/log.py", line 121, in run_and_log
     raise Exception(error)
@@ -450,44 +449,25 @@ shibokensupport/signature/parser.py:270: RuntimeWarning: pyside_type_init:_resol
         UNRECOGNIZED:   'PySide6.QtWidgets.QFileDialog.ViewMode'
         OFFENDING LINE: 'PySide6.QtWidgets.QFileDialog.viewMode(self)->PySide6.QtWidgets.QFileDialog.ViewMode'
         
-/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/app.py:760: UserWarning: 
-The "+" operator is deprecated in Qt For Python 6.0 .
-Please use "|" instead.
-  Qt.CTRL + Qt.Key_C,
-/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/app.py:765: UserWarning: 
-The "+" operator is deprecated in Qt For Python 6.0 .
-Please use "|" instead.
-  Qt.CTRL + Qt.Key_V,
-/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/app.py:859: UserWarning: 
-The "+" operator is deprecated in Qt For Python 6.0 .
-Please use "|" instead.
-  Qt.CTRL + Qt.SHIFT + Qt.Key_C,
-/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/app.py:864: UserWarning: 
-The "+" operator is deprecated in Qt For Python 6.0 .
-Please use "|" instead.
-  Qt.CTRL + Qt.SHIFT + Qt.Key_V,
-/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/app.py:1367: UserWarning: 
-The "+" operator is deprecated in Qt For Python 6.0 .
-Please use "|" instead.
-  key_command = Qt.CTRL + Qt.Key_0 + self.labels.tracks.index(track) + 1
 Traceback (most recent call last):
-  File "/Users/liezlmaree/Projects/envexp/envexp/user_test_code.py", line 28, in <module>
-    window = MainWindow(
-  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/app.py", line 190, in __init__
-    self.commands.loadLabelsObject(labels=labels)
-  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/commands.py", line 260, in loadLabelsObject
-    self.execute(LoadLabelsObject, labels=labels, filename=filename)
-  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/commands.py", line 241, in execute
-    command().execute(context=self, params=kwargs)
-  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/commands.py", line 137, in execute
-    self.do_with_signal(context, params)
-  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/commands.py", line 161, in do_with_signal
-    cls.do_action(context, params)
-  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/commands.py", line 678, in do_action
-    context.app.on_data_update([UpdateTopic.project, UpdateTopic.all])
-  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/app.py", line 1186, in on_data_update
-    self._update_track_menu()
-  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/app.py", line 1367, in _update_track_menu
-    key_command = Qt.CTRL + Qt.Key_0 + self.labels.tracks.index(track) + 1
-TypeError: unsupported operand type(s) for +: 'PySide6.QtCore.QKeyCombination' and 'int'
+  File "shibokensupport/signature/mapping.py", line 177, in update
+ModuleNotFoundError: No module named 'google3'
+Fatal Python error: seterror_argument failed to call update_mapping
+Python runtime state: initialized
+
+Current thread 0x00000001dfac6080 (most recent call first):
+  File "pyscript", line 11 in func_or
+  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/app.py", line 1367 in _update_track_menu
+  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/app.py", line 1186 in on_data_update
+  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/commands.py", line 678 in do_action
+  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/commands.py", line 161 in do_with_signal
+  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/commands.py", line 137 in execute
+  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/commands.py", line 241 in execute
+  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/commands.py", line 260 in loadLabelsObject
+  File "/Users/liezlmaree/Projects/envexp/envexp/sleap/gui/app.py", line 190 in __init__
+  File "/Users/liezlmaree/Projects/envexp/envexp/user_test_code.py", line 28 in <module>
+
+Extension modules: numpy.core._multiarray_umath, numpy.core._multiarray_tests, numpy.linalg._umath_linalg, numpy.fft._pocketfft_internal, numpy.random._common, numpy.random.bit_generator, numpy.random._bounded_integers, numpy.random._mt19937, numpy.random.mtrand, numpy.random._philox, numpy.random._pcg64, numpy.random._sfc64, numpy.random._generator, google.protobuf.pyext._message, google3.net.proto2.python.internal.cpp._message, tensorflow.python.framework.fast_tensor_util, _brotli, zstandard.backend_c, h5py._errors, h5py.defs, h5py._objects, h5py.h5, h5py.utils, h5py.h5t, h5py.h5s, h5py.h5ac, h5py.h5p, h5py.h5r, h5py._proxy, h5py._conv, h5py.h5z, h5py.h5a, h5py.h5d, h5py.h5ds, h5py.h5g, h5py.h5i, h5py.h5f, h5py.h5fd, h5py.h5pl, h5py.h5o, h5py.h5l, h5py._selector, scipy._lib._ccallback_c, scipy.sparse._sparsetools, _csparsetools, scipy.sparse._csparsetools, scipy.linalg._fblas, scipy.linalg._flapack, scipy.linalg.cython_lapack, scipy.linalg._cythonized_array_utils, scipy.linalg._solve_toeplitz, scipy.linalg._decomp_lu_cython, scipy.linalg._matfuncs_sqrtm_triu, scipy.linalg.cython_blas, scipy.linalg._matfuncs_expm, scipy.linalg._decomp_update, scipy.sparse.linalg._dsolve._superlu, scipy.sparse.linalg._eigen.arpack._arpack, scipy.sparse.linalg._propack._spropack, scipy.sparse.linalg._propack._dpropack, scipy.sparse.linalg._propack._cpropack, scipy.sparse.linalg._propack._zpropack, scipy.sparse.csgraph._tools, scipy.sparse.csgraph._shortest_path, scipy.sparse.csgraph._traversal, scipy.sparse.csgraph._min_spanning_tree, scipy.sparse.csgraph._flow, scipy.sparse.csgraph._matching, scipy.sparse.csgraph._reordering, jaxlib.cpu_feature_guard, PIL._imaging, pandas._libs.tslibs.ccalendar, pandas._libs.tslibs.np_datetime, pandas._libs.tslibs.dtypes, pandas._libs.tslibs.base, pandas._libs.tslibs.nattype, pandas._libs.tslibs.timezones, pandas._libs.tslibs.fields, pandas._libs.tslibs.timedeltas, pandas._libs.tslibs.tzconversion, pandas._libs.tslibs.timestamps, pandas._libs.properties, pandas._libs.tslibs.offsets, pandas._libs.tslibs.strptime, pandas._libs.tslibs.parsing, pandas._libs.tslibs.conversion, pandas._libs.tslibs.period, pandas._libs.tslibs.vectorized, pandas._libs.ops_dispatch, pandas._libs.missing, pandas._libs.hashtable, pandas._libs.algos, pandas._libs.interval, pandas._libs.lib, pandas._libs.ops, pandas._libs.hashing, pandas._libs.arrays, pandas._libs.tslib, pandas._libs.sparse, pandas._libs.internals, pandas._libs.indexing, pandas._libs.index, pandas._libs.writers, pandas._libs.join, pandas._libs.window.aggregations, pandas._libs.window.indexers, pandas._libs.reshape, pandas._libs.groupby, pandas._libs.json, pandas._libs.parsers, pandas._libs.testing, scipy.ndimage._nd_image, scipy.special._ufuncs_cxx, scipy.special._ufuncs, scipy.special._specfun, scipy.special._comb, scipy.special._ellip_harm_2, _ni_label, scipy.ndimage._ni_label, sklearn.__check_build._check_build, psutil._psutil_osx, psutil._psutil_posix, scipy.spatial._ckdtree, scipy._lib.messagestream, scipy.spatial._qhull, scipy.spatial._voronoi, scipy.spatial._distance_wrap, scipy.spatial._hausdorff, scipy.spatial.transform._rotation, scipy.optimize._group_columns, scipy.optimize._trlib._trlib, scipy.optimize._lbfgsb, _moduleTNC, scipy.optimize._moduleTNC, scipy.optimize._cobyla, scipy.optimize._slsqp, scipy.optimize._minpack, scipy.optimize._lsq.givens_elimination, scipy.optimize._zeros, scipy.optimize._highs.cython.src._highs_wrapper, scipy.optimize._highs._highs_wrapper, scipy.optimize._highs.cython.src._highs_constants, scipy.optimize._highs._highs_constants, scipy.linalg._interpolative, scipy.optimize._bglu_dense, scipy.optimize._lsap, scipy.optimize._direct, scipy.integrate._odepack, scipy.integrate._quadpack, scipy.integrate._vode, scipy.integrate._dop, scipy.integrate._lsoda, scipy.interpolate._fitpack, scipy.interpolate._dfitpack, scipy.interpolate._bspl, scipy.interpolate._ppoly, scipy.interpolate.interpnd, scipy.interpolate._rbfinterp_pythran, scipy.interpolate._rgi_cython, scipy.special.cython_special, scipy.stats._stats, scipy.stats._biasedurn, scipy.stats._levy_stable.levyst, scipy.stats._stats_pythran, scipy._lib._uarray._uarray, scipy.stats._ansari_swilk_statistics, scipy.stats._sobol, scipy.stats._qmc_cy, scipy.stats._mvn, scipy.stats._rcont.rcont, scipy.stats._unuran.unuran_wrapper, sklearn.utils._isfinite, sklearn.utils.sparsefuncs_fast, sklearn.utils.murmurhash, sklearn.utils._openmp_helpers, sklearn.metrics.cluster._expected_mutual_info_fast, sklearn.preprocessing._csr_polynomial_expansion, sklearn.preprocessing._target_encoder_fast, sklearn.metrics._dist_metrics, sklearn.metrics._pairwise_distances_reduction._datasets_pair, sklearn.utils._cython_blas, sklearn.metrics._pairwise_distances_reduction._base, sklearn.metrics._pairwise_distances_reduction._middle_term_computer, sklearn.utils._heap, sklearn.utils._sorting, sklearn.metrics._pairwise_distances_reduction._argkmin, sklearn.metrics._pairwise_distances_reduction._argkmin_classmode, sklearn.utils._vector_sentinel, sklearn.metrics._pairwise_distances_reduction._radius_neighbors, sklearn.metrics._pairwise_distances_reduction._radius_neighbors_classmode, sklearn.metrics._pairwise_fast, sklearn.utils._random, scipy.io.matlab._mio_utils, scipy.io.matlab._streams, scipy.io.matlab._mio5_utils, numpy.linalg.lapack_lite, cv2, yaml._yaml, rapidjson, sklearn.utils._seq_dataset, sklearn.linear_model._cd_fast, _loss, sklearn._loss._loss, sklearn.utils.arrayfuncs, sklearn.svm._liblinear, sklearn.svm._libsvm, sklearn.svm._libsvm_sparse, sklearn.utils._weight_vector, sklearn.linear_model._sgd_fast, sklearn.linear_model._sag_fast, sklearn.decomposition._online_lda_fast, sklearn.decomposition._cdnmf_fast, sklearn.utils._fast_dict, sklearn.cluster._hierarchical_fast, sklearn.cluster._k_means_common, sklearn.cluster._k_means_elkan, sklearn.cluster._k_means_lloyd, sklearn.cluster._k_means_minibatch, sklearn.neighbors._partition_nodes, sklearn.neighbors._ball_tree, sklearn.neighbors._kd_tree, sklearn.cluster._dbscan_inner, sklearn.cluster._hdbscan._tree, sklearn.cluster._hdbscan._linkage, sklearn.cluster._hdbscan._reachability, sklearn._isotonic, sklearn.tree._utils, sklearn.tree._tree, sklearn.tree._splitter, sklearn.tree._criterion, sklearn.neighbors._quad_tree, sklearn.manifold._barnes_hut_tsne, sklearn.manifold._utils, skimage._shared.geometry, skimage.feature._hoghistogram, shiboken6.Shiboken, PySide6.QtCore, PySide6.QtGui, PySide6.QtWidgets, PySide6.QtOpenGLWidgets, PySide6.QtOpenGL, skimage.measure._ccomp, skimage.transform._warps_cy, zmq.backend.cython._zmq, kiwisolver._cext, scipy.cluster._vq, scipy.cluster._hierarchy, scipy.cluster._optimal_leaf_ordering, work._ruamel_yaml, _ruamel_yaml, PIL._imagingmath (total: 251)
+/Users/liezlmaree/micromamba/envs/experiment/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
 

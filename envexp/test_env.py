@@ -100,13 +100,13 @@ def main(library=None, input_dir=None, commit_message=None):
 
     # Determine the conda executable to use
     conda_command = determine_conda()
-    remove_environment(conda_command=conda_command)
+    # remove_environment(conda_command=conda_command)
     reset_logfile()
     delete_old_experiment_code()
 
     try:
-        # Create a new conda environment
-        create_environment(conda_command=conda_command)
+        # # Create a new conda environment
+        # create_environment(conda_command=conda_command)
 
         # Test the imports
         if input_dir is not None:
