@@ -1,8 +1,304 @@
--e git+https://github.com/roomrys/envexp@833539cf76c7d27a39641967d2f94d623023e325#egg=experiment&subdirectory=envexp
+albumentations @ file:///home/conda/feedstock_root/build_artifacts/albumentations_1719491047265/work
+  albucore @ file:///home/conda/feedstock_root/build_artifacts/albucore_1719215807087/work
+    numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+    opencv-python-headless==4.10.0
+    tomli @ file:///home/conda/feedstock_root/build_artifacts/tomli_1644342247877/work
+    typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1717802530399/work
+  numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+  opencv-python-headless==4.10.0
+  pydantic @ file:///home/conda/feedstock_root/build_artifacts/pydantic_1720293063581/work
+    annotated-types @ file:///home/conda/feedstock_root/build_artifacts/annotated-types_1716290248287/work
+    pydantic_core @ file:///D:/bld/pydantic-core_1720041362737/work
+      typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1717802530399/work
+    typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1717802530399/work
+  PyYAML @ file:///D:/bld/pyyaml_1723018379157/work
+  scikit-image @ file:///D:/bld/scikit-image_1719499619117/work
+    imageio @ file:///home/conda/feedstock_root/build_artifacts/imageio_1719234999090/work
+      numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+      pillow @ file:///D:/bld/pillow_1719903664201/work
+    lazy_loader @ file:///home/conda/feedstock_root/build_artifacts/lazy-loader_1723774329602/work
+      packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1718189413536/work
+    networkx @ file:///home/conda/feedstock_root/build_artifacts/networkx_1712540363324/work
+    numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+    packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1718189413536/work
+    pillow @ file:///D:/bld/pillow_1719903664201/work
+    scipy @ file:///C:/bld/scipy-split_1720323113518/work/dist/scipy-1.14.0-cp310-cp310-win_amd64.whl#sha256=aff617c4dbd3181c34b13a5d7328da74e1cd748c7edfec383281d1dbee8b7859
+      numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+    tifffile @ file:///home/conda/feedstock_root/build_artifacts/tifffile_1723458355548/work
+      numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+  scikit-learn @ file:///D:/bld/scikit-learn_1719998278715/work/dist/scikit_learn-1.5.1-cp310-cp310-win_amd64.whl#sha256=21dcea9bd978b87f19498f6d102eafc3a3bdded82146b8313b7caa7be2375326
+    joblib @ file:///home/conda/feedstock_root/build_artifacts/joblib_1714665484399/work
+    numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+    scipy @ file:///C:/bld/scipy-split_1720323113518/work/dist/scipy-1.14.0-cp310-cp310-win_amd64.whl#sha256=aff617c4dbd3181c34b13a5d7328da74e1cd748c7edfec383281d1dbee8b7859
+      numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+    threadpoolctl @ file:///home/conda/feedstock_root/build_artifacts/threadpoolctl_1714400101435/work
+  scipy @ file:///C:/bld/scipy-split_1720323113518/work/dist/scipy-1.14.0-cp310-cp310-win_amd64.whl#sha256=aff617c4dbd3181c34b13a5d7328da74e1cd748c7edfec383281d1dbee8b7859
+    numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+  typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1717802530399/work
+cached-property @ file:///home/conda/feedstock_root/build_artifacts/cached_property_1615209429212/work
+cattrs @ file:///home/conda/feedstock_root/build_artifacts/cattrs_1701406356568/work
+  attrs @ file:///home/conda/feedstock_root/build_artifacts/attrs_1722977137225/work
+  exceptiongroup @ file:///home/conda/feedstock_root/build_artifacts/exceptiongroup_1720869315914/work
+  typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1717802530399/work
+-e git+https://github.com/roomrys/envexp@45b422d7a11a1a8de1b14096c6ef18b26f88e62c#egg=experiment&subdirectory=envexp
+imagecodecs @ file:///D:/bld/imagecodecs_1722899598957/work
+  numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+imageio-ffmpeg @ file:///home/conda/feedstock_root/build_artifacts/imageio-ffmpeg_1717461632069/work
+  setuptools==72.1.0
+imgstore==0.2.9
+  numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+  pandas @ file:///D:/bld/pandas_1715897730709/work
+    numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+    python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1709299778482/work
+      six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+    pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1706886791323/work
+    tzdata @ file:///home/conda/feedstock_root/build_artifacts/python-tzdata_1707747584337/work
+  python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1709299778482/work
+    six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+  pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1706886791323/work
+  PyYAML @ file:///D:/bld/pyyaml_1723018379157/work
+  tzlocal==5.2
+    tzdata @ file:///home/conda/feedstock_root/build_artifacts/python-tzdata_1707747584337/work
+importlib_resources @ file:///home/conda/feedstock_root/build_artifacts/importlib_resources_1723702735258/work
+jsmin @ file:///home/conda/feedstock_root/build_artifacts/jsmin_1642532731678/work
+jsonpickle==1.4.1
+  importlib_metadata @ file:///home/conda/feedstock_root/build_artifacts/importlib-metadata_1721856510709/work
+    zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1723591248676/work
+munkres==1.1.4
+ndx-pose @ file:///home/conda/feedstock_root/build_artifacts/ndx-pose_1706810229855/work
+  hdmf @ file:///D:/bld/hdmf_1722287530235/work
+    h5py @ file:///D:/bld/h5py_1717664858971/work
+      numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+    jsonschema @ file:///home/conda/feedstock_root/build_artifacts/jsonschema_1720529478715/work
+      attrs @ file:///home/conda/feedstock_root/build_artifacts/attrs_1722977137225/work
+      jsonschema-specifications @ file:///tmp/tmpkv1z7p57/src
+        referencing @ file:///home/conda/feedstock_root/build_artifacts/referencing_1714619483868/work
+          attrs @ file:///home/conda/feedstock_root/build_artifacts/attrs_1722977137225/work
+          rpds-py @ file:///D:/bld/rpds-py_1723039227744/work
+      referencing @ file:///home/conda/feedstock_root/build_artifacts/referencing_1714619483868/work
+        attrs @ file:///home/conda/feedstock_root/build_artifacts/attrs_1722977137225/work
+        rpds-py @ file:///D:/bld/rpds-py_1723039227744/work
+      rpds-py @ file:///D:/bld/rpds-py_1723039227744/work
+    numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+    pandas @ file:///D:/bld/pandas_1715897730709/work
+      numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+      python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1709299778482/work
+        six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+      pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1706886791323/work
+      tzdata @ file:///home/conda/feedstock_root/build_artifacts/python-tzdata_1707747584337/work
+    ruamel.yaml @ file:///D:/bld/ruamel.yaml_1707298240950/work
+      ruamel.yaml.clib @ file:///D:/bld/ruamel.yaml.clib_1707314694548/work
+    scipy @ file:///C:/bld/scipy-split_1720323113518/work/dist/scipy-1.14.0-cp310-cp310-win_amd64.whl#sha256=aff617c4dbd3181c34b13a5d7328da74e1cd748c7edfec383281d1dbee8b7859
+      numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+  pynwb @ file:///D:/bld/pynwb_1720295942552/work
+    h5py @ file:///D:/bld/h5py_1717664858971/work
+      numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+    hdmf @ file:///D:/bld/hdmf_1722287530235/work
+      h5py @ file:///D:/bld/h5py_1717664858971/work
+        numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+      jsonschema @ file:///home/conda/feedstock_root/build_artifacts/jsonschema_1720529478715/work
+        attrs @ file:///home/conda/feedstock_root/build_artifacts/attrs_1722977137225/work
+        jsonschema-specifications @ file:///tmp/tmpkv1z7p57/src
+          referencing @ file:///home/conda/feedstock_root/build_artifacts/referencing_1714619483868/work
+            attrs @ file:///home/conda/feedstock_root/build_artifacts/attrs_1722977137225/work
+            rpds-py @ file:///D:/bld/rpds-py_1723039227744/work
+        referencing @ file:///home/conda/feedstock_root/build_artifacts/referencing_1714619483868/work
+          attrs @ file:///home/conda/feedstock_root/build_artifacts/attrs_1722977137225/work
+          rpds-py @ file:///D:/bld/rpds-py_1723039227744/work
+        rpds-py @ file:///D:/bld/rpds-py_1723039227744/work
+      numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+      pandas @ file:///D:/bld/pandas_1715897730709/work
+        numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+        python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1709299778482/work
+          six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+        pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1706886791323/work
+        tzdata @ file:///home/conda/feedstock_root/build_artifacts/python-tzdata_1707747584337/work
+      ruamel.yaml @ file:///D:/bld/ruamel.yaml_1707298240950/work
+        ruamel.yaml.clib @ file:///D:/bld/ruamel.yaml.clib_1707314694548/work
+      scipy @ file:///C:/bld/scipy-split_1720323113518/work/dist/scipy-1.14.0-cp310-cp310-win_amd64.whl#sha256=aff617c4dbd3181c34b13a5d7328da74e1cd748c7edfec383281d1dbee8b7859
+        numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+    numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+    pandas @ file:///D:/bld/pandas_1715897730709/work
+      numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+      python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1709299778482/work
+        six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+      pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1706886791323/work
+      tzdata @ file:///home/conda/feedstock_root/build_artifacts/python-tzdata_1707747584337/work
+    python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1709299778482/work
+      six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+nixio==1.5.3
+  h5py @ file:///D:/bld/h5py_1717664858971/work
+    numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+  numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+  six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+opencv-python==4.10.0
 pip @ file:///home/conda/feedstock_root/build_artifacts/pip_1722450924710/work
+pkgutil_resolve_name @ file:///home/conda/feedstock_root/build_artifacts/pkgutil-resolve-name_1694617248815/work
+psutil @ file:///D:/bld/psutil_1719274706785/work
+pykalman @ file:///home/conda/feedstock_root/build_artifacts/pykalman_1711547707628/work
+  numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+  scipy @ file:///C:/bld/scipy-split_1720323113518/work/dist/scipy-1.14.0-cp310-cp310-win_amd64.whl#sha256=aff617c4dbd3181c34b13a5d7328da74e1cd748c7edfec383281d1dbee8b7859
+    numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
 PySide6==6.7.2
+python-rapidjson @ file:///D:/bld/python-rapidjson_1722901949842/work
+PyWavelets==1.7.0
+  numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+pyzmq @ file:///D:/bld/pyzmq_1722971811181/work
+qimage2ndarray==1.10.0
+  numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
 QtPy @ file:///home/conda/feedstock_root/build_artifacts/qtpy_1698112029416/work
   packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1718189413536/work
-setuptools==72.1.0
+qudida @ file:///home/conda/feedstock_root/build_artifacts/qudida_1651101164121/work
+  numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+  opencv-python-headless==4.10.0
+  scikit-learn @ file:///D:/bld/scikit-learn_1719998278715/work/dist/scikit_learn-1.5.1-cp310-cp310-win_amd64.whl#sha256=21dcea9bd978b87f19498f6d102eafc3a3bdded82146b8313b7caa7be2375326
+    joblib @ file:///home/conda/feedstock_root/build_artifacts/joblib_1714665484399/work
+    numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+    scipy @ file:///C:/bld/scipy-split_1720323113518/work/dist/scipy-1.14.0-cp310-cp310-win_amd64.whl#sha256=aff617c4dbd3181c34b13a5d7328da74e1cd748c7edfec383281d1dbee8b7859
+      numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+    threadpoolctl @ file:///home/conda/feedstock_root/build_artifacts/threadpoolctl_1714400101435/work
+  typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1717802530399/work
+rich @ file:///home/conda/feedstock_root/build_artifacts/rich-split_1709150387247/work/dist
+  markdown-it-py @ file:///home/conda/feedstock_root/build_artifacts/markdown-it-py_1686175045316/work
+    mdurl @ file:///home/conda/feedstock_root/build_artifacts/mdurl_1704317613764/work
+  Pygments @ file:///home/conda/feedstock_root/build_artifacts/pygments_1714846767233/work
+seaborn @ file:///home/conda/feedstock_root/build_artifacts/seaborn-split_1714494649443/work
+  matplotlib==3.9.2
+    contourpy @ file:///D:/bld/contourpy_1712429995466/work
+      numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+    cycler @ file:///home/conda/feedstock_root/build_artifacts/cycler_1696677705766/work
+    fonttools @ file:///D:/bld/fonttools_1720359163792/work
+    kiwisolver @ file:///D:/bld/kiwisolver_1695380033173/work
+    numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+    packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1718189413536/work
+    pillow @ file:///D:/bld/pillow_1719903664201/work
+    pyparsing @ file:///home/conda/feedstock_root/build_artifacts/pyparsing_1709721012883/work
+    python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1709299778482/work
+      six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+  numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+  pandas @ file:///D:/bld/pandas_1715897730709/work
+    numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+    python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1709299778482/work
+      six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+    pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1706886791323/work
+    tzdata @ file:///home/conda/feedstock_root/build_artifacts/python-tzdata_1707747584337/work
+segmentation-models==1.0.1
+  efficientnet==1.0.0
+    Keras-Applications==1.0.8
+      h5py @ file:///D:/bld/h5py_1717664858971/work
+        numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+      numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+    scikit-image @ file:///D:/bld/scikit-image_1719499619117/work
+      imageio @ file:///home/conda/feedstock_root/build_artifacts/imageio_1719234999090/work
+        numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+        pillow @ file:///D:/bld/pillow_1719903664201/work
+      lazy_loader @ file:///home/conda/feedstock_root/build_artifacts/lazy-loader_1723774329602/work
+        packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1718189413536/work
+      networkx @ file:///home/conda/feedstock_root/build_artifacts/networkx_1712540363324/work
+      numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+      packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1718189413536/work
+      pillow @ file:///D:/bld/pillow_1719903664201/work
+      scipy @ file:///C:/bld/scipy-split_1720323113518/work/dist/scipy-1.14.0-cp310-cp310-win_amd64.whl#sha256=aff617c4dbd3181c34b13a5d7328da74e1cd748c7edfec383281d1dbee8b7859
+        numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+      tifffile @ file:///home/conda/feedstock_root/build_artifacts/tifffile_1723458355548/work
+        numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+  image-classifiers==1.0.0
+    Keras-Applications==1.0.8
+      h5py @ file:///D:/bld/h5py_1717664858971/work
+        numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+      numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+  Keras-Applications==1.0.8
+    h5py @ file:///D:/bld/h5py_1717664858971/work
+      numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+    numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
 shiboken6==6.7.2
-wheel==0.44.0
+statsmodels @ file:///D:/bld/statsmodels_1715941409651/work
+  numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+  packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1718189413536/work
+  pandas @ file:///D:/bld/pandas_1715897730709/work
+    numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+    python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1709299778482/work
+      six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+    pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1706886791323/work
+    tzdata @ file:///home/conda/feedstock_root/build_artifacts/python-tzdata_1707747584337/work
+  patsy @ file:///home/conda/feedstock_root/build_artifacts/patsy_1704469236901/work
+    numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+    six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+  scipy @ file:///C:/bld/scipy-split_1720323113518/work/dist/scipy-1.14.0-cp310-cp310-win_amd64.whl#sha256=aff617c4dbd3181c34b13a5d7328da74e1cd748c7edfec383281d1dbee8b7859
+    numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+tensorflow==2.9.2
+  absl-py==2.1.0
+  astunparse==1.6.3
+    six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+    wheel==0.44.0
+  flatbuffers==1.12
+  gast==0.4.0
+  google-pasta==0.2.0
+    six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+  grpcio==1.64.1
+  h5py @ file:///D:/bld/h5py_1717664858971/work
+    numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+  keras==2.9.0
+  Keras-Preprocessing==1.1.2
+    numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+    six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+  libclang==18.1.1
+  numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+  opt-einsum==3.3.0
+    numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+  packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1718189413536/work
+  protobuf==3.19.6
+  setuptools==72.1.0
+  six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+  tensorboard==2.9.1
+    absl-py==2.1.0
+    google-auth==2.32.0
+      cachetools==5.4.0
+      pyasn1_modules==0.4.0
+        pyasn1==0.6.0
+      rsa==4.9
+        pyasn1==0.6.0
+    google-auth-oauthlib==0.4.6
+      google-auth==2.32.0
+        cachetools==5.4.0
+        pyasn1_modules==0.4.0
+          pyasn1==0.6.0
+        rsa==4.9
+          pyasn1==0.6.0
+      requests-oauthlib==2.0.0
+        oauthlib==3.2.2
+        requests==2.32.3
+          certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1720457958366/work/certifi
+          charset-normalizer==3.3.2
+          idna==3.7
+          urllib3==2.2.2
+    grpcio==1.64.1
+    Markdown==3.6
+    numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+    protobuf==3.19.6
+    requests==2.32.3
+      certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1720457958366/work/certifi
+      charset-normalizer==3.3.2
+      idna==3.7
+      urllib3==2.2.2
+    setuptools==72.1.0
+    tensorboard-data-server==0.6.1
+    tensorboard-plugin-wit==1.8.1
+    Werkzeug==3.0.3
+      MarkupSafe==2.1.5
+    wheel==0.44.0
+  tensorflow-estimator==2.9.0
+  tensorflow-io-gcs-filesystem==0.31.0
+  termcolor==2.4.0
+  typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1717802530399/work
+  wrapt==1.16.0
+tensorflow-hub @ file:///home/conda/feedstock_root/build_artifacts/tensorflow-hub_1618768305670/work/wheel_dir/tensorflow_hub-0.12.0-py2.py3-none-any.whl
+  numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+  protobuf==3.19.6
+unicodedata2 @ file:///D:/bld/unicodedata2_1695848155043/work
+virtualenv==20.10.0
+  backports.entry-points-selectable==1.1.1
+  distlib==0.3.4
+  filelock==3.4.0
+  platformdirs
+  six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
