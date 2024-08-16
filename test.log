@@ -1,7 +1,8 @@
-2024-08-15 23:09:39,338 INFO envexp_utils.log Testing imports with:
-2024-08-15 23:09:39,338 INFO envexp_utils.log 	import sleap
-2024-08-15 23:09:46,935 INFO envexp_utils.log Imports passed successfully!
-2024-08-15 23:09:46,935 INFO envexp_utils.log Running user-defined test code:
+2024-08-16 13:36:53,613 INFO envexp_utils.log Environment created successfully!
+2024-08-16 13:36:55,313 INFO envexp_utils.log Testing imports with:
+2024-08-16 13:36:55,313 INFO envexp_utils.log 	import sleap
+2024-08-16 13:38:40,382 INFO envexp_utils.log Imports passed successfully!
+2024-08-16 13:38:40,384 INFO envexp_utils.log Running user-defined test code:
 """User-defined test code to run after the imports have been tested."""
 
 if __name__ == "__main__":
@@ -32,4 +33,4 @@ if __name__ == "__main__":
 
     sleap_train(["/Users/liezlmaree/Projects/sleap-datasets/drosophila-melanogaster-courtship/models/231016_063130.centroid.n=149","./test_labels.slp"])
 
-2024-08-15 23:50:58,998 INFO envexp_utils.log Tests passed successfully!
+2024-08-16 14:05:34,386 INFO envexp_utils.log Tests passed successfully!

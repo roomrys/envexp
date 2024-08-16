@@ -1,5 +1,5 @@
 aiohttp @ file:///Users/runner/miniforge3/conda-bld/aiohttp_1723330888367/work
-  aiohappyeyeballs @ file:///home/conda/feedstock_root/build_artifacts/aiohappyeyeballs_1723050862572/work
+  aiohappyeyeballs @ file:///home/conda/feedstock_root/build_artifacts/aiohappyeyeballs_1723793936996/work
   aiosignal @ file:///home/conda/feedstock_root/build_artifacts/aiosignal_1667935791922/work
     frozenlist @ file:///Users/runner/miniforge3/conda-bld/frozenlist_1702645565720/work
   async-timeout @ file:///home/conda/feedstock_root/build_artifacts/async-timeout_1691763562544/work
@@ -27,7 +27,7 @@ albumentations @ file:///home/conda/feedstock_root/build_artifacts/albumentation
     imageio @ file:///home/conda/feedstock_root/build_artifacts/imageio_1719234999090/work
       numpy==1.23.5
       pillow @ file:///Users/runner/miniforge3/conda-bld/pillow_1719903567335/work
-    lazy_loader @ file:///home/conda/feedstock_root/build_artifacts/lazy_loader_1712342969017/work
+    lazy_loader @ file:///home/conda/feedstock_root/build_artifacts/lazy-loader_1723774329602/work
       packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1718189413536/work
     networkx @ file:///home/conda/feedstock_root/build_artifacts/networkx_1712540363324/work
     numpy==1.23.5
@@ -54,7 +54,7 @@ cattrs @ file:///home/conda/feedstock_root/build_artifacts/cattrs_1701406356568/
   exceptiongroup @ file:///home/conda/feedstock_root/build_artifacts/exceptiongroup_1720869315914/work
   typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1717802530399/work
 click @ file:///home/conda/feedstock_root/build_artifacts/click_1692311806742/work
--e git+https://github.com/roomrys/envexp@7e85d2b4f34ece808d47d2025bf56589451638ef#egg=experiment&subdirectory=envexp
+-e git+https://github.com/roomrys/envexp@5078bc280d6d2cd0fc9b8103d6a71601a151d0ce#egg=experiment&subdirectory=envexp
 h2 @ file:///home/conda/feedstock_root/build_artifacts/h2_1634280454336/work
   hpack==4.0.0
   hyperframe @ file:///home/conda/feedstock_root/build_artifacts/hyperframe_1619110129307/work
@@ -219,7 +219,7 @@ segmentation-models==1.0.1
       imageio @ file:///home/conda/feedstock_root/build_artifacts/imageio_1719234999090/work
         numpy==1.23.5
         pillow @ file:///Users/runner/miniforge3/conda-bld/pillow_1719903567335/work
-      lazy_loader @ file:///home/conda/feedstock_root/build_artifacts/lazy_loader_1712342969017/work
+      lazy_loader @ file:///home/conda/feedstock_root/build_artifacts/lazy-loader_1723774329602/work
         packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1718189413536/work
       networkx @ file:///home/conda/feedstock_root/build_artifacts/networkx_1712540363324/work
       numpy==1.23.5

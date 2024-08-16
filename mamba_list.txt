@@ -2,7 +2,7 @@ List of packages in environment: "/Users/liezlmaree/micromamba/envs/experiment"
   Name                                  Version       Build                     Channel    
 ─────────────────────────────────────────────────────────────────────────────────────────────
   absl-py                               2.1.0         pyhd8ed1ab_0              conda-forge
-  aiohappyeyeballs                      2.3.5         pyhd8ed1ab_0              conda-forge
+  aiohappyeyeballs                      2.3.6         pyhd8ed1ab_0              conda-forge
   aiohttp                               3.10.3        py310ha6dd24b_0           conda-forge
   aiosignal                             1.3.1         pyhd8ed1ab_0              conda-forge
   albucore                              0.0.12        pyhd8ed1ab_0              conda-forge
@@ -85,12 +85,12 @@ List of packages in environment: "/Users/liezlmaree/micromamba/envs/experiment"
   jsonschema                            4.23.0        pyhd8ed1ab_0              conda-forge
   jsonschema-specifications             2023.12.1     pyhd8ed1ab_0              conda-forge
   jxrlib                                1.1           h93a5062_3                conda-forge
-  keras                                 2.9.0         pyhd8ed1ab_0              conda-forge
   keras-preprocessing                   1.1.2         pyhd8ed1ab_0              conda-forge
   kiwisolver                            1.4.5         py310h38f39d4_1           conda-forge
   krb5                                  1.21.3        h237132a_0                conda-forge
   lame                                  3.100         h1a8c8d9_1003             conda-forge
-  lazy_loader                           0.4           pyhd8ed1ab_0              conda-forge
+  lazy-loader                           0.4           pyhd8ed1ab_1              conda-forge
+  lazy_loader                           0.4           pyhd8ed1ab_1              conda-forge
   lcms2                                 2.16          ha0e7c42_0                conda-forge
   lerc                                  4.0.0         h9a09cb3_0                conda-forge
   libabseil                             20240116.2    cxx17_h00cdb27_1          conda-forge
@@ -218,7 +218,7 @@ List of packages in environment: "/Users/liezlmaree/micromamba/envs/experiment"
   python-dateutil                       2.9.0         pyhd8ed1ab_0              conda-forge
   python-rapidjson                      1.20          py310hcf9f62a_0           conda-forge
   python-tzdata                         2024.1        pyhd8ed1ab_0              conda-forge
-  python_abi                            3.10          4_cp310                   conda-forge
+  python_abi                            3.10          5_cp310                   conda-forge
   pytz                                  2024.1        pyhd8ed1ab_0              conda-forge
   pyu2f                                 0.1.5         pyhd8ed1ab_0              conda-forge
   pywavelets                            1.7.0         py310hb3e58dc_0           conda-forge

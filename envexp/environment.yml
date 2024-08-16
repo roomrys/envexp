@@ -14,7 +14,6 @@ dependencies:
   - conda-forge::grpcio <2.0,>=1.24.3
   - conda-forge::h5py >=2.9.0
   - conda-forge::idna <4,>=2.5
-  - conda-forge::keras <2.10.0,>=2.9.0rc0 # Required for tensorflow-macos
   - conda-forge::keras-preprocessing >=1.1.1
   - anaconda::markdown >=2.6.8
   - conda-forge::MarkupSafe >=2.1.1
