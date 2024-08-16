@@ -1,38 +1,10 @@
 name: experiment
 channels:
+  - sleap-deps/label/dev
   - conda-forge
+  - anaconda
 dependencies:
-  - conda-forge::absl-py >=1.0.0
-  - conda-forge::astunparse >=1.6.0
-  - conda-forge::cachetools <6.0,>=2.0.0
-  - conda-forge::certifi >=2017.4.17
-  - conda-forge::charset-normalizer <4,>=2
-  - conda-forge::gast <=0.4.0,>=0.2.1
-  - conda-forge::google-auth <3,>=1.6.3
-  - conda-forge::google-auth-oauthlib <0.5,>=0.4.1
-  - conda-forge::google-pasta >=0.1.1
-  - conda-forge::grpcio <2.0,>=1.24.3
-  - conda-forge::h5py >=2.9.0
-  - conda-forge::idna <4,>=2.5
-  - conda-forge::keras-preprocessing >=1.1.1
-  - anaconda::markdown >=2.6.8
-  - conda-forge::MarkupSafe >=2.1.1
-  - conda-forge::numpy >=1.16.5,<2.0 # tensorflow compiled with numpy 1.x
-  - conda-forge::oauthlib >=3.0.0
-  - conda-forge::opt-einsum >=2.3.2
-  - conda-forge::packaging
-  - conda-forge::pip
-  - conda-forge::protobuf >3.20
-  - conda-forge::pyasn1 <0.7.0,>=0.4.6
-  - conda-forge::pyasn1-modules >=0.2.1
-  - conda-forge::requests <3,>=2.21.0
-  - conda-forge::requests-oauthlib >=0.7.0
-  - conda-forge::rsa <5,>=3.1.4
-  - conda-forge::termcolor >=1.1.0
-  - conda-forge::typing-extensions >=3.6.6
-  - conda-forge::urllib3 <3,>=1.21.1
-  - conda-forge::werkzeug >=1.0.1
-  - conda-forge::wrapt >=1.11.0
+  - sleap-deps/label/dev::tensorflow ==2.12.0
   - conda-forge::python >=3.10.0,<3.11.0 # Start of sleap deps
   - conda-forge::attrs >=21.2.0
   - conda-forge::cattrs

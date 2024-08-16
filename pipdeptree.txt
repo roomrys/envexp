@@ -23,7 +23,7 @@ albumentations @ file:///home/conda/feedstock_root/build_artifacts/albumentation
       typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1717802530399/work
     typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1717802530399/work
   PyYAML @ file:///Users/runner/miniforge3/conda-bld/pyyaml_1723018225160/work
-  scikit-image @ file:///Users/runner/miniforge3/conda-bld/scikit-image_1719499476008/work/dist/scikit_image-0.24.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=5c219f159d2c4e91ea7c5bea72e6fa8572aa8dcbb759f55fc3d59be1e1a6068a
+  scikit-image @ file:///Users/runner/miniforge3/conda-bld/scikit-image_1723842252897/work/dist/scikit_image-0.24.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=640bb58a01a8263d69d965d325a9f813c2c67ad22034367da0d2767442839591
     imageio @ file:///home/conda/feedstock_root/build_artifacts/imageio_1719234999090/work
       numpy==1.23.5
       pillow @ file:///Users/runner/miniforge3/conda-bld/pillow_1719903567335/work
@@ -54,7 +54,7 @@ cattrs @ file:///home/conda/feedstock_root/build_artifacts/cattrs_1701406356568/
   exceptiongroup @ file:///home/conda/feedstock_root/build_artifacts/exceptiongroup_1720869315914/work
   typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1717802530399/work
 click @ file:///home/conda/feedstock_root/build_artifacts/click_1692311806742/work
--e git+https://github.com/roomrys/envexp@5078bc280d6d2cd0fc9b8103d6a71601a151d0ce#egg=experiment&subdirectory=envexp
+-e git+https://github.com/roomrys/envexp@eeec3aa44a99986381bb837c7f84e39e891f8423#egg=experiment&subdirectory=envexp
 h2 @ file:///home/conda/feedstock_root/build_artifacts/h2_1634280454336/work
   hpack==4.0.0
   hyperframe @ file:///home/conda/feedstock_root/build_artifacts/hyperframe_1619110129307/work
@@ -215,7 +215,7 @@ segmentation-models==1.0.1
       h5py @ file:///Users/runner/miniforge3/conda-bld/h5py_1717665543879/work
         numpy==1.23.5
       numpy==1.23.5
-    scikit-image @ file:///Users/runner/miniforge3/conda-bld/scikit-image_1719499476008/work/dist/scikit_image-0.24.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=5c219f159d2c4e91ea7c5bea72e6fa8572aa8dcbb759f55fc3d59be1e1a6068a
+    scikit-image @ file:///Users/runner/miniforge3/conda-bld/scikit-image_1723842252897/work/dist/scikit_image-0.24.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=640bb58a01a8263d69d965d325a9f813c2c67ad22034367da0d2767442839591
       imageio @ file:///home/conda/feedstock_root/build_artifacts/imageio_1719234999090/work
         numpy==1.23.5
         pillow @ file:///Users/runner/miniforge3/conda-bld/pillow_1719903567335/work
@@ -317,7 +317,7 @@ tensorflow-macos==2.12.0
           idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1713279365350/work
           urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1719391292974/work
     grpcio @ file:///Users/runner/miniforge3/conda-bld/grpc-split_1713388347891/work
-    Markdown @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_160njdxnjs/croot/markdown_1671541913695/work
+    Markdown @ file:///home/conda/feedstock_root/build_artifacts/markdown_1710435156458/work
     numpy==1.23.5
     protobuf==4.25.3
     requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1717057054362/work
