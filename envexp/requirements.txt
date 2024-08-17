@@ -1,4 +1,12 @@
-tensorflow-macos>=2.10.0,<2.13.0; sys_platform == 'darwin' and platform_machine == 'arm64' # 2.9.2 can only work up to Python 3.10
+# tensorflow dependencies
+tensorflow-macos >=2.10.0,<2.13.0; sys_platform == 'darwin' and platform_machine == 'arm64' # 2.9.2 can only work up to Python 3.10
 tensorflow-metal; sys_platform == 'darwin' and platform_machine == 'arm64'
 tensorflow-hub; sys_platform == 'darwin' and platform_machine == 'arm64'
 protobuf>3.20; sys_platform == 'darwin' and platform_machine == 'arm64'
+
+# sleap dependencies
+imgstore<0.3.0  # 0.3.3 results in https://github.com/O365/python-o365/issues/591 which is from https://github.com/regebro/tzlocal/issues/112 when tzlocal is v3.0
+nixio>=1.5.3  # Constrain put on by @jgrewe from G-Node
+qimage2ndarray  # ==1.9.0
+segmentation-models
+pynwb>=2.3.3  # 2.0.0 required by ndx-pose, 2.3.3 fixes importlib-metadata incompatibility

@@ -100,12 +100,12 @@ def main(library=None, input_dir=None, commit_message=None):
 
     # Determine the conda executable to use
     conda_command = determine_conda()
-    remove_environment(conda_command=conda_command)
+    # remove_environment(conda_command=conda_command)
     reset_logfile()
     delete_old_experiment_code()
 
     try:
-        # Create a new conda environment
+        # # Create a new conda environment
         create_environment(conda_command=conda_command)
 
         # Test the imports
@@ -137,6 +137,6 @@ def main(library=None, input_dir=None, commit_message=None):
 if __name__ == "__main__":
     main(
         # library="qtpy",
-        # input_dir="/Users/liezlmaree/Projects/sleap/sleap",
-        commit_message="tensorflow-macos>=2.10.0,<2.13.0",
+        input_dir="/Users/liezlmaree/Projects/sleap/sleap",
+        commit_message="tensorflow==2.12.0=py310_1 (sleap-deps), sleap-train",
     )
