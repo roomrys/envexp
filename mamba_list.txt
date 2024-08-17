@@ -242,7 +242,7 @@ List of packages in environment: "/Users/liezlmaree/micromamba/envs/experiment"
   ruamel.yaml.clib                      0.2.8         py310hd125d64_0           conda-forge         
   scikit-image                          0.24.0        py310h2216879_2           conda-forge         
   scikit-learn                          1.5.1         py310h64e73be_0           conda-forge         
-  scipy                                 1.14.0        py310h7057308_1           conda-forge         
+  scipy                                 1.14.0        py310h7057308_2           conda-forge         
   seaborn                               0.13.2        hd8ed1ab_2                conda-forge         
   seaborn-base                          0.13.2        pyhd8ed1ab_2              conda-forge         
   setuptools                            72.1.0        pyhd8ed1ab_0              conda-forge         
@@ -251,7 +251,7 @@ List of packages in environment: "/Users/liezlmaree/micromamba/envs/experiment"
   statsmodels                           0.14.2        py310hb3e58dc_0           conda-forge         
   svt-av1                               2.1.2         h7bae524_0                conda-forge         
   tbb                                   2021.12.0     h420ef59_3                conda-forge         
-  tensorflow                            2.12.0        py310_0                   sleap-deps/label/dev
+  tensorflow                            2.12.0        py310_1                   sleap-deps/label/dev
   termcolor                             2.4.0         pyhd8ed1ab_0              conda-forge         
   threadpoolctl                         3.5.0         pyhc1e730c_0              conda-forge         
   tifffile                              2024.8.10     pyhd8ed1ab_0              conda-forge         

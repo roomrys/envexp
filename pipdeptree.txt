@@ -33,17 +33,17 @@ albumentations @ file:///home/conda/feedstock_root/build_artifacts/albumentation
     numpy==1.23.5
     packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1718189413536/work
     pillow @ file:///Users/runner/miniforge3/conda-bld/pillow_1719903567335/work
-    scipy @ file:///Users/runner/miniforge3/conda-bld/scipy-split_1720323036795/work/dist/scipy-1.14.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=b939069a5cdf606593597be906da29711202c602e3f753e5fbc9256c5a5e562d
+    scipy @ file:///Users/runner/miniforge3/conda-bld/scipy-split_1723854803030/work/dist/scipy-1.14.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=b12037e82aad5ee56c9c96f7df433a7adeb86fe49277a71b1bb903d3a22c5ca4
       numpy==1.23.5
     tifffile @ file:///home/conda/feedstock_root/build_artifacts/tifffile_1723458355548/work
       numpy==1.23.5
   scikit-learn @ file:///Users/runner/miniforge3/conda-bld/scikit-learn_1719998139114/work/dist/scikit_learn-1.5.1-cp310-cp310-macosx_11_0_arm64.whl#sha256=3a3666390773d49f321866f340869ec511b3089dfc8fd1f0244d305930b5018e
     joblib @ file:///home/conda/feedstock_root/build_artifacts/joblib_1714665484399/work
     numpy==1.23.5
-    scipy @ file:///Users/runner/miniforge3/conda-bld/scipy-split_1720323036795/work/dist/scipy-1.14.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=b939069a5cdf606593597be906da29711202c602e3f753e5fbc9256c5a5e562d
+    scipy @ file:///Users/runner/miniforge3/conda-bld/scipy-split_1723854803030/work/dist/scipy-1.14.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=b12037e82aad5ee56c9c96f7df433a7adeb86fe49277a71b1bb903d3a22c5ca4
       numpy==1.23.5
     threadpoolctl @ file:///home/conda/feedstock_root/build_artifacts/threadpoolctl_1714400101435/work
-  scipy @ file:///Users/runner/miniforge3/conda-bld/scipy-split_1720323036795/work/dist/scipy-1.14.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=b939069a5cdf606593597be906da29711202c602e3f753e5fbc9256c5a5e562d
+  scipy @ file:///Users/runner/miniforge3/conda-bld/scipy-split_1723854803030/work/dist/scipy-1.14.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=b12037e82aad5ee56c9c96f7df433a7adeb86fe49277a71b1bb903d3a22c5ca4
     numpy==1.23.5
   typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1717802530399/work
 blinker @ file:///home/conda/feedstock_root/build_artifacts/blinker_1715091184126/work
@@ -54,7 +54,7 @@ cattrs @ file:///home/conda/feedstock_root/build_artifacts/cattrs_1701406356568/
   exceptiongroup @ file:///home/conda/feedstock_root/build_artifacts/exceptiongroup_1720869315914/work
   typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1717802530399/work
 click @ file:///home/conda/feedstock_root/build_artifacts/click_1692311806742/work
--e git+https://github.com/roomrys/envexp@18b970d54b595f4d60b032c92c34253acf45f67f#egg=experiment&subdirectory=envexp
+-e git+https://github.com/roomrys/envexp@581d36e4059386e40d669dfe1fae05e4688a14e3#egg=experiment&subdirectory=envexp
 h2 @ file:///home/conda/feedstock_root/build_artifacts/h2_1634280454336/work
   hpack==4.0.0
   hyperframe @ file:///home/conda/feedstock_root/build_artifacts/hyperframe_1619110129307/work
@@ -107,7 +107,7 @@ ndx-pose @ file:///home/conda/feedstock_root/build_artifacts/ndx-pose_1706810229
       tzdata @ file:///home/conda/feedstock_root/build_artifacts/python-tzdata_1707747584337/work
     ruamel.yaml @ file:///Users/runner/miniforge3/conda-bld/ruamel.yaml_1707298382103/work
       ruamel.yaml.clib @ file:///Users/runner/miniforge3/conda-bld/ruamel.yaml.clib_1707314852085/work
-    scipy @ file:///Users/runner/miniforge3/conda-bld/scipy-split_1720323036795/work/dist/scipy-1.14.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=b939069a5cdf606593597be906da29711202c602e3f753e5fbc9256c5a5e562d
+    scipy @ file:///Users/runner/miniforge3/conda-bld/scipy-split_1723854803030/work/dist/scipy-1.14.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=b12037e82aad5ee56c9c96f7df433a7adeb86fe49277a71b1bb903d3a22c5ca4
       numpy==1.23.5
   pynwb @ file:///Users/runner/miniforge3/conda-bld/pynwb_1720295844483/work
     h5py @ file:///Users/runner/miniforge3/conda-bld/h5py_1717665543879/work
@@ -134,7 +134,7 @@ ndx-pose @ file:///home/conda/feedstock_root/build_artifacts/ndx-pose_1706810229
         tzdata @ file:///home/conda/feedstock_root/build_artifacts/python-tzdata_1707747584337/work
       ruamel.yaml @ file:///Users/runner/miniforge3/conda-bld/ruamel.yaml_1707298382103/work
         ruamel.yaml.clib @ file:///Users/runner/miniforge3/conda-bld/ruamel.yaml.clib_1707314852085/work
-      scipy @ file:///Users/runner/miniforge3/conda-bld/scipy-split_1720323036795/work/dist/scipy-1.14.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=b939069a5cdf606593597be906da29711202c602e3f753e5fbc9256c5a5e562d
+      scipy @ file:///Users/runner/miniforge3/conda-bld/scipy-split_1723854803030/work/dist/scipy-1.14.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=b12037e82aad5ee56c9c96f7df433a7adeb86fe49277a71b1bb903d3a22c5ca4
         numpy==1.23.5
     numpy==1.23.5
     pandas @ file:///Users/runner/miniforge3/conda-bld/pandas_1715897645859/work
@@ -157,7 +157,7 @@ psutil @ file:///Users/runner/miniforge3/conda-bld/psutil_1719274593229/work
 PyJWT @ file:///home/conda/feedstock_root/build_artifacts/pyjwt_1722701264352/work
 pykalman @ file:///home/conda/feedstock_root/build_artifacts/pykalman_1711547707628/work
   numpy==1.23.5
-  scipy @ file:///Users/runner/miniforge3/conda-bld/scipy-split_1720323036795/work/dist/scipy-1.14.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=b939069a5cdf606593597be906da29711202c602e3f753e5fbc9256c5a5e562d
+  scipy @ file:///Users/runner/miniforge3/conda-bld/scipy-split_1723854803030/work/dist/scipy-1.14.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=b12037e82aad5ee56c9c96f7df433a7adeb86fe49277a71b1bb903d3a22c5ca4
     numpy==1.23.5
 pyOpenSSL @ file:///home/conda/feedstock_root/build_artifacts/pyopenssl_1722587090966/work
   cryptography @ file:///Users/runner/miniforge3/conda-bld/cryptography-split_1721521271239/work
@@ -181,7 +181,7 @@ qudida @ file:///home/conda/feedstock_root/build_artifacts/qudida_1651101164121/
   scikit-learn @ file:///Users/runner/miniforge3/conda-bld/scikit-learn_1719998139114/work/dist/scikit_learn-1.5.1-cp310-cp310-macosx_11_0_arm64.whl#sha256=3a3666390773d49f321866f340869ec511b3089dfc8fd1f0244d305930b5018e
     joblib @ file:///home/conda/feedstock_root/build_artifacts/joblib_1714665484399/work
     numpy==1.23.5
-    scipy @ file:///Users/runner/miniforge3/conda-bld/scipy-split_1720323036795/work/dist/scipy-1.14.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=b939069a5cdf606593597be906da29711202c602e3f753e5fbc9256c5a5e562d
+    scipy @ file:///Users/runner/miniforge3/conda-bld/scipy-split_1723854803030/work/dist/scipy-1.14.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=b12037e82aad5ee56c9c96f7df433a7adeb86fe49277a71b1bb903d3a22c5ca4
       numpy==1.23.5
     threadpoolctl @ file:///home/conda/feedstock_root/build_artifacts/threadpoolctl_1714400101435/work
   typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1717802530399/work
@@ -225,7 +225,7 @@ segmentation-models==1.0.1
       numpy==1.23.5
       packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1718189413536/work
       pillow @ file:///Users/runner/miniforge3/conda-bld/pillow_1719903567335/work
-      scipy @ file:///Users/runner/miniforge3/conda-bld/scipy-split_1720323036795/work/dist/scipy-1.14.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=b939069a5cdf606593597be906da29711202c602e3f753e5fbc9256c5a5e562d
+      scipy @ file:///Users/runner/miniforge3/conda-bld/scipy-split_1723854803030/work/dist/scipy-1.14.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=b12037e82aad5ee56c9c96f7df433a7adeb86fe49277a71b1bb903d3a22c5ca4
         numpy==1.23.5
       tifffile @ file:///home/conda/feedstock_root/build_artifacts/tifffile_1723458355548/work
         numpy==1.23.5
@@ -251,7 +251,7 @@ statsmodels @ file:///Users/runner/miniforge3/conda-bld/statsmodels_171594124988
   patsy @ file:///home/conda/feedstock_root/build_artifacts/patsy_1704469236901/work
     numpy==1.23.5
     six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
-  scipy @ file:///Users/runner/miniforge3/conda-bld/scipy-split_1720323036795/work/dist/scipy-1.14.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=b939069a5cdf606593597be906da29711202c602e3f753e5fbc9256c5a5e562d
+  scipy @ file:///Users/runner/miniforge3/conda-bld/scipy-split_1723854803030/work/dist/scipy-1.14.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=b12037e82aad5ee56c9c96f7df433a7adeb86fe49277a71b1bb903d3a22c5ca4
     numpy==1.23.5
 tensorflow-hub==0.16.1
   numpy==1.23.5
@@ -275,7 +275,7 @@ tensorflow-macos==2.12.0
         numpy==1.23.5
         numpy==1.23.5
       numpy==1.23.5
-      scipy @ file:///Users/runner/miniforge3/conda-bld/scipy-split_1720323036795/work/dist/scipy-1.14.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=b939069a5cdf606593597be906da29711202c602e3f753e5fbc9256c5a5e562d
+      scipy @ file:///Users/runner/miniforge3/conda-bld/scipy-split_1723854803030/work/dist/scipy-1.14.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=b12037e82aad5ee56c9c96f7df433a7adeb86fe49277a71b1bb903d3a22c5ca4
         numpy==1.23.5
     ml-dtypes==0.4.0
       numpy==1.23.5
@@ -283,7 +283,7 @@ tensorflow-macos==2.12.0
     numpy==1.23.5
     opt-einsum @ file:///home/conda/feedstock_root/build_artifacts/opt_einsum_1696448916724/work
       numpy==1.23.5
-    scipy @ file:///Users/runner/miniforge3/conda-bld/scipy-split_1720323036795/work/dist/scipy-1.14.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=b939069a5cdf606593597be906da29711202c602e3f753e5fbc9256c5a5e562d
+    scipy @ file:///Users/runner/miniforge3/conda-bld/scipy-split_1723854803030/work/dist/scipy-1.14.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=b12037e82aad5ee56c9c96f7df433a7adeb86fe49277a71b1bb903d3a22c5ca4
       numpy==1.23.5
   keras @ file:///home/conda/feedstock_root/build_artifacts/keras_1679712543761/work/keras-2.12.0-py2.py3-none-any.whl
   libclang==18.1.1
