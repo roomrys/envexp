@@ -39,7 +39,7 @@ List of packages in environment: "/Users/liezlmaree/micromamba/envs/experiment"
   double-conversion                     3.3.0         h13dd4ca_0                conda-forge         
   exceptiongroup                        1.2.2         pyhd8ed1ab_0              conda-forge         
   expat                                 2.6.2         hebf3989_0                conda-forge         
-  ffmpeg                                6.1.2         gpl_h2009a67_101          conda-forge         
+  ffmpeg                                6.1.2         gpl_h232664a_100          conda-forge         
   font-ttf-dejavu-sans-mono             2.37          hab24e00_0                conda-forge         
   font-ttf-inconsolata                  3.000         h77eed37_0                conda-forge         
   font-ttf-source-code-pro              2.038         h77eed37_0                conda-forge         
@@ -56,7 +56,7 @@ List of packages in environment: "/Users/liezlmaree/micromamba/envs/experiment"
   gettext-tools                         0.22.5        h8414b35_3                conda-forge         
   giflib                                5.2.2         h93a5062_0                conda-forge         
   gmp                                   6.3.0         h7bae524_2                conda-forge         
-  gnutls                                3.8.7         h9df781c_0                conda-forge         
+  gnutls                                3.7.9         hd26332c_0                conda-forge         
   google-auth                           2.33.0        pyhff2d567_0              conda-forge         
   google-auth-oauthlib                  0.4.6         pyhd8ed1ab_0              conda-forge         
   google-pasta                          0.2.0         pyhd8ed1ab_1              conda-forge         
@@ -85,7 +85,6 @@ List of packages in environment: "/Users/liezlmaree/micromamba/envs/experiment"
   jsonschema                            4.23.0        pyhd8ed1ab_0              conda-forge         
   jsonschema-specifications             2023.12.1     pyhd8ed1ab_0              conda-forge         
   jxrlib                                1.1           h93a5062_3                conda-forge         
-  keras                                 2.12.0        pyhd8ed1ab_0              conda-forge         
   keras-preprocessing                   1.1.2         pyhd8ed1ab_0              conda-forge         
   kiwisolver                            1.4.5         py310h38f39d4_1           conda-forge         
   krb5                                  1.21.3        h237132a_0                conda-forge         

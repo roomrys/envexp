@@ -138,5 +138,5 @@ if __name__ == "__main__":
     main(
         # library="qtpy",
         input_dir="/Users/liezlmaree/Projects/sleap/sleap",
-        commit_message="tensorflow==2.12.0 (sleap-deps), sleap-train, jsonpickle<=1.5.0",
+        commit_message="tensorflow==2.12.0 (sleap-deps), keras, sleap-train, jsonpickle<=1.5.0",
     )

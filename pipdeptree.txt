@@ -54,7 +54,7 @@ cattrs @ file:///home/conda/feedstock_root/build_artifacts/cattrs_1701406356568/
   exceptiongroup @ file:///home/conda/feedstock_root/build_artifacts/exceptiongroup_1720869315914/work
   typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1717802530399/work
 click @ file:///home/conda/feedstock_root/build_artifacts/click_1692311806742/work
--e git+https://github.com/roomrys/envexp@eeec3aa44a99986381bb837c7f84e39e891f8423#egg=experiment&subdirectory=envexp
+-e git+https://github.com/roomrys/envexp@18b970d54b595f4d60b032c92c34253acf45f67f#egg=experiment&subdirectory=envexp
 h2 @ file:///home/conda/feedstock_root/build_artifacts/h2_1634280454336/work
   hpack==4.0.0
   hyperframe @ file:///home/conda/feedstock_root/build_artifacts/hyperframe_1619110129307/work
@@ -285,7 +285,7 @@ tensorflow-macos==2.12.0
       numpy==1.23.5
     scipy @ file:///Users/runner/miniforge3/conda-bld/scipy-split_1720323036795/work/dist/scipy-1.14.0-cp310-cp310-macosx_11_0_arm64.whl#sha256=b939069a5cdf606593597be906da29711202c602e3f753e5fbc9256c5a5e562d
       numpy==1.23.5
-  keras==2.12.0
+  keras @ file:///home/conda/feedstock_root/build_artifacts/keras_1679712543761/work/keras-2.12.0-py2.py3-none-any.whl
   libclang==18.1.1
   numpy==1.23.5
   opt-einsum @ file:///home/conda/feedstock_root/build_artifacts/opt_einsum_1696448916724/work
