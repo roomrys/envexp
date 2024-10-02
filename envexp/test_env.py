@@ -138,5 +138,5 @@ if __name__ == "__main__":
     main(
         # library="qtpy",
         # input_dir="/Users/liezlmaree/Projects/sleap/sleap",
-        commit_message="Pin numpy to <2",
+        commit_message="Add PySide6 and opencv",
     )
