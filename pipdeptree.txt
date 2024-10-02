@@ -1,5 +1,5 @@
 cached-property @ file:///home/conda/feedstock_root/build_artifacts/cached_property_1615209429212/work
--e git+https://github.com/roomrys/envexp@d1f3ce5cc3830377771424cdc1f151b670ef2b7f#egg=experiment&subdirectory=envexp
+-e git+https://github.com/roomrys/envexp@afa9e308b179c9be73eb5554413a36ff94d88744#egg=experiment&subdirectory=envexp
 importlib_metadata @ file:///home/conda/feedstock_root/build_artifacts/importlib-metadata_1726082825846/work
   zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1726248574750/work
 ipykernel==6.21.2

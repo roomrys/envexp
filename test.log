@@ -1,16 +1,16 @@
-2024-10-02 14:17:18,524 INFO envexp_utils.log Environment created successfully!
-2024-10-02 14:17:24,913 INFO envexp_utils.log Running user-defined test code:
+2024-10-02 14:25:01,141 INFO envexp_utils.log Environment created successfully!
+2024-10-02 14:25:07,672 INFO envexp_utils.log Running user-defined test code:
 """User-defined test code to run after the imports have been tested."""
 
 if __name__ == "__main__":
     import tensorflow
 
-2024-10-02 14:17:27,705 ERROR envexp_utils.log Tests failed!
+2024-10-02 14:25:09,918 ERROR envexp_utils.log Tests failed!
 Traceback (most recent call last):
   File "d:\envexp\envexp\envexp_utils\log.py", line 123, in run_and_log
     raise Exception(error)
-Exception: 2024-10-02 14:17:26.509325: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
-2024-10-02 14:17:26.509360: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Exception: 2024-10-02 14:25:09.342206: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2024-10-02 14:25:09.342253: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
 
 A module that was compiled using NumPy 1.x cannot be run in
 NumPy 2.1.1 as it may crash. To support both 1.x and 2.x
