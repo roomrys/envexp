@@ -2,9 +2,16 @@ name: experiment
 channels:
   - conda-forge
 dependencies:
-  - python=3.10
-  - qtpy
-  - pyside6
+  - python>=3.10.0,<3.11.0
+  - numpy
+  - h5py
+  - protobuf
+  - certifi
+  - importlib-metadata
+  - six
+  - typing-extensions
+  - zipp
   - pip
   - pip:
+    - tensorflow==2.9.2
     - -e . # Install the package in the current directory

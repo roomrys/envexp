@@ -138,5 +138,5 @@ if __name__ == "__main__":
     main(
         # library="qtpy",
         # input_dir="/Users/liezlmaree/Projects/sleap/sleap",
-        commit_message="Fix error with repo_name",
+        commit_message="Test",
     )

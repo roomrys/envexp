@@ -1,8 +1,86 @@
--e git+https://github.com/roomrys/envexp@833539cf76c7d27a39641967d2f94d623023e325#egg=experiment&subdirectory=envexp
-pip @ file:///home/conda/feedstock_root/build_artifacts/pip_1722450924710/work
-PySide6==6.7.2
-QtPy @ file:///home/conda/feedstock_root/build_artifacts/qtpy_1698112029416/work
-  packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1718189413536/work
-setuptools==72.1.0
-shiboken6==6.7.2
-wheel==0.44.0
+cached-property @ file:///home/conda/feedstock_root/build_artifacts/cached_property_1615209429212/work
+-e git+https://github.com/roomrys/envexp@d1f3ce5cc3830377771424cdc1f151b670ef2b7f#egg=experiment&subdirectory=envexp
+importlib_metadata @ file:///home/conda/feedstock_root/build_artifacts/importlib-metadata_1726082825846/work
+  zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1726248574750/work
+ipykernel==6.21.2
+  comm
+  debugpy==1.6.6
+  ipython
+  jupyter-client
+  jupyter_core==5.2.0
+    platformdirs
+    pywin32==305
+    traitlets
+  matplotlib-inline
+  nest-asyncio==1.5.6
+  packaging==24.1
+  psutil==5.9.4
+  pyzmq==25.0.0
+  tornado==6.2
+  traitlets
+pip @ file:///home/conda/feedstock_root/build_artifacts/pip_1724954388421/work
+tensorflow==2.9.2
+  absl-py==2.1.0
+  astunparse==1.6.3
+    six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+    wheel==0.44.0
+  flatbuffers==1.12
+  gast==0.4.0
+  google-pasta==0.2.0
+    six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+  grpcio==1.66.2
+  h5py @ file:///D:/bld/h5py_1717664858971/work
+    numpy @ file:///D:/bld/numpy_1725411924103/work/dist/numpy-2.1.1-cp310-cp310-win_amd64.whl#sha256=07fc83bf2c7860dfae7fe2b4a2b8d0dfae43c4d3600390ff6299be05daeeee86
+  keras==2.9.0
+  Keras-Preprocessing==1.1.2
+    numpy @ file:///D:/bld/numpy_1725411924103/work/dist/numpy-2.1.1-cp310-cp310-win_amd64.whl#sha256=07fc83bf2c7860dfae7fe2b4a2b8d0dfae43c4d3600390ff6299be05daeeee86
+    six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+  libclang==18.1.1
+  numpy @ file:///D:/bld/numpy_1725411924103/work/dist/numpy-2.1.1-cp310-cp310-win_amd64.whl#sha256=07fc83bf2c7860dfae7fe2b4a2b8d0dfae43c4d3600390ff6299be05daeeee86
+  opt_einsum==3.4.0
+  packaging==24.1
+  protobuf==3.19.6
+  setuptools==75.1.0
+  six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+  tensorboard==2.9.1
+    absl-py==2.1.0
+    google-auth==2.35.0
+      cachetools==5.5.0
+      pyasn1_modules==0.4.1
+        pyasn1==0.6.1
+      rsa==4.9
+        pyasn1==0.6.1
+    google-auth-oauthlib==0.4.6
+      google-auth==2.35.0
+        cachetools==5.5.0
+        pyasn1_modules==0.4.1
+          pyasn1==0.6.1
+        rsa==4.9
+          pyasn1==0.6.1
+      requests-oauthlib==2.0.0
+        oauthlib==3.2.2
+        requests==2.32.3
+          certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1725278078093/work/certifi
+          charset-normalizer==3.3.2
+          idna==3.10
+          urllib3==2.2.3
+    grpcio==1.66.2
+    Markdown==3.7
+    numpy @ file:///D:/bld/numpy_1725411924103/work/dist/numpy-2.1.1-cp310-cp310-win_amd64.whl#sha256=07fc83bf2c7860dfae7fe2b4a2b8d0dfae43c4d3600390ff6299be05daeeee86
+    protobuf==3.19.6
+    requests==2.32.3
+      certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1725278078093/work/certifi
+      charset-normalizer==3.3.2
+      idna==3.10
+      urllib3==2.2.3
+    setuptools==75.1.0
+    tensorboard-data-server==0.6.1
+    tensorboard-plugin-wit==1.8.1
+    Werkzeug==3.0.4
+      MarkupSafe==2.1.5
+    wheel==0.44.0
+  tensorflow-estimator==2.9.0
+  tensorflow-io-gcs-filesystem==0.31.0
+  termcolor==2.4.0
+  typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1717802530399/work
+  wrapt==1.16.0
