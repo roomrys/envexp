@@ -1,14 +1,7 @@
-brotlipy @ file:///D:/bld/brotlipy_1666764804378/work
-  cffi @ file:///D:/bld/cffi_1671179506518/work
-    pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1636257122734/work
-conda-package-handling @ file:///home/conda/feedstock_root/build_artifacts/conda-package-handling_1669907009957/work
-  conda_package_streaming @ file:///home/conda/feedstock_root/build_artifacts/conda-package-streaming_1669733752472/work
-    requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1680286922386/work
-      certifi==2022.12.7
-      charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1678108872112/work
-      idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1663625384323/work
-      urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1678635778344/work
-    zstandard==0.19.0
+cached-property @ file:///home/conda/feedstock_root/build_artifacts/cached_property_1615209429212/work
+-e git+https://github.com/roomrys/envexp@d04a58207c4b2331a4e0dbc5c28c368febd40a65#egg=experiment&subdirectory=envexp
+importlib_metadata @ file:///home/conda/feedstock_root/build_artifacts/importlib-metadata_1726082825846/work
+  zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1726248574750/work
 ipykernel==6.21.2
   comm
   debugpy==1.6.6
@@ -20,33 +13,78 @@ ipykernel==6.21.2
     traitlets
   matplotlib-inline
   nest-asyncio==1.5.6
-  packaging
+  packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1718189413536/work
   psutil==5.9.4
   pyzmq==25.0.0
   tornado==6.2
   traitlets
-mamba @ file:///D:/bld/mamba-split_1680002565588/work/mamba
-  conda==23.1.0
-    menuinst @ file:///D:/bld/menuinst_1666839998718/work
-    pluggy @ file:///home/conda/feedstock_root/build_artifacts/pluggy_1667232663820/work
-    pycosat @ file:///D:/bld/pycosat_1666836675990/work
-    requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1680286922386/work
-      certifi==2022.12.7
-      charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1678108872112/work
-      idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1663625384323/work
-      urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1678635778344/work
-    ruamel.yaml @ file:///D:/bld/ruamel.yaml_1678273308128/work
-      ruamel.yaml.clib @ file:///D:/bld/ruamel.yaml.clib_1670412994006/work
-    tqdm @ file:///home/conda/feedstock_root/build_artifacts/tqdm_1677948868469/work
-      colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1666700638685/work
-  libmambapy @ file:///D:/bld/mamba-split_1680002565588/work/libmambapy
-pip==24.0
-pyOpenSSL @ file:///home/conda/feedstock_root/build_artifacts/pyopenssl_1680037383858/work
-  cryptography @ file:///D:/bld/cryptography-split_1679811386218/work
-    cffi @ file:///D:/bld/cffi_1671179506518/work
-      pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1636257122734/work
-PySocks @ file:///D:/bld/pysocks_1661604991356/work
-setuptools==65.6.3
-toolz @ file:///home/conda/feedstock_root/build_artifacts/toolz_1657485559105/work
-wheel==0.40.0
-win-inet-pton @ file:///D:/bld/win_inet_pton_1667051142467/work
+opencv-python==4.10.0
+opencv-python-headless==4.10.0
+pip @ file:///home/conda/feedstock_root/build_artifacts/pip_1724954388421/work
+PySide6==6.7.2
+shiboken6==6.7.2
+tensorflow==2.9.2
+  absl-py==2.1.0
+  astunparse==1.6.3
+    six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+    wheel==0.44.0
+  flatbuffers==1.12
+  gast==0.4.0
+  google-pasta==0.2.0
+    six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+  grpcio==1.66.2
+  h5py @ file:///D:/bld/h5py_1717664858971/work
+    numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+  keras==2.9.0
+  Keras-Preprocessing==1.1.2
+    numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+    six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+  libclang==18.1.1
+  numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+  opt_einsum==3.4.0
+  packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1718189413536/work
+  protobuf==3.19.6
+  setuptools==75.1.0
+  six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+  tensorboard==2.9.1
+    absl-py==2.1.0
+    google-auth==2.35.0
+      cachetools==5.5.0
+      pyasn1_modules==0.4.1
+        pyasn1==0.6.1
+      rsa==4.9
+        pyasn1==0.6.1
+    google-auth-oauthlib==0.4.6
+      google-auth==2.35.0
+        cachetools==5.5.0
+        pyasn1_modules==0.4.1
+          pyasn1==0.6.1
+        rsa==4.9
+          pyasn1==0.6.1
+      requests-oauthlib==2.0.0
+        oauthlib==3.2.2
+        requests==2.32.3
+          certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1725278078093/work/certifi
+          charset-normalizer==3.3.2
+          idna==3.10
+          urllib3==2.2.3
+    grpcio==1.66.2
+    Markdown==3.7
+    numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
+    protobuf==3.19.6
+    requests==2.32.3
+      certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1725278078093/work/certifi
+      charset-normalizer==3.3.2
+      idna==3.10
+      urllib3==2.2.3
+    setuptools==75.1.0
+    tensorboard-data-server==0.6.1
+    tensorboard-plugin-wit==1.8.1
+    Werkzeug==3.0.4
+      MarkupSafe==2.1.5
+    wheel==0.44.0
+  tensorflow-estimator==2.9.0
+  tensorflow-io-gcs-filesystem==0.31.0
+  termcolor==2.4.0
+  typing_extensions @ file:///home/conda/feedstock_root/build_artifacts/typing_extensions_1717802530399/work
+  wrapt==1.16.0

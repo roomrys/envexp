@@ -1,10 +1,8 @@
-2024-10-02 14:49:32,233 ERROR envexp_utils.log Failed to create environment!
-Traceback (most recent call last):
-  File "d:\envexp\envexp\envexp_utils\log.py", line 123, in run_and_log
-    raise Exception(error)
-Exception: ERROR conda.core.link:_execute(745): An error occurred while installing package 'conda-forge::vc14_runtime-14.40.33810-ha82c5b3_21'.
-
-[Errno 13] Permission denied: 'C:\\Users\\TalmoLab\\mambaforge\\envs\\experiment\\vcruntime140.dll'
-()
-
+2024-10-02 14:54:59,748 INFO envexp_utils.log Environment created successfully!
+2024-10-02 14:55:07,078 INFO envexp_utils.log Running user-defined test code:
+"""User-defined test code to run after the imports have been tested."""
 
+if __name__ == "__main__":
+    import tensorflow
+
+2024-10-02 14:55:12,526 INFO envexp_utils.log Tests passed successfully!
