@@ -1,5 +1,10 @@
-2024-10-02 14:34:48,096 ERROR envexp_utils.log Failed to create environment!
+2024-10-02 14:49:32,233 ERROR envexp_utils.log Failed to create environment!
 Traceback (most recent call last):
   File "d:\envexp\envexp\envexp_utils\log.py", line 123, in run_and_log
     raise Exception(error)
-Exception
+Exception: ERROR conda.core.link:_execute(745): An error occurred while installing package 'conda-forge::vc14_runtime-14.40.33810-ha82c5b3_21'.
+
+[Errno 13] Permission denied: 'C:\\Users\\TalmoLab\\mambaforge\\envs\\experiment\\vcruntime140.dll'
+()
+
+

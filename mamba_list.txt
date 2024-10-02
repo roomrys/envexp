@@ -1,0 +1,3 @@
+# packages in environment at C:\Users\TalmoLab\mambaforge\envs\experiment:
+#
+# Name                    Version                   Build  Channel

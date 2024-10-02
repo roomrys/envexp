@@ -138,5 +138,5 @@ if __name__ == "__main__":
     main(
         # library="qtpy",
         # input_dir="/Users/liezlmaree/Projects/sleap/sleap",
-        commit_message="Add PySide6 and opencv",
+        commit_message="Remove protobuf constraint",
     )

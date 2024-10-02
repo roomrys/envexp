@@ -1,0 +1,52 @@
+brotlipy @ file:///D:/bld/brotlipy_1666764804378/work
+  cffi @ file:///D:/bld/cffi_1671179506518/work
+    pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1636257122734/work
+conda-package-handling @ file:///home/conda/feedstock_root/build_artifacts/conda-package-handling_1669907009957/work
+  conda_package_streaming @ file:///home/conda/feedstock_root/build_artifacts/conda-package-streaming_1669733752472/work
+    requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1680286922386/work
+      certifi==2022.12.7
+      charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1678108872112/work
+      idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1663625384323/work
+      urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1678635778344/work
+    zstandard==0.19.0
+ipykernel==6.21.2
+  comm
+  debugpy==1.6.6
+  ipython
+  jupyter-client
+  jupyter_core==5.2.0
+    platformdirs
+    pywin32==305
+    traitlets
+  matplotlib-inline
+  nest-asyncio==1.5.6
+  packaging
+  psutil==5.9.4
+  pyzmq==25.0.0
+  tornado==6.2
+  traitlets
+mamba @ file:///D:/bld/mamba-split_1680002565588/work/mamba
+  conda==23.1.0
+    menuinst @ file:///D:/bld/menuinst_1666839998718/work
+    pluggy @ file:///home/conda/feedstock_root/build_artifacts/pluggy_1667232663820/work
+    pycosat @ file:///D:/bld/pycosat_1666836675990/work
+    requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1680286922386/work
+      certifi==2022.12.7
+      charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1678108872112/work
+      idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1663625384323/work
+      urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1678635778344/work
+    ruamel.yaml @ file:///D:/bld/ruamel.yaml_1678273308128/work
+      ruamel.yaml.clib @ file:///D:/bld/ruamel.yaml.clib_1670412994006/work
+    tqdm @ file:///home/conda/feedstock_root/build_artifacts/tqdm_1677948868469/work
+      colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1666700638685/work
+  libmambapy @ file:///D:/bld/mamba-split_1680002565588/work/libmambapy
+pip==24.0
+pyOpenSSL @ file:///home/conda/feedstock_root/build_artifacts/pyopenssl_1680037383858/work
+  cryptography @ file:///D:/bld/cryptography-split_1679811386218/work
+    cffi @ file:///D:/bld/cffi_1671179506518/work
+      pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1636257122734/work
+PySocks @ file:///D:/bld/pysocks_1661604991356/work
+setuptools==65.6.3
+toolz @ file:///home/conda/feedstock_root/build_artifacts/toolz_1657485559105/work
+wheel==0.40.0
+win-inet-pton @ file:///D:/bld/win_inet_pton_1667051142467/work
