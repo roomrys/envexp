@@ -3,7 +3,7 @@ channels:
   - conda-forge
 dependencies:
   - python>=3.10.0,<3.11.0
-  - numpy
+  - numpy>=1.16.5,<2.0 # tensorflow compiled with numpy 1.x
   - h5py
   - protobuf
   - certifi
@@ -11,6 +11,8 @@ dependencies:
   - six
   - typing-extensions
   - zipp
+  - PySide6
+  - opencv
   - pip
   - pip:
     - tensorflow==2.9.2

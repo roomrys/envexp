@@ -1,5 +1,5 @@
 cached-property @ file:///home/conda/feedstock_root/build_artifacts/cached_property_1615209429212/work
--e git+https://github.com/roomrys/envexp@d1f3ce5cc3830377771424cdc1f151b670ef2b7f#egg=experiment&subdirectory=envexp
+-e git+https://github.com/roomrys/envexp@d04a58207c4b2331a4e0dbc5c28c368febd40a65#egg=experiment&subdirectory=envexp
 importlib_metadata @ file:///home/conda/feedstock_root/build_artifacts/importlib-metadata_1726082825846/work
   zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1726248574750/work
 ipykernel==6.21.2
@@ -13,12 +13,16 @@ ipykernel==6.21.2
     traitlets
   matplotlib-inline
   nest-asyncio==1.5.6
-  packaging==24.1
+  packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1718189413536/work
   psutil==5.9.4
   pyzmq==25.0.0
   tornado==6.2
   traitlets
+opencv-python==4.10.0
+opencv-python-headless==4.10.0
 pip @ file:///home/conda/feedstock_root/build_artifacts/pip_1724954388421/work
+PySide6==6.7.2
+shiboken6==6.7.2
 tensorflow==2.9.2
   absl-py==2.1.0
   astunparse==1.6.3
@@ -30,15 +34,15 @@ tensorflow==2.9.2
     six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
   grpcio==1.66.2
   h5py @ file:///D:/bld/h5py_1717664858971/work
-    numpy @ file:///D:/bld/numpy_1725411924103/work/dist/numpy-2.1.1-cp310-cp310-win_amd64.whl#sha256=07fc83bf2c7860dfae7fe2b4a2b8d0dfae43c4d3600390ff6299be05daeeee86
+    numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
   keras==2.9.0
   Keras-Preprocessing==1.1.2
-    numpy @ file:///D:/bld/numpy_1725411924103/work/dist/numpy-2.1.1-cp310-cp310-win_amd64.whl#sha256=07fc83bf2c7860dfae7fe2b4a2b8d0dfae43c4d3600390ff6299be05daeeee86
+    numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
     six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
   libclang==18.1.1
-  numpy @ file:///D:/bld/numpy_1725411924103/work/dist/numpy-2.1.1-cp310-cp310-win_amd64.whl#sha256=07fc83bf2c7860dfae7fe2b4a2b8d0dfae43c4d3600390ff6299be05daeeee86
+  numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
   opt_einsum==3.4.0
-  packaging==24.1
+  packaging @ file:///home/conda/feedstock_root/build_artifacts/packaging_1718189413536/work
   protobuf==3.19.6
   setuptools==75.1.0
   six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
@@ -66,7 +70,7 @@ tensorflow==2.9.2
           urllib3==2.2.3
     grpcio==1.66.2
     Markdown==3.7
-    numpy @ file:///D:/bld/numpy_1725411924103/work/dist/numpy-2.1.1-cp310-cp310-win_amd64.whl#sha256=07fc83bf2c7860dfae7fe2b4a2b8d0dfae43c4d3600390ff6299be05daeeee86
+    numpy @ file:///D:/bld/numpy_1707225570061/work/dist/numpy-1.26.4-cp310-cp310-win_amd64.whl#sha256=6761da75b1528684e6bf4dabdbdded9d1eb4d0e9b299482c7ce152cfb3155106
     protobuf==3.19.6
     requests==2.32.3
       certifi @ file:///home/conda/feedstock_root/build_artifacts/certifi_1725278078093/work/certifi
